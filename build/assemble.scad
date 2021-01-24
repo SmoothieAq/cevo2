@@ -1,0 +1,23 @@
+include <cevo2.scad>
+include <defs/base_defs.scad>
+
+use <assemblies/frame.scad>
+use <assemblies/y_assembly.scad>
+use <assemblies/x_assembly.scad>
+use <assemblies/bed.scad>
+use <assemblies/loops.scad>
+use <assemblies/leads.scad>
+
+module cevo2_assembly() {assembly("cevo2")
+frame_assembly();
+    y_assembly();
+    x_assembly();
+    loops_assembly();
+    leads_assembly();
+    bed_assembly();
+}
+
+cevo2_assembly();
+
+
+
