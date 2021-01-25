@@ -1,3 +1,3 @@
 <component name="DependencyValidationManager">
-  <scope name="scad" pattern="file:*.scad" />
+  <scope name="scad" pattern="file:*.scad&amp;&amp;!lib:*..*" />
 </component>

@@ -1,5 +1,5 @@
 <component name="CopyrightManager">
-  <settings default="scad-cr">
+  <settings>
     <module2copyright>
       <element module="scad" copyright="scad-cr" />
     </module2copyright>

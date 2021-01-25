@@ -43,6 +43,7 @@ bed = [320,320,6];
 bed_fast_off = 8;
 bed_y_off = 60;
 bed_x_off = (frame_p4.x-bed.x)/2;
+bed_off = 3;
 
 base_part_thick = 5;
 motor_nudge = 0.5;
