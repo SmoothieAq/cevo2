@@ -1,4 +1,5 @@
 include <../../../xNopSCADlib/xVitamins/xextrusions.scad>
+include <../../../xNopSCADlib/xVitamins/xscrews.scad>
 
 posx = 0.4;
 posy = 0.5;
@@ -25,7 +26,6 @@ pos_y = area_y_offf+posy*area_y;
 frame_y_z1 = 164-extr_d2;
 frame_y_z3 = extr_z_len-extr_d2;
 frame_y_z2 = frame_y_z3-112;
-echo(d=350-(frame_y_z2-frame_y_z1));
 
 xrail_xoff = -12;
 xrail_zoff = 28;
@@ -44,6 +44,8 @@ bed_fast_off = 8;
 bed_y_off = 60;
 bed_x_off = (frame_p4.x-bed.x)/2;
 bed_off = 3;
+
+screwPart = axscrew(M3_cap_screw,material=MaterialBlackSteel);
 
 base_part_thick = 5;
 motor_nudge = 0.5;
