@@ -1,0 +1,16 @@
+{
+    "assemblies/main_assembled.png": 19.885,
+    "assemblies/main_assembly.png": 19.659,
+    "assemblies/bed_assembled.png": 3.57,
+    "assemblies/bed_assembly.png": 3.56,
+    "assemblies/frame_assembled.png": 4.023,
+    "assemblies/frame_assembly.png": 4.004,
+    "assemblies/leads_assembled.png": 10.247,
+    "assemblies/leads_assembly.png": 10.311,
+    "assemblies/loops_assembled.png": 6.729,
+    "assemblies/loops_assembly.png": 6.679,
+    "assemblies/x_assembled.png": 5.579,
+    "assemblies/x_assembly.png": 5.552,
+    "assemblies/y_assembled.png": 4.835,
+    "assemblies/y_assembly.png": 4.715
+}

@@ -1,0 +1,8 @@
+loops_assembly:
+Vitamins:
+  2 Stepper motor NEMA17 x 47mm
+  1 Belt GT2 x 6mm x 1646mm
+  1 Belt GT2 x 6mm x 1646mm
+  8 Pulley GT2 idler smooth 9.63mm
+  2 Pulley GT2OB 20 teeth
+  4 Screw M3 grub x  6mm

@@ -1,0 +1,8 @@
+{
+    "holderL2.stl": 55.9,
+    "holderF2.stl": 55.007,
+    "holderB2.stl": 60.171,
+    "holderL1.stl": 12.972,
+    "holderF1.stl": 11.404,
+    "holderB1.stl": 11.83
+}

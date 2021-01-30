@@ -30,7 +30,7 @@ leadScrews = [ for (i = [0:2]) let(
 	pss = [ for (p = leadnut_screw_poss(leadnut)) ptf_rotate(p,[0,0,45])+[0,0,holder_thick1-leadnut_flange_t(leadnut)] ]
 ) [ for (p = pss) axxscrew(screw,t=p) ] ];
 
-module leads_assembly() {assembly("leads");
+module leads_assembly() assembly("leads") {
 
 	for (i = [0:2]) {
 		lp = leads[i][1];
@@ -48,10 +48,10 @@ module leads_assembly() {assembly("leads");
 				xleadnut(leadnut);
 			}
 			translate([0, 0, z]) rotate([0,0,holder_a(i)]) {
-				if (i == 0) {part_holderL2(); part_holderL1();}
-				if (i == 1) {part_holderF2(); part_holderF1();}
-				if (i == 2) {part_holderB2(); part_holderB1();}
-				xxside2(holderScrews[i]);
+				if (i == 0) {holderL2_stl(); holderL1_stl();}
+				if (i == 1) {holderF2_stl(); holderF1_stl();}
+				if (i == 2) {holderB2_stl(); holderB1_stl();}
+				xxside2(holderScrews[i]);//
 				xxside1(holderScrews[i]);
 				xxside2(leadScrews[i]);
 				xxside1(leadScrews[i]);
@@ -72,12 +72,12 @@ module leads_assembly() {assembly("leads");
 	}
 }
 
-module part_holderL2() {stl("holderL2"); holder2(0); }
-module part_holderF2() {stl("holderF2"); holder2(1); }
-module part_holderB2() {stl("holderB2"); holder2(2); }
-module part_holderL1() {stl("holderL1"); holder1(0); }
-module part_holderF1() {stl("holderF1"); holder1(1); }
-module part_holderB1() {stl("holderB1"); holder1(2); }
+module holderL2_stl() {stl("holderL2"); holder2(0); }
+module holderF2_stl() {stl("holderF2"); holder2(1); }
+module holderB2_stl() {stl("holderB2"); holder2(2); }
+module holderL1_stl() {stl("holderL1"); holder1(0); }
+module holderF1_stl() {stl("holderF1"); holder1(1); }
+module holderB1_stl() {stl("holderB1"); holder1(2); }
 
 module holder2(i,color=[.15,.15,.15]) {
 	ld = leadnut_flange_dia(leadnut);
@@ -225,7 +225,7 @@ module holder_tub(i,a1,a2,r=0) {
 }
 
 //leads_assembly();
-part_holderL2();
+holderL2_stl();
 //holder_pins(2);
 //part_holderL1();
 //xxside2(holderScrews[0]);

@@ -8,8 +8,8 @@ use <assemblies/bed.scad>
 use <assemblies/loops.scad>
 use <assemblies/leads.scad>
 
-module cevo2_assembly() {assembly("cevo2")
-frame_assembly();
+module main_assembly() assembly("main") {
+    frame_assembly();
     y_assembly();
     x_assembly();
     loops_assembly();
@@ -17,7 +17,7 @@ frame_assembly();
     bed_assembly();
 }
 
-cevo2_assembly();
+main_assembly();
 
 
 

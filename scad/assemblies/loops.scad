@@ -1,7 +1,7 @@
 include <../cevo2.scad>
 include <../defs/loops_defs.scad>
 
-module loops_assembly() {assembly("loops");
+module loops_assembly() assembly("loops") {
 
 	for (loop = loops) {
 		translate([0, 0, loop.x]) {

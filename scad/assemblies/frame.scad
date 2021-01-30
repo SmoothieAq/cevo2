@@ -2,7 +2,7 @@ include <../cevo2.scad>
 include <../defs/base_defs.scad>
 
 
-module frame_assembly() { assembly("frame");
+module frame_assembly() assembly("frame") {
 
     extr_x = axextrusion(extr_type,extr_x_len,MaterialBlackSteel);
     extr_y = axextrusion(extr_type,extr_y_len,MaterialBlackSteel);

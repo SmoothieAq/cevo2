@@ -1,0 +1,3 @@
+y_assembly:
+Vitamins:
+  2 Linear rail MGN12H x 410mm

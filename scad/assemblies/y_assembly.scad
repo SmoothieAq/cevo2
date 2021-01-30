@@ -3,7 +3,7 @@ include <../defs/loops_defs.scad>
 
 include <../../../xNopSCADlib/xVitamins/xrails.scad>
 
-module y_assembly() {assembly("y");
+module y_assembly() assembly("y") {
 
 
 	rail_y = axrail(MGN12H,extr_y_len,MaterialBlackSteel);

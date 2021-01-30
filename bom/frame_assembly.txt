@@ -1,0 +1,5 @@
+frame_assembly:
+Vitamins:
+  6 Extrusion E3030 x 410mm
+  4 Extrusion E3030 x 420mm
+  4 Extrusion E3030 x 600mm
