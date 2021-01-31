@@ -47,7 +47,10 @@ bed_off = 3;
 
 screwPart = axscrew(M3_cap_screw,material=MaterialBlackSteel);
 
-base_part_thick = 5;
+base_part_thick = 4;
+base_part_thickx = 7;
+base_part_thick2 = 20;
+base_part_thick2x = 20;
 motor_nudge = 0.5;
 part_assemble_nudge = 0.2;
 part_press_nudge = 0.6;

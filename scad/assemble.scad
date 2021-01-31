@@ -9,12 +9,12 @@ use <assemblies/loops.scad>
 use <assemblies/leads.scad>
 
 module main_assembly() assembly("main") {
-    frame_assembly();
+//    frame_assembly();
     y_assembly();
     x_assembly();
     loops_assembly();
-    leads_assembly();
-    bed_assembly();
+//    leads_assembly();
+//    bed_assembly();
 }
 
 main_assembly();

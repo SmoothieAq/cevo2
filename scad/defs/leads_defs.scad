@@ -17,8 +17,8 @@ holder_pin  = axSteelRod(2, 10);
 holder_washer = M2_washer;
 holder_ball = 5;
 
-holder_thick1 = 7;
-holder_thick2 = 20;
+holder_thick1 = base_part_thickx;
+holder_thick2 = base_part_thick2;
 holder_offz = 15;
 
 
