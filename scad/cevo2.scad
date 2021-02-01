@@ -4,6 +4,6 @@ $nozzle = 0.4;
 include <../../xNopSCADlib/xxVitamins/xxDefaults.scad>
 //$show_threads=true;
 //$show_lines=false;
-//$explode = 1;
+$explode = 1;
 include <../../xNopSCADlib/xNopSCADlib/core.scad>
 
