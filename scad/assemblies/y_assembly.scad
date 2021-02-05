@@ -49,7 +49,7 @@ module yxholder(y1xb) color(grey(24)){
 						rotate([5,1,0])
 							cylinder(h,d1=d1,d2=d2);
 				}
-				translate([0,-cl/2-cpx/2-3,cw/2])
+				translate([0,-cl/2-cpx/2-3,cw/2-part_assemble_nudge])
 					cube([xyholder_thick2*2,cl,xyholder_thick2]);
 				translate([0,-cl/2-cpx/2-3,-xyholder_thick2-frame_y_z3+loops[0][0]+pulley_height(idler)/2])
 					cube([xyholder_thick2*2,cl,xyholder_thick2]);
@@ -60,8 +60,10 @@ module yxholder(y1xb) color(grey(24)){
 			}
 			for (l = [loopshp(4),loopslp(2)]) {
 				p = l - y1xb;
-				translate([p.x, p.y, - h2byxholder - cw / 2 - part_assemble_nudge])
-					#cylinder(h2byxholder, d = xyholder_thick2);
+				difference() {
+					translate([p.x, p.y, -h2byxholder-cw/2-part_assemble_nudge])
+						#cylinder(h2byxholder, d = xyholder_thick2);
+				}
 			}
 		}
 		translate([xyholder_thick2/2-0.1,-cpx/2,])

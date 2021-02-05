@@ -12,7 +12,7 @@ module main_assembly() assembly("main") {
 //    frame_assembly();
     y_assembly();
     x_assembly();
-    loops_assembly();
+//    loops_assembly();
 //    leads_assembly();
 //    bed_assembly();
 }

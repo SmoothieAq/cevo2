@@ -7,6 +7,7 @@ posy = 0.5;
 extr_x_len = 420;
 extr_y_len = 410;
 extr_z_len = 600;
+extr_z_bracket_thick = 6;
 extr_type = E3030;
 
 extr_d = extrusion_width(extr_type);
@@ -23,8 +24,8 @@ area_y = extr_y_len+extr_d-area_y_offf-area_y_offb;
 pos_x = area_x_offl+posx*area_x;
 pos_y = area_y_offf+posy*area_y;
 
-frame_y_z1 = 164-extr_d2;
-frame_y_z3 = extr_z_len-extr_d2;
+frame_y_z1 = 164+extr_z_bracket_thick-extr_d2;
+frame_y_z3 = extr_z_len+extr_z_bracket_thick-extr_d2;
 frame_y_z2 = frame_y_z3-112;
 
 xrail_xoff = -12;
