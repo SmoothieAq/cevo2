@@ -1,5 +1,6 @@
 include <../cevo2.scad>
 include <../defs/loops_defs.scad>
+include <../../../xNopSCADlib/xxVitamins/xxscrews.scad>
 
 carriage_y = rail_carriage(rail_y);
 ch = carriage_height(carriage_y);
@@ -9,17 +10,24 @@ cl = carriage_length(carriage_y);
 cpx = carriage_pitch_x(carriage_y);
 rh2 = rail_height(rail_y)/2;
 h2byxholder = frame_y_z3-loops[1][0]+pulley_height(idler)/2+-cw/2+base_part_thick;
+echo(h2byxholder=h2byxholder);
 
+idlerScrews = let(
+	screw = axxscrew_setLengAdjustDepth(screwPart,thick=h2byxholder,nut_depth=1.0),
+	pss = [ for (p = [loopshp(4),loopslp(2)]) [p.x,p.y,frame_y_z3-h2byxholder-cw/2] ]
+) [ for (p = pss) axxscrew(screw,t=p,r=[180,0,0]) ]; echo(idlerScrews);
 
 module y_assembly() assembly("y") {
 
 	translate([extr_d2,extr_d2,frame_y_z3])
 		rotate([90,0,90])
-			xrail_assembly(rail_y,pos=pos_y-extr_d2-cpx/2);
+			*xrail_assembly(rail_y,pos=pos_y-extr_d2-cpx/2);
 
 	y1xb = [extr_d2,pos_y,frame_y_z3];
 	translate(y1xb)
-		yxholder(y1xb);
+		#yxholder(y1xb);
+	xxside2(idlerScrews);
+	xxside1(idlerScrews);
 //	translate(loopslp(2)-[0,0,10]) cube([10,10,10]);
 
 	translate([extr_x_len+extr_d2,extr_d2,frame_y_z3])
@@ -60,12 +68,19 @@ module yxholder(y1xb) color(grey(24)){
 			}
 			for (l = [loopshp(4),loopslp(2)]) {
 				p = l - y1xb;
-				difference() {
-					translate([p.x, p.y, -h2byxholder-cw/2-part_assemble_nudge])
-						#cylinder(h2byxholder, d = xyholder_thick2);
-				}
+				translate([p.x, p.y, -h2byxholder-cw/2])
+					cylinder(h2byxholder-part_assemble_nudge, d = xyholder_thick2);
 			}
 		}
+		translate([-xyholder_thick2,-cl/2-cpx/2-3,(loopshp(4)-y1xb).z-pulley_height(idler)/2-xyholder_thick2])
+			*cube([xyholder_thick2*3,cl,xyholder_thick2]);
+		for (l = [loopshp(4),loopslp(2)]) {
+			p = l - y1xb;
+			translate([p.x,p.y,p.z-pulley_height(idler)/2-washer_thickness(idler_washer)])
+				cylinder(pulley_height(idler)+2*washer_thickness(idler_washer),d=pulley_flange_dia(idler)+1);
+		}
+		translate([0,0,])
+//		xxside1_hole(idlerScrews[i]);
 		translate([xyholder_thick2/2-0.1,-cpx/2,])
 			rotate([0,90,0])
 				linear_extrude(xyholder_thick2)

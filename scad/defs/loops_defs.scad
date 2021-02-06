@@ -6,10 +6,12 @@ include <NopSCADlib/vitamins/pulleys.scad>
 include <NopSCADlib/vitamins/belts.scad>
 include <NopSCADlib/vitamins/stepper_motors.scad>
 include <../../../xNopSCADlib/xVitamins/xrails.scad>
+include <../../../xNopSCADlib/xVitamins/xwashers.scad>
 
 belt = GT2x6;
 pulley = GT2x20ob_pulley;
 idler = ["GT2_xx","GT2",0,10,GT2x6,6.0,11.5,0,3,11.5,1.0,0,0,false,0];//GT2x16_plain_idler;
+idler_washer = M3_washer_small_thick;
 motor = NEMA17;
 
 rail_y = axrail(MGN12H,extr_y_len,MaterialBlackSteel);
