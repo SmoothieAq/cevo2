@@ -6,7 +6,6 @@ include <NopSCADlib/vitamins/tubings.scad>
 
 module x_assembly() assembly("x") {
 
-	rail_x = axrail(MGN12H,xrail_len,MaterialBlackSteel);
 
 	translate([extr_d2-xrail_xoff,pos_y,xrail_z]) {
 		xrail_assembly(rail_x, pos=pos_x-extr_d2+xrail_xoff);

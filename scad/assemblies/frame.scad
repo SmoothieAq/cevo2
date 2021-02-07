@@ -11,8 +11,8 @@ E30_corner_bracket = [ "E20_corner_bracket", [38, 38, 30], 2, 3, 28]; // TODO
 frame_corner_bracket = E30_corner_bracket;
 
 module frame_assembly() assembly("frame") {
-    frame_sideL_assembly();
-    translate([frame_p4.x,0,0])
+    explode([-extr_d,0,0]) frame_sideL_assembly();
+    explode([extr_d,0,0]) translate([frame_p4.x,0,0])
         frame_sideR_assembly();
 
     for (z = [frame_y_z1,frame_y_z2])
@@ -25,21 +25,6 @@ module frame_assembly() assembly("frame") {
     translate([extr_d2,frame_p2.y,frame_y_z3])
         rotate([0,90,0])
             xextrusion(extr_x);
-//    for (p = [frame_p1,frame_p2,frame_p3,frame_p4])
-//        translate([p.x,p.y,0])
-//            xextrusion(extr_z);
-//
-//
-//    for (z = [frame_y_z1,frame_y_z3])
-//        translate([extr_d2,frame_p2.y,z])
-//            rotate([0,90,0])
-//                xextrusion(extr_x);
-//
-//    for (x = [frame_p1.x,frame_p3.x])
-//        for (z = [frame_y_z1,frame_y_z2,frame_y_z3])
-//            translate([x,extr_d2,z])
-//                rotate([-90,0,0])
-//                    xextrusion(extr_y);
 }
 
 module frame_sideL_assembly() assembly("frame_sideL") {
