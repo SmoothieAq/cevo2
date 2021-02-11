@@ -1,7 +1,10 @@
 include <../cevo2.scad>
 include <../defs/base_defs.scad>
+include <../defs/loops_defs.scad>
 
 use <../../../xNopSCADlib/xVitamins/xextrusion_bracket3.scad>
+include <../../../xNopSCADlib/xVitamins/xextrusions.scad>
+include <../../../xNopSCADlib/xVitamins/xnuts.scad>
 
 extr_x = axextrusion(extr_type,extr_x_len,MaterialBlackSteel);
 extr_y = axextrusion(extr_type,extr_y_len,MaterialBlackSteel);
@@ -45,7 +48,14 @@ module frame_side_assembly() {
             translate([x,extr_d2,z]) {
                 rotate([0, 90, 90])
                     if (z == frame_y_z3) {
-                        explode([-extr_d,0,],explode_children=true) xextrusion(extr_y);
+                        explode([-extr_d,0,],explode_children=true) {
+                            xextrusion(extr_y);
+                            rotate([0,-90,-90])
+                                for (p = rail_hole_nps(rail_y))
+                                    explode([0,0,-extr_d2])
+                                        translate([p,0,-extr_d2])
+                                            xnut(xextrusion_nut(extr_y,screwd=3));
+                        }
                     } else {
                         xextrusion_assembly(extr_y);
                     }
@@ -57,4 +67,4 @@ module frame_side_assembly() {
             xextrusion_bracket3();
 }
 
-frame_assembly();
+frame_sideL_assembly();

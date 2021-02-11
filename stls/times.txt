@@ -1,8 +1,12 @@
 {
-    "holderL2.stl": 55.9,
-    "holderF2.stl": 55.007,
-    "holderB2.stl": 60.171,
-    "holderL1.stl": 12.972,
-    "holderF1.stl": 11.404,
-    "holderB1.stl": 11.83
+    "holderL2.stl": 59.953,
+    "holderF2.stl": 61.178,
+    "holderB2.stl": 66.188,
+    "holderL1.stl": 14.354,
+    "holderF1.stl": 13.08,
+    "holderB1.stl": 13.728,
+    "yxholderL1.stl": 40.19,
+    "yxholderL2.stl": 32.315,
+    "yxholderR1.stl": 40.481,
+    "yxholderR2.stl": 33.159
 }

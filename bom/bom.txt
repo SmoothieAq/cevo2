@@ -1,45 +1,66 @@
 Vitamins:
-    F  L  L         
-    r  e  o  M      
- B  a  a  o  a      
- e  m  d  p  i      
- d  e  s  s  n  X  Y
-  |  |  | 2|  |  |  |  2 Stepper motor NEMA17 x 47mm
-  |  | 3|  |  |  |  |  3 Stepper motor NEMA17 x 47mm
-  |  | 3|  |  |  |  |  3 Ball bearing 608-2RS 8mm x 22mm x 7mm
-  |  |  | 1|  |  |  |  1 Belt GT2 x 6mm x 1646mm
-  |  |  | 1|  |  |  |  1 Belt GT2 x 6mm x 1646mm
-  |  | 3|  |  |  |  |  3 Spring 11.85mm OD, 0.8mm gauge x 37.8mm long, closed end
-  | 6|  |  |  |  |  |  6 Extrusion E3030 x 410mm
-  | 4|  |  |  |  |  |  4 Extrusion E3030 x 420mm
-  | 4|  |  |  |  |  |  4 Extrusion E3030 x 600mm
-  |  | 3|  |  |  |  |  3 Leadscrew nut 8 x 2
-  |  |21|  |  |  |  | 21 Nut M3 x 2.4mm 
-  |  |  | 8|  |  |  |  8 Pulley GT2 idler smooth 9.63mm
-  |  |  | 2|  |  |  |  2 Pulley GT2OB 20 teeth
-  |  |  |  |  | 1|  |  1 Linear rail MGN12H x 396mm
-  |  |  |  |  |  | 2|  2 Linear rail MGN12H x 410mm
-  |  | 6|  |  |  |  |  6 Smooth rod 2mm x 10mm
-  |  |21|  |  |  |  | 21 Screw M3 cap x 12mm
-  |  |  | 4|  |  |  |  4 Screw M3 grub x  6mm
-  |  | 1|  |  |  |  |  1 Carbon fiber OD 10mm ID 8mm x 283mm
-  |  | 2|  |  |  |  |  2 Carbon fiber OD 10mm ID 8mm x 318.882mm
-  |  |  |  |  | 1|  |  1 Carbon fiber OD 10mm ID 8mm x 396mm
-  |  | 6|  |  |  |  |  6 Washer  M2 x 5mm x 0.3mm
+       F                        
+       r                        
+       a                        
+       m                        
+       e  F                     
+          r                     
+    F  s  a  L  L               
+    r  i  m  e  o  M            
+ B  a  d  e  a  o  a            
+ e  m  e     d  p  i        Y  Y
+ d  e  l  y  s  s  n  X  Y  l  r
+  |  |  |  |  | 2|  |  |  |  |  |  2 Stepper motor NEMA17 x 47mm
+  |  |  |  | 3|  |  |  |  |  |  |  3 Stepper motor NEMA17 x 47mm
+  |  |  |  | 3|  |  |  |  |  |  |  3 Ball bearing 608-2RS 8mm x 22mm x 7mm
+  |  |  |  |  | 1|  |  |  |  |  |  1 Belt GT2 x 6mm x 1650mm
+  |  |  |  |  | 1|  |  |  |  |  |  1 Belt GT2 x 6mm x 1650mm
+  |  |  |  | 3|  |  |  |  |  |  |  3 Spring 11.85mm OD, 0.8mm gauge x 37.8mm long, closed end
+  |  | 6|  |  |  |  |  |  |  |  |  6 Extrusion E3030 x 410mm
+  | 4|  |  |  |  |  |  |  |  |  |  4 Extrusion E3030 x 420mm
+  |  | 4|  |  |  |  |  |  |  |  |  4 Extrusion E3030 x 600mm
+  | 6| 8|  |  |  |  |  |  |  |  | 14 Extrusion corner bracket 30
+  |  |  |  | 3|  |  |  |  |  |  |  3 Leadscrew nut 8 x 2
+  |  |  |  |21|  |  |  | 6| 3| 3| 33 Nut M3 x 2.4mm 
+  |  |  |  |  | 8|  |  |  |  |  |  8 Pulley GT2 idler smooth 10mm
+  |  |  |  |  | 2|  |  |  |  |  |  2 Pulley GT2OB 20 teeth
+  |  |  |  |  |  |  | 1|  |  |  |  1 Linear rail MGN12H x 396mm
+  |  |  |  |  |  |  |  | 2| 1| 1|  4 Linear rail MGN12H x 410mm
+  |  |  |  | 6|  |  |  |  |  |  |  6 Smooth rod 2mm x 10mm
+  |  |  |  |  |  |  |  | 4| 2| 2|  8 Screw M3 cap x 10mm
+  |  |  |  |21|  |  |  | 4| 2| 2| 29 Screw M3 cap x 12mm
+  |  |  |  |  |  |  |  | 2|  |  |  2 Screw M3 cap x 16mm
+  |  |  |  |  |  |  |  | 4|  |  |  4 Screw M3 cap x 25mm
+  |  |  |  |  | 4|  |  |  |  |  |  4 Screw M3 grub x  6mm
+  |12|16|  |  |  |  |  |  |  |  | 28 Screw M4 dome x  8mm
+  |  |18|  |  |  |  |  |  |  |  | 18 Nut M3 sliding T
+  |12|16|  |  |  |  |  |  |  |  | 28 Nut M4 sliding T
+  |  |  |  | 1|  |  |  |  |  |  |  1 Carbon fiber OD 10mm ID 8mm x 283mm
+  |  |  |  | 2|  |  |  |  |  |  |  2 Carbon fiber OD 10mm ID 8mm x 318.882mm
+  |  |  |  | 6|  |  |  |  |  |  |  6 Washer  M2 x 5mm x 0.3mm
+  |  | 4|  |  |  |  |  |  |  |  |  4 Extrusion inner corner bracket E30 M5
 
 Printed:
-  |  | 1|  |  |  |  |  1 holderB1.stl
-  |  | 1|  |  |  |  |  1 holderB2.stl
-  |  | 1|  |  |  |  |  1 holderF1.stl
-  |  | 1|  |  |  |  |  1 holderF2.stl
-  |  | 1|  |  |  |  |  1 holderL1.stl
-  |  | 1|  |  |  |  |  1 holderL2.stl
+  |  |  |  | 1|  |  |  |  |  |  |  1 holderB1.stl
+  |  |  |  | 1|  |  |  |  |  |  |  1 holderB2.stl
+  |  |  |  | 1|  |  |  |  |  |  |  1 holderF1.stl
+  |  |  |  | 1|  |  |  |  |  |  |  1 holderF2.stl
+  |  |  |  | 1|  |  |  |  |  |  |  1 holderL1.stl
+  |  |  |  | 1|  |  |  |  |  |  |  1 holderL2.stl
+  |  |  |  |  |  |  |  | 1| 1|  |  2 yxholderL1.stl
+  |  |  |  |  |  |  |  | 1|  |  |  1 yxholderL2.stl
+  |  |  |  |  |  |  |  | 1|  | 1|  2 yxholderR1.stl
+  |  |  |  |  |  |  |  | 1|  |  |  1 yxholderR2.stl
 
 Assemblies:
   1 bed_assembly
   1 frame_assembly
+  2 frame_sideL_assemblies
+  1 frame_y_assembly
   1 leads_assembly
   1 loops_assembly
   1 main_assembly
   1 x_assembly
   1 y_assembly
+  1 yl_assembly
+  1 yr_assembly

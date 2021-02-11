@@ -1,3 +1,14 @@
 y_assembly:
 Vitamins:
+  6 Nut M3 x 2.4mm 
   2 Linear rail MGN12H x 410mm
+  4 Screw M3 cap x 10mm
+  4 Screw M3 cap x 12mm
+  2 Screw M3 cap x 16mm
+  4 Screw M3 cap x 25mm
+
+Printed:
+  1 yxholderL1.stl
+  1 yxholderL2.stl
+  1 yxholderR1.stl
+  1 yxholderR2.stl

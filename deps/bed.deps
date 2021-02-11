@@ -1,6 +1,13 @@
 tmp.png: \
+	C:/Users/jesper/IdeaProjects/xNopSCADlib/xNopSCADlib/vitamins/tslot_nut.scad \
+	C:/Users/jesper/IdeaProjects/xNopSCADlib/xxVitamins/xxscrews.scad \
+	C:/Users/jesper/IdeaProjects/xNopSCADlib/xVitamins/xnuts.scad \
+	C:/Users/jesper/Documents/OpenSCAD/libraries/dotSCAD/util/_impl/_sub_str_impl.scad \
+	C:/Users/jesper/Documents/OpenSCAD/libraries/dotSCAD/util/sub_str.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/fillet.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/tube.scad \
+	C:/Users/jesper/IdeaProjects/xNopSCADlib/xVitamins/xtslot_nut.scad \
+	C:/Users/jesper/IdeaProjects/xNopSCADlib/xVitamins/xextrusion_bracket.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/maths.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/sweep.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/nut.scad \
@@ -13,12 +20,14 @@ tmp.png: \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/nuts.scad \
 	C:/Users/jesper/IdeaProjects/xNopSCADlib/xUtil/xUtil.scad \
 	C:/Users/jesper/IdeaProjects/xNopSCADlib/xVitamins/xscrew.scad \
+	C:/Users/jesper/IdeaProjects/xNopSCADlib/xNopSCADlib/vitamins/tslot_nuts.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/core/core.scad \
 	png.scad \
 	C:/Users/jesper/IdeaProjects/cevo2/scad/cevo2.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/quadrant.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/washers.scad \
 	C:/Users/jesper/IdeaProjects/xNopSCADlib/xVitamins/xextrusions.scad \
+	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/extrusion_bracket.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/core.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/core/bom.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/core/teardrops.scad \
@@ -31,6 +40,7 @@ tmp.png: \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/core/sphere.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/extrusions.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/thread.scad \
+	C:/Users/jesper/IdeaProjects/xNopSCADlib/xxVitamins/xxscrew.scad \
 	C:/Users/jesper/IdeaProjects/cevo2/scad/assemblies/bed.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/extrusion.scad \
 	C:/Users/jesper/IdeaProjects/xNopSCADlib/xVitamins/xscrews.scad \

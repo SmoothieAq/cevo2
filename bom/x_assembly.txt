@@ -1,4 +1,3 @@
 x_assembly:
 Vitamins:
   1 Linear rail MGN12H x 396mm
-  1 Carbon fiber OD 10mm ID 8mm x 396mm

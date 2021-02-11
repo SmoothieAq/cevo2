@@ -65,12 +65,35 @@ module y_assembly() assembly("y") {
 	xxsides(yxholderScrews[1]);
 }
 
+module yl_assembly() assembly("yl") {
+
+	translate([extr_d2,extr_d2,frame_y_z3])
+		rotate([90,0,90])
+			xrail_assembly(rail_y,pos=pos_y-extr_d2-cpx/2);
+
+	explode([xyholder_thick2,0,0],explode_children=true) {
+		yxholderL1_stl();
+		xxside1(yxholderScrews[0]);
+	}
+}
+module yr_assembly() assembly("yr") {
+
+	translate([extr_x_len+extr_d2,extr_d2,frame_y_z3])
+		rotate([-90,0,90])
+			xrail_assembly(rail_y,pos=pos_y-extr_d2);
+
+	explode([-xyholder_thick2,0,0],explode_children=true) {
+		yxholderR1_stl();
+		xxside1(yxholderScrews[1]);
+	}
+}
+
 module yxholderL1_stl() {stl("yxholderL1"); yxholder1(0); }
 module yxholderL2_stl() {stl("yxholderL2"); yxholder2(0); }
 module yxholderR1_stl() {stl("yxholderR1"); yxholder1(1); }
 module yxholderR2_stl() {stl("yxholderR2"); yxholder2(1); }
 
-function cut(i,zd) = [ch + part_assemble_nudge-xyholder_thick2,-cl/2-cpx/2-3,(idlerps[i][(i+1)%2]-yxbs[i]).z+ph/2+iwt+zd];
+function cut(i,zd) = [ch + part_assemble_nudge-(i*2+1)*xyholder_thick2,-cl/2-cpx/2-3,(idlerps[i][(i+1)%2]-yxbs[i]).z+ph/2+iwt+zd];
 
 module yxholder1(i) {
 	xxpart1(yxholderScrews[i],partColor,noscrew=true)
@@ -155,4 +178,4 @@ module yxholder(i) {
 	}
 }
 
-yxholderL1_stl();
+yl_assembly();

@@ -1,5 +1,9 @@
 frame_assembly:
 Vitamins:
-  6 Extrusion E3030 x 410mm
   4 Extrusion E3030 x 420mm
-  4 Extrusion E3030 x 600mm
+  6 Extrusion corner bracket 30
+ 12 Screw M4 dome x  8mm
+ 12 Nut M4 sliding T
+
+Assemblies:
+  2 frame_sideL_assemblies
