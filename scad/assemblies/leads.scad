@@ -28,14 +28,14 @@ motor_mount_screws = [ for (i = [-1:1]) let(
 	r = i?[90,0,90]:[0,0,0],
 	thick = i?base_part_thickx*2:base_part_thickx,
 	horizontal = i != 0
-) axxscrew_setLengAdjustDepth(screwFrameMount,thick=thick,t=t,r=r,xnut=xextrusion_nut(extr_type),spacing=20,horizontal=horizontal) ];
+) axxscrew_setLengAdjustDepth(screwFrameMount,thick=thick,t=t,r=r,spacing=20,horizontal=horizontal) ];
 
 lead_bearing_holder_screws = [ for (i = [-1:1]) let(
 	t = [i?-mw/2+base_part_thickx:-mw/2-extr_d2,i*(-mw/2-10),i?-extr_d2:base_part_thickx],
 	r = i?[90,0,90]:[0,0,0],
 	thick = i?base_part_thickx*2:base_part_thickx,
 	horizontal = i != 0
-) axxscrew_setLengAdjustDepth(screwFrameMount,thick=thick,t=t,r=r,xnut=xextrusion_nut(extr_type),spacing=20,horizontal=horizontal) ];
+) axxscrew_setLengAdjustDepth(screwFrameMount,thick=thick,t=t,r=r,spacing=20,horizontal=horizontal) ];
 
 holderScrews = [ for (i = [0:2]) let(
 	screw = axxscrew_setLengAdjustThick(screwPart,thick=holder_thick2/3*2,plate=3,nut_plate=3),

@@ -1,9 +1,5 @@
 main_assembly:
 
 Assemblies:
-  1 bed_assembly
   1 frame_y_assembly
-  1 leads_assembly
   1 loops_assembly
-  1 x_assembly
-  1 y_assembly

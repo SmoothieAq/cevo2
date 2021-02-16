@@ -25,14 +25,14 @@ loops_xoff1 = 10;
 loops = let (
     lo = pulley_ir(idler)*2 + belt_thickness(belt) // 2*pulley_pr(idler)
 ) [
-        [xrail_z+5, [
+        [xrail_z+3, [
             [frame_p1.x+loops_side_off, frame_p1.y+loops_front_off, pulley, 1],
             [frame_p2.x+loops_side_off,frame_p2.y-loops_back_off, idler, 1],
             [frame_p3.x-loops_side_off-lo,frame_p3.y-loops_back_off, idler, 1],
             [frame_p4.x-loops_side_off-lo,pos_y-loops_xoff0, idler, 1],
             [frame_p2.x+loops_side_off+lo,pos_y-loops_xoff0-lo, idler, -1]
         ]],
-        [xrail_z+5-pulley_height(idler)-0.8, [
+        [xrail_z+3-pulley_height(idler)-0.8, [
             [frame_p4.x-loops_side_off, frame_p4.y+loops_front_off, pulley, 1],
             [frame_p4.x-loops_side_off-lo,pos_y-loops_xoff1-lo, idler, -1],
             [frame_p1.x+loops_side_off+lo,pos_y-loops_xoff1, idler, 1],

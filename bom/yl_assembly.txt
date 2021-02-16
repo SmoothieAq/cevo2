@@ -1,9 +1,0 @@
-yl_assembly:
-Vitamins:
-  3 Nut M3 x 2.4mm 
-  1 Linear rail MGN12H x 410mm
-  2 Screw M3 cap x 10mm
-  2 Screw M3 cap x 12mm
-
-Printed:
-  1 yxholderL1.stl

@@ -1,3 +1,0 @@
-x_assembly:
-Vitamins:
-  1 Linear rail MGN12H x 396mm

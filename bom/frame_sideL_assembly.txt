@@ -5,5 +5,5 @@ Vitamins:
   8 Extrusion corner bracket 30
  16 Screw M4 dome x  8mm
  18 Nut M3 sliding T
- 16 Nut M4 sliding T
+ 24 Nut M4 sliding T
   4 Extrusion inner corner bracket E30 M5

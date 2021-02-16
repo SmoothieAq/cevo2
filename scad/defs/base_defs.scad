@@ -1,5 +1,5 @@
 include <../../../xNopSCADlib/xVitamins/xextrusions.scad>
-include <../../../xNopSCADlib/xVitamins/xscrews.scad>
+include <../../../xNopSCADlib/xxVitamins/xxscrews.scad>
 
 posx = 0.4;
 posy = 0.5;
@@ -47,7 +47,7 @@ bed_x_off = (frame_p4.x-bed.x)/2;
 bed_off = 3;
 
 screwPart = axscrew(M3_cap_screw,material=MaterialBlackSteel);
-screwFrameMount = axscrew(M4_dome_screw,material=MaterialBlackSteel);
+screwFrameMount = axxscrew(axscrew(M4_dome_screw,material=MaterialBlackSteel),xnut=xextrusion_nut(extr_type),nut_depth=0,nut_plate=0,twist=0);
 
 base_part_thick = 4;
 base_part_thickx = 7;
