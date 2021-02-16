@@ -47,6 +47,7 @@ bed_x_off = (frame_p4.x-bed.x)/2;
 bed_off = 3;
 
 screwPart = axscrew(M3_cap_screw,material=MaterialBlackSteel);
+screwFrameMount = axscrew(M4_dome_screw,material=MaterialBlackSteel);
 
 base_part_thick = 4;
 base_part_thickx = 7;

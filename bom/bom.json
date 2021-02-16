@@ -17,6 +17,15 @@
             "NEMA(NEMA17l): Stepper motor NEMA17 x 47mm": {
                 "count": 3
             },
+            "screw(M3_cap_screw, 12): Screw M3 cap x 12mm": {
+                "count": 33
+            },
+            "screw(M4_dome_screw, 16): Screw M4 dome x 16mm": {
+                "count": 12
+            },
+            "screw(M4_dome_screw, 10): Screw M4 dome x 10mm": {
+                "count": 6
+            },
             "ball_bearing(BB608): Ball bearing 608-2RS 8mm x 22mm x 7mm": {
                 "count": 3
             },
@@ -27,9 +36,6 @@
                 "count": 3
             },
             "nut(M3_nut): Nut M3 x 2.4mm ": {
-                "count": 21
-            },
-            "screw(M3_cap_screw, 12): Screw M3 cap x 12mm": {
                 "count": 21
             },
             "rod(2, 10): Smooth rod 2mm x 10mm": {
@@ -46,6 +52,14 @@
             }
         },
         "printed": {
+            "leads_motor_holder.stl": {
+                "count": 3,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "lead_bearing_holder.stl": {
+                "count": 3,
+                "colour": "[0, 0.572549, 0]"
+            },
             "holderL2.stl": {
                 "count": 1,
                 "colour": "[0, 0.572549, 0]"

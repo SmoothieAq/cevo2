@@ -1,0 +1,6 @@
+frame_y_assembly:
+
+Assemblies:
+  1 frame_assembly
+  1 yl_assembly
+  1 yr_assembly

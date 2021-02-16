@@ -1,12 +1,14 @@
 {
-    "holderL2.stl": 59.953,
-    "holderF2.stl": 61.178,
-    "holderB2.stl": 66.188,
-    "holderL1.stl": 14.354,
-    "holderF1.stl": 13.08,
-    "holderB1.stl": 13.728,
-    "yxholderL1.stl": 40.19,
-    "yxholderL2.stl": 32.315,
-    "yxholderR1.stl": 40.481,
-    "yxholderR2.stl": 33.159
+    "holderL2.stl": 56.004,
+    "holderF2.stl": 53.728,
+    "holderB2.stl": 58.611,
+    "holderL1.stl": 12.762,
+    "holderF1.stl": 11.983,
+    "holderB1.stl": 12.136,
+    "yxholderL1.stl": 36.374,
+    "yxholderL2.stl": 28.964,
+    "yxholderR1.stl": 37.045,
+    "yxholderR2.stl": 29.212,
+    "lead_bearing_holder.stl": 48.515,
+    "leads_motor_holder.stl": 47.634
 }

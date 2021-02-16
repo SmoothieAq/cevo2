@@ -28,10 +28,12 @@ Vitamins:
   |  |  |  |  |  |  |  | 2| 1| 1|  4 Linear rail MGN12H x 410mm
   |  |  |  | 6|  |  |  |  |  |  |  6 Smooth rod 2mm x 10mm
   |  |  |  |  |  |  |  | 4| 2| 2|  8 Screw M3 cap x 10mm
-  |  |  |  |21|  |  |  | 4| 2| 2| 29 Screw M3 cap x 12mm
+  |  |  |  |33|  |  |  | 4| 2| 2| 41 Screw M3 cap x 12mm
   |  |  |  |  |  |  |  | 2|  |  |  2 Screw M3 cap x 16mm
   |  |  |  |  |  |  |  | 4|  |  |  4 Screw M3 cap x 25mm
   |  |  |  |  | 4|  |  |  |  |  |  4 Screw M3 grub x  6mm
+  |  |  |  | 6|  |  |  |  |  |  |  6 Screw M4 dome x 10mm
+  |  |  |  |12|  |  |  |  |  |  | 12 Screw M4 dome x 16mm
   |12|16|  |  |  |  |  |  |  |  | 28 Screw M4 dome x  8mm
   |  |18|  |  |  |  |  |  |  |  | 18 Nut M3 sliding T
   |12|16|  |  |  |  |  |  |  |  | 28 Nut M4 sliding T
@@ -47,6 +49,8 @@ Printed:
   |  |  |  | 1|  |  |  |  |  |  |  1 holderF2.stl
   |  |  |  | 1|  |  |  |  |  |  |  1 holderL1.stl
   |  |  |  | 1|  |  |  |  |  |  |  1 holderL2.stl
+  |  |  |  | 3|  |  |  |  |  |  |  3 lead_bearing_holder.stl
+  |  |  |  | 3|  |  |  |  |  |  |  3 leads_motor_holder.stl
   |  |  |  |  |  |  |  | 1| 1|  |  2 yxholderL1.stl
   |  |  |  |  |  |  |  | 1|  |  |  1 yxholderL2.stl
   |  |  |  |  |  |  |  | 1|  | 1|  2 yxholderR1.stl

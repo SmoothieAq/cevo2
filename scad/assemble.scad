@@ -13,14 +13,14 @@ module main_assembly() assembly("main") {
 //    y_assembly();
 //    x_assembly();
     loops_assembly();
-    leads_assembly();
-    bed_assembly();
+//    leads_assembly();
+//    bed_assembly();
 }
 
 module frame_y_assembly() assembly("frame_y") {
     frame_assembly();
-    explode([extr_d2,0,0]) yl_assembly();
-    explode([-extr_d2,0,0]) yr_assembly();
+//    explode([extr_d2,0,0]) yl_assembly();
+//    explode([-extr_d2,0,0]) yr_assembly();
 }
 
 main_assembly();

@@ -17,7 +17,7 @@ motor = NEMA17;
 rail_y = axrail(MGN12H,extr_y_len,MaterialBlackSteel);
 rail_x = axrail(MGN12H,xrail_len,MaterialBlackSteel);
 
-loops_side_off = NEMA_width(motor)/2-extr_d2+base_part_thick;
+loops_side_off = NEMA_width(motor)/2-extr_d2+base_part_thick/2;
 loops_front_off = NEMA_width(motor)/2+extr_d2+motor_nudge;
 loops_back_off = pulley_flange_dia(idler)/2+extr_d2+motor_nudge;
 loops_xoff0 = 10;
