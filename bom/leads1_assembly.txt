@@ -1,0 +1,7 @@
+leads1_assembly:
+Vitamins:
+  3 Stepper motor NEMA17 x 47mm
+ 12 Screw M3 cap x 12mm
+
+Printed:
+  3 leads_motor_holder.stl

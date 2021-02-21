@@ -5,5 +5,7 @@ include <../../xNopSCADlib/xxVitamins/xxDefaults.scad>
 //$show_threads=true;
 //$show_lines=false;
 $explode = 1;
+$pose = undef;
+$posed=undef;
 include <../../xNopSCADlib/xNopSCADlib/core.scad>
 

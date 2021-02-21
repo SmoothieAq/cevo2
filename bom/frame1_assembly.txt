@@ -1,0 +1,7 @@
+frame1_assembly:
+Vitamins:
+  9 Screw M4 dome x 12mm
+
+Assemblies:
+  1 frame_assembly
+  1 leads2_assembly

@@ -1,50 +1,71 @@
 Vitamins:
-       F               
-       r               
-       a               
-       m               
-       e  F            
- F        r  I         
- r  F  s  a  d  L      
- a  r  i  m  l  o  M   
- m  a  d  e  e  o  a   
- e  m  e     r  p  i  Y
- 2  e  l  y  l  s  n  r
-  |  |  |  |  | 2|  |  |  2 Stepper motor NEMA17 x 47mm
-  |  |  |  |  | 1|  |  |  1 Belt GT2 x 6mm x 1658mm
-  |  |  |  |  | 1|  |  |  1 Belt GT2 x 6mm x 1658mm
-  |  | 6|  |  |  |  |  |  6 Extrusion E3030 x 410mm
-  | 4|  |  |  |  |  |  |  4 Extrusion E3030 x 420mm
-  |  | 4|  |  |  |  |  |  4 Extrusion E3030 x 600mm
-  | 6| 8|  |  |  |  |  | 14 Extrusion corner bracket 30
-  |  |  |  | 2|  |  | 2|  4 Nut M3 x 2.4mm 
-  |  |  |  | 2| 8|  | 2| 12 Pulley GT2 idler smooth 10mm
-  |  |  |  |  | 2|  |  |  2 Pulley GT2OB 20 teeth
-  |  |  |  |  | 4|  |  |  4 Screw M3 cap x 11mm
-  |  |  |  |  | 4|  |  |  4 Screw M3 cap x 14mm
-  |  |  |  | 2| 4|  | 2|  8 Screw M3 cap x 25mm
-  |  |  |  |  | 4|  |  |  4 Screw M3 grub x  6mm
-  |  |  |  |  | 4|  |  |  4 Screw M4 dome x 12mm
- 8|12|16|  |  | 8|  |  | 44 Screw M4 dome x  8mm
-  |  |18|  |  |  |  |  | 18 Nut M3 sliding T
-  |12|24|  |  |  |  |  | 36 Nut M4 sliding T
-  |  |  |  | 4|  |  | 4|  8 Washer  M3 x 6mm x 1mm
-  |  | 4|  |  |  |  |  |  4 Extrusion inner corner bracket E30 M5
+                               L   
+                               o   
+                               o   
+                               p   
+                               s   
+                                   
+                               m   
+                   F           o   
+                   r           t   
+                   a           o   
+                   m           r   
+                   e               
+    F  F  F  F           L  L  h   
+    r  r  r  r  F  s  I  e  e  o   
+ B  a  a  a  a  r  i  d  a  a  l  M
+ e  m  m  m  m  a  d  l  d  d  d  a
+ d  e  e  e  e  m  e  e  s  s  e  i
+ 1  1  2  4  5  e  l  r  1  2  r  n
+  |  |  |  |  |  |  |  |  |  | 2|  |  2 Stepper motor NEMA17 x 47mm
+  |  |  |  |  |  |  |  | 3|  |  |  |  3 Stepper motor NEMA17 x 47mm
+  |  | 3|  |  |  |  |  |  |  |  |  |  3 Ball bearing 608-2RS 8mm x 22mm x 7mm
+ 3|  |  |  |  |  |  |  |  |  |  |  |  3 Spring 11.85mm OD, 0.8mm gauge x 37.8mm long, closed end
+  |  |  |  |  |  | 6|  |  |  |  |  |  6 Extrusion E3030 x 410mm
+  |  |  |  |  | 4|  |  |  |  |  |  |  4 Extrusion E3030 x 420mm
+  |  |  |  |  |  | 4|  |  |  |  |  |  4 Extrusion E3030 x 600mm
+  |  |  |  |  | 6| 8|  |  |  |  |  | 14 Extrusion corner bracket 30
+ 3|  |  |  |  |  |  |  |  |  |  |  |  3 Leadscrew nut 8 x 2
+12|  |  |  |  |  |  | 4|  |  |  |  | 16 Nut M3 x 2.4mm 
+  |  |  |  |  |  |  | 4|  |  |  |  |  4 Pulley GT2 idler smooth 10mm
+  |  |  |  |  |  |  |  |  |  | 2|  |  2 Pulley GT2OB 20 teeth
+ 6|  |  |  |  |  |  |  |  |  |  |  |  6 Smooth rod 2mm x 10mm
+  |  |  |  |  |  |  |  |  |  | 4|  |  4 Screw M3 cap x 11mm
+12|  |  |  |  |  |  |  |12|  |  |  | 24 Screw M3 cap x 12mm
+  |  |  |  |  |  |  |  |  |  | 4|  |  4 Screw M3 cap x 14mm
+  |  |  |  |  |  |  | 4|  |  |  |  |  4 Screw M3 cap x 25mm
+  |  |  |  |  |  |  |  |  |  | 4|  |  4 Screw M3 grub x  6mm
+  | 9| 9|  | 4|  |  |  |  |  |  |  | 22 Screw M4 dome x 12mm
+  |  |  | 8|  |12|16|  |  |  |  |  | 36 Screw M4 dome x  8mm
+  |  |  |  |  |  |18|  |  |  |  |  | 18 Nut M3 sliding T
+  |  |  |  |  |15|34|  |  |  |  |  | 49 Nut M4 sliding T
+ 6|  |  |  |  |  |  |  |  |  |  |  |  6 Washer  M2 x 5mm x 0.3mm
+  |  |  |  |  |  |  | 8|  |  |  |  |  8 Washer  M3 x 6mm x 1mm
+  |  |  |  |  |  | 4|  |  |  |  |  |  4 Extrusion inner corner bracket E30 M5
 
 Printed:
-  |  |  |  | 1| 1|  |  |  2 idler_holderL1.stl
-  |  |  |  | 1|  |  |  |  1 idler_holderL2.stl
-  |  |  |  |  | 1|  | 1|  2 idler_holderR1.stl
-  |  |  |  |  |  |  | 1|  1 idler_holderR2.stl
-  |  |  |  |  | 1|  |  |  1 loops_motor_holderL.stl
-  |  |  |  |  | 1|  |  |  1 loops_motor_holderR.stl
+ 1|  |  |  |  |  |  |  |  |  |  |  |  1 bed_holderB2.stl
+ 1|  |  |  |  |  |  |  |  |  |  |  |  1 bed_holderF2.stl
+ 1|  |  |  |  |  |  |  |  |  |  |  |  1 bed_holderL2.stl
+  |  |  |  |  |  |  | 1|  |  |  |  |  1 idler_holderL1.stl
+  |  |  |  |  |  |  | 1|  |  |  |  |  1 idler_holderL2.stl
+  |  |  |  |  |  |  | 1|  |  |  |  |  1 idler_holderR1.stl
+  |  |  |  |  |  |  | 1|  |  |  |  |  1 idler_holderR2.stl
+  |  | 3|  |  |  |  |  |  |  |  |  |  3 leads_holder.stl
+  |  |  |  |  |  |  |  | 3|  |  |  |  3 leads_motor_holder.stl
+  |  |  |  |  |  |  |  |  |  | 1|  |  1 loops_motor_holderL.stl
+  |  |  |  |  |  |  |  |  |  | 1|  |  1 loops_motor_holderR.stl
 
 Assemblies:
+  1 bed1_assembly
+  1 frame1_assembly
   1 frame2_assembly
+  1 frame4_assembly
+  1 frame5_assembly
   1 frame_assembly
   2 frame_sideL_assemblies
-  1 frame_y_assembly
-  1 idlerl_assembly
-  1 loops_assembly
+  1 idler_assembly
+  1 leads1_assembly
+  1 leads2_assembly
+  1 loops_motor_holder_assembly
   1 main_assembly
-  1 yr_assembly

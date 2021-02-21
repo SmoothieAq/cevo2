@@ -2,7 +2,7 @@ include <../cevo2.scad>
 include <../defs/loops_defs.scad>
 include <../../../xNopSCADlib/xxVitamins/xxscrews.scad>
 
-carriage_y = rail_carriage(rail_y);
+carriage_y = xrail_carriage(rail_y);
 ch = carriage_height(carriage_y);
 chc = ch-carriage_clearance(carriage_y);
 cw = carriage_width(carriage_y);

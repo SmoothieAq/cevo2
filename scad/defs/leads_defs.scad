@@ -34,3 +34,10 @@ leads = [
 function holder_name(i)     = leads[i][0];
 function holder_leadp(i)    = leads[i][1];
 function holder_bedp(i)     = leads[i][2];
+
+module for_leads(i,z) {
+    lp = leads[i][1];
+    translate([lp.x,lp.y,z])
+        rotate([0,0,i*90])
+            children();
+}

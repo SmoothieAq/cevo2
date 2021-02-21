@@ -1,0 +1,12 @@
+idler_assembly:
+Vitamins:
+  4 Nut M3 x 2.4mm 
+  4 Pulley GT2 idler smooth 10mm
+  4 Screw M3 cap x 25mm
+  8 Washer  M3 x 6mm x 1mm
+
+Printed:
+  1 idler_holderL1.stl
+  1 idler_holderL2.stl
+  1 idler_holderR1.stl
+  1 idler_holderR2.stl

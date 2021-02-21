@@ -1,4 +1,0 @@
-frame_y_assembly:
-
-Assemblies:
-  1 frame2_assembly

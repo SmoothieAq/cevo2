@@ -1,5 +1,4 @@
 main_assembly:
 
 Assemblies:
-  1 frame_y_assembly
-  1 loops_assembly
+  1 frame5_assembly

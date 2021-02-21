@@ -1,53 +1,29 @@
 [
     {
-        "name": "loops_assembly",
+        "name": "loops_motor_holder_assembly",
         "big": null,
+        "ngb": false,
+        "zoomed": 0,
         "count": 1,
         "assemblies": {},
         "vitamins": {
+            "NEMA(NEMA17): Stepper motor NEMA17 x 47mm": {
+                "count": 2
+            },
             "pulley(GT2x20ob_pulley): Pulley GT2OB 20 teeth": {
                 "count": 2
             },
             "screw(M3_grub_screw, 6): Screw M3 grub x  6mm": {
                 "count": 4
             },
-            "pulley(GT2_xx): Pulley GT2 idler smooth 10mm": {
-                "count": 8
-            },
-            "belt(GT2x6, [[8.15, 36.65, 6.3662], [8.15, 418.75, 5.376], [430.47, 418.75, 5.376], [430.47, 225, 5.376], [19.53, 213.62, -5.376]]): Belt GT2 x 6mm x 1658mm": {
-                "count": 1
-            },
-            "belt(GT2x6, [[441.85, 36.65, 6.3662], [430.47, 213.62, -5.376], [19.53, 225, 5.376], [19.53, 418.75, 5.376], [441.85, 418.75, 5.376]]): Belt GT2 x 6mm x 1658mm": {
-                "count": 1
-            },
-            "screw(M3_cap_screw, 25): Screw M3 cap x 25mm": {
-                "count": 4
-            },
-            "screw(M4_dome_screw, 8): Screw M4 dome x  8mm": {
-                "count": 8
-            },
-            "NEMA(NEMA17): Stepper motor NEMA17 x 47mm": {
-                "count": 2
-            },
             "screw(M3_cap_screw, 14): Screw M3 cap x 14mm": {
                 "count": 4
             },
             "screw(M3_cap_screw, 11): Screw M3 cap x 11mm": {
                 "count": 4
-            },
-            "screw(M4_dome_screw, 12): Screw M4 dome x 12mm": {
-                "count": 4
             }
         },
         "printed": {
-            "idler_holderL1.stl": {
-                "count": 1,
-                "colour": "[0, 0.572549, 0]"
-            },
-            "idler_holderR1.stl": {
-                "count": 1,
-                "colour": "[0, 0.572549, 0]"
-            },
             "loops_motor_holderL.stl": {
                 "count": 1,
                 "colour": "[0, 0.572549, 0]"
@@ -60,25 +36,35 @@
         "routed": {}
     },
     {
-        "name": "yr_assembly",
+        "name": "idler_assembly",
         "big": null,
+        "ngb": false,
+        "zoomed": 0,
         "count": 1,
         "assemblies": {},
         "vitamins": {
             "nut(M3_nut): Nut M3 x 2.4mm ": {
-                "count": 2
-            },
-            "washer(M3_washer): Washer  M3 x 6mm x 1mm": {
                 "count": 4
             },
+            "washer(M3_washer): Washer  M3 x 6mm x 1mm": {
+                "count": 8
+            },
             "pulley(GT2_xx): Pulley GT2 idler smooth 10mm": {
-                "count": 2
+                "count": 4
             },
             "screw(M3_cap_screw, 25): Screw M3 cap x 25mm": {
-                "count": 2
+                "count": 4
             }
         },
         "printed": {
+            "idler_holderL2.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "idler_holderL1.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
             "idler_holderR2.stl": {
                 "count": 1,
                 "colour": "[0, 0.572549, 0]"
@@ -91,30 +77,42 @@
         "routed": {}
     },
     {
-        "name": "idlerl_assembly",
+        "name": "bed1_assembly",
         "big": null,
+        "ngb": false,
+        "zoomed": 0,
         "count": 1,
         "assemblies": {},
         "vitamins": {
             "nut(M3_nut): Nut M3 x 2.4mm ": {
-                "count": 2
+                "count": 12
             },
-            "washer(M3_washer): Washer  M3 x 6mm x 1mm": {
-                "count": 4
+            "screw(M3_cap_screw, 12): Screw M3 cap x 12mm": {
+                "count": 12
             },
-            "pulley(GT2_xx): Pulley GT2 idler smooth 10mm": {
-                "count": 2
+            "rod(2, 10): Smooth rod 2mm x 10mm": {
+                "count": 6
             },
-            "screw(M3_cap_screw, 25): Screw M3 cap x 25mm": {
-                "count": 2
+            "washer(M2_washer): Washer  M2 x 5mm x 0.3mm": {
+                "count": 6
+            },
+            "leadnut(LSN8x2): Leadscrew nut 8 x 2": {
+                "count": 3
+            },
+            "comp_spring(leadnut spring, 18.9): Spring 11.85mm OD, 0.8mm gauge x 37.8mm long, closed end": {
+                "count": 3
             }
         },
         "printed": {
-            "idler_holderL2.stl": {
+            "bed_holderL2.stl": {
                 "count": 1,
                 "colour": "[0, 0.572549, 0]"
             },
-            "idler_holderL1.stl": {
+            "bed_holderF2.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "bed_holderB2.stl": {
                 "count": 1,
                 "colour": "[0, 0.572549, 0]"
             }
@@ -122,8 +120,47 @@
         "routed": {}
     },
     {
+        "name": "leads1_assembly",
+        "big": null,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {},
+        "vitamins": {
+            "NEMA(NEMA17l): Stepper motor NEMA17 x 47mm": {
+                "count": 3
+            },
+            "screw(M3_cap_screw, 12): Screw M3 cap x 12mm": {
+                "count": 12
+            }
+        },
+        "printed": {
+            "leads_motor_holder.stl": {
+                "count": 3,
+                "colour": "[0, 0.572549, 0]"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "leads2_assembly",
+        "big": null,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {
+            "leads1_assembly": 1,
+            "bed1_assembly": 1
+        },
+        "vitamins": {},
+        "printed": {},
+        "routed": {}
+    },
+    {
         "name": "frame_sideL_assembly",
         "big": null,
+        "ngb": false,
+        "zoomed": 0,
         "count": 2,
         "assemblies": {},
         "vitamins": {
@@ -131,7 +168,7 @@
                 "count": 4
             },
             "sliding_t_nut(M4_sliding_t_nut): Nut M4 sliding T": {
-                "count": 24
+                "count": 34
             },
             "extrusion(E3030, 410): Extrusion E3030 x 410mm": {
                 "count": 6
@@ -155,6 +192,8 @@
     {
         "name": "frame_assembly",
         "big": null,
+        "ngb": false,
+        "zoomed": 0,
         "count": 1,
         "assemblies": {
             "frame_sideL_assembly": 2
@@ -170,7 +209,25 @@
                 "count": 12
             },
             "sliding_t_nut(M4_sliding_t_nut): Nut M4 sliding T": {
-                "count": 12
+                "count": 15
+            }
+        },
+        "printed": {},
+        "routed": {}
+    },
+    {
+        "name": "frame1_assembly",
+        "big": null,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {
+            "frame_assembly": 1,
+            "leads2_assembly": 1
+        },
+        "vitamins": {
+            "screw(M4_dome_screw, 12): Screw M4 dome x 12mm": {
+                "count": 9
             }
         },
         "printed": {},
@@ -179,11 +236,37 @@
     {
         "name": "frame2_assembly",
         "big": null,
+        "ngb": false,
+        "zoomed": 0,
         "count": 1,
         "assemblies": {
-            "frame_assembly": 1,
-            "idlerl_assembly": 1,
-            "yr_assembly": 1
+            "frame1_assembly": 1
+        },
+        "vitamins": {
+            "screw(M4_dome_screw, 12): Screw M4 dome x 12mm": {
+                "count": 9
+            },
+            "ball_bearing(BB608): Ball bearing 608-2RS 8mm x 22mm x 7mm": {
+                "count": 3
+            }
+        },
+        "printed": {
+            "leads_holder.stl": {
+                "count": 3,
+                "colour": "[0, 0.572549, 0]"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "frame4_assembly",
+        "big": null,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {
+            "frame2_assembly": 1,
+            "idler_assembly": 1
         },
         "vitamins": {
             "screw(M4_dome_screw, 8): Screw M4 dome x  8mm": {
@@ -194,23 +277,31 @@
         "routed": {}
     },
     {
-        "name": "frame_y_assembly",
+        "name": "frame5_assembly",
         "big": null,
+        "ngb": false,
+        "zoomed": 0,
         "count": 1,
         "assemblies": {
-            "frame2_assembly": 1
+            "frame4_assembly": 1,
+            "loops_motor_holder_assembly": 1
         },
-        "vitamins": {},
+        "vitamins": {
+            "screw(M4_dome_screw, 12): Screw M4 dome x 12mm": {
+                "count": 4
+            }
+        },
         "printed": {},
         "routed": {}
     },
     {
         "name": "main_assembly",
         "big": null,
+        "ngb": false,
+        "zoomed": 0,
         "count": 1,
         "assemblies": {
-            "frame_y_assembly": 1,
-            "loops_assembly": 1
+            "frame5_assembly": 1
         },
         "vitamins": {},
         "printed": {},

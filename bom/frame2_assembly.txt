@@ -1,0 +1,10 @@
+frame2_assembly:
+Vitamins:
+  3 Ball bearing 608-2RS 8mm x 22mm x 7mm
+  9 Screw M4 dome x 12mm
+
+Printed:
+  3 leads_holder.stl
+
+Assemblies:
+  1 frame1_assembly

@@ -1,0 +1,7 @@
+frame5_assembly:
+Vitamins:
+  4 Screw M4 dome x 12mm
+
+Assemblies:
+  1 frame4_assembly
+  1 loops_motor_holder_assembly

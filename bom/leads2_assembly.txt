@@ -1,0 +1,5 @@
+leads2_assembly:
+
+Assemblies:
+  1 bed1_assembly
+  1 leads1_assembly

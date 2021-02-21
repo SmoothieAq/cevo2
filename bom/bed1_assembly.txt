@@ -1,0 +1,13 @@
+bed1_assembly:
+Vitamins:
+  3 Spring 11.85mm OD, 0.8mm gauge x 37.8mm long, closed end
+  3 Leadscrew nut 8 x 2
+ 12 Nut M3 x 2.4mm 
+  6 Smooth rod 2mm x 10mm
+ 12 Screw M3 cap x 12mm
+  6 Washer  M2 x 5mm x 0.3mm
+
+Printed:
+  1 bed_holderB2.stl
+  1 bed_holderF2.stl
+  1 bed_holderL2.stl

@@ -1,0 +1,11 @@
+loops_motor_holder_assembly:
+Vitamins:
+  2 Stepper motor NEMA17 x 47mm
+  2 Pulley GT2OB 20 teeth
+  4 Screw M3 cap x 11mm
+  4 Screw M3 cap x 14mm
+  4 Screw M3 grub x  6mm
+
+Printed:
+  1 loops_motor_holderL.stl
+  1 loops_motor_holderR.stl
