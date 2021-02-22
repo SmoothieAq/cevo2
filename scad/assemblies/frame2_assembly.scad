@@ -7,7 +7,7 @@ use <../parts/leads_holder.scad>
 use <leads2_assembly.scad>
 
 
-module frame2_assembly() assembly("frame2") {
+module frame2_assembly() pose(a=[ 45.20, 0.00, 55.10 ],t=[ -0.20, 236.75, 462.01 ],d=390.64,exploded=true) assembly("frame2") {
     frame1_assembly();
     explode([0, 0, extr_d2], explode_children = true) {
         for (i = [0:2])

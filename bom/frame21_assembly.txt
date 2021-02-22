@@ -1,0 +1,12 @@
+frame21_assembly:
+Vitamins:
+  4 Nut M3 x 2.4mm 
+  4 Screw M3 cap x 10mm
+  4 Screw M3 cap x 12mm
+
+Printed:
+  1 x_holderL1.stl
+  1 x_holderR1.stl
+
+Assemblies:
+  1 frame20_assembly

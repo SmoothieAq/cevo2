@@ -1,4 +1,4 @@
 main_assembly:
 
 Assemblies:
-  1 frame5_assembly
+  1 frame22_assembly

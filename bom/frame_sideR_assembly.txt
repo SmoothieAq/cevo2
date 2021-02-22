@@ -1,0 +1,9 @@
+frame_sideR_assembly:
+Vitamins:
+  3 Extrusion E3030 x 410mm
+  2 Extrusion E3030 x 600mm
+  4 Extrusion corner bracket 30
+  8 Screw M4 dome x  8mm
+  9 Nut M3 sliding T
+ 17 Nut M4 sliding T
+  2 Extrusion inner corner bracket E30 M5

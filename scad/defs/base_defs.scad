@@ -1,8 +1,8 @@
 include <../../../xNopSCADlib/xVitamins/xextrusions.scad>
 include <../../../xNopSCADlib/xxVitamins/xxscrews.scad>
 
-posx = 0.4;
-posy = 0.5;
+posx = 0.3;
+posy = 0.1;
 
 extr_x_len = 420;
 extr_y_len = 410;
@@ -29,7 +29,7 @@ frame_y_z3 = extr_z_len+extr_z_bracket_thick-extr_d2;
 frame_y_z2 = frame_y_z3-112;
 
 xrail_xoff = -12;
-xrail_zoff = 28;
+xrail_zoff = 32/*28*/;
 xrail_z = frame_y_z3-xrail_zoff;
 xrail_len = extr_x_len+2*xrail_xoff;
 

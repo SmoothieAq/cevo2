@@ -1,0 +1,14 @@
+frame3_assembly:
+Vitamins:
+  9 Nut M3 x 2.4mm 
+  9 Screw M3 cap x 12mm
+  1 Carbon fiber OD 10mm ID 8mm x 283mm
+  2 Carbon fiber OD 10mm ID 8mm x 318.882mm
+
+Printed:
+  1 bed_holderB1.stl
+  1 bed_holderF1.stl
+  1 bed_holderL1.stl
+
+Assemblies:
+  1 frame2_assembly

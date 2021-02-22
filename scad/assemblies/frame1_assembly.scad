@@ -7,7 +7,7 @@ use <../parts/leads_motor_holder.scad>
 use <leads2_assembly.scad>
 
 
-module frame1_assembly() assembly("frame1") {
+module frame1_assembly() pose(a=[ 57.10, 0.00, 53.70 ],t=[ 147.86, 141.88, 259.86 ],d=169.02,exploded=true) assembly("frame1") {
     frame_assembly();
     explode([extr_d2, 0, extr_d2/2], explode_children = true) {
         leads2_assembly();

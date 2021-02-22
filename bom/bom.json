@@ -3,7 +3,7 @@
         "name": "loops_motor_holder_assembly",
         "big": null,
         "ngb": false,
-        "zoomed": 0,
+        "zoomed": 3,
         "count": 1,
         "assemblies": {},
         "vitamins": {
@@ -37,9 +37,9 @@
     },
     {
         "name": "idler_assembly",
-        "big": null,
+        "big": false,
         "ngb": false,
-        "zoomed": 0,
+        "zoomed": 3,
         "count": 1,
         "assemblies": {},
         "vitamins": {
@@ -80,7 +80,7 @@
         "name": "bed1_assembly",
         "big": null,
         "ngb": false,
-        "zoomed": 0,
+        "zoomed": 3,
         "count": 1,
         "assemblies": {},
         "vitamins": {
@@ -123,7 +123,7 @@
         "name": "leads1_assembly",
         "big": null,
         "ngb": false,
-        "zoomed": 0,
+        "zoomed": 2,
         "count": 1,
         "assemblies": {},
         "vitamins": {
@@ -146,7 +146,7 @@
         "name": "leads2_assembly",
         "big": null,
         "ngb": false,
-        "zoomed": 0,
+        "zoomed": 2,
         "count": 1,
         "assemblies": {
             "leads1_assembly": 1,
@@ -157,33 +157,66 @@
         "routed": {}
     },
     {
+        "name": "frame_sideR_assembly",
+        "big": null,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {},
+        "vitamins": {
+            "extrusion(E3030, 600): Extrusion E3030 x 600mm": {
+                "count": 2
+            },
+            "sliding_t_nut(M4_sliding_t_nut): Nut M4 sliding T": {
+                "count": 17
+            },
+            "extrusion(E3030, 410): Extrusion E3030 x 410mm": {
+                "count": 3
+            },
+            "extrusion_corner_bracket(W30_corner_bracket): Extrusion corner bracket 30": {
+                "count": 4
+            },
+            "screw(M4_dome_screw, 8): Screw M4 dome x  8mm": {
+                "count": 8
+            },
+            "sliding_t_nut(M3_sliding_t_nut): Nut M3 sliding T": {
+                "count": 9
+            },
+            "xextrusion_bracket3(): Extrusion inner corner bracket E30 M5": {
+                "count": 2
+            }
+        },
+        "printed": {},
+        "routed": {}
+    },
+    {
         "name": "frame_sideL_assembly",
         "big": null,
         "ngb": false,
         "zoomed": 0,
-        "count": 2,
+        "count": 1,
         "assemblies": {},
         "vitamins": {
             "extrusion(E3030, 600): Extrusion E3030 x 600mm": {
-                "count": 4
+                "count": 2
             },
             "sliding_t_nut(M4_sliding_t_nut): Nut M4 sliding T": {
-                "count": 34
+                "count": 17
             },
             "extrusion(E3030, 410): Extrusion E3030 x 410mm": {
-                "count": 6
+                "count": 3
             },
             "extrusion_corner_bracket(W30_corner_bracket): Extrusion corner bracket 30": {
-                "count": 8
+                "count": 4
             },
             "screw(M4_dome_screw, 8): Screw M4 dome x  8mm": {
-                "count": 16
+                "count": 8
             },
             "sliding_t_nut(M3_sliding_t_nut): Nut M3 sliding T": {
-                "count": 18
+                "count": 9
             },
             "xextrusion_bracket3(): Extrusion inner corner bracket E30 M5": {
-                "count": 4
+                "count": 2
             }
         },
         "printed": {},
@@ -196,7 +229,8 @@
         "zoomed": 0,
         "count": 1,
         "assemblies": {
-            "frame_sideL_assembly": 2
+            "frame_sideL_assembly": 1,
+            "frame_sideR_assembly": 1
         },
         "vitamins": {
             "extrusion(E3030, 420): Extrusion E3030 x 420mm": {
@@ -219,7 +253,7 @@
         "name": "frame1_assembly",
         "big": null,
         "ngb": false,
-        "zoomed": 0,
+        "zoomed": 2,
         "count": 1,
         "assemblies": {
             "frame_assembly": 1,
@@ -237,7 +271,7 @@
         "name": "frame2_assembly",
         "big": null,
         "ngb": false,
-        "zoomed": 0,
+        "zoomed": 2,
         "count": 1,
         "assemblies": {
             "frame1_assembly": 1
@@ -259,13 +293,52 @@
         "routed": {}
     },
     {
-        "name": "frame4_assembly",
+        "name": "frame3_assembly",
         "big": null,
         "ngb": false,
-        "zoomed": 0,
+        "zoomed": 2,
         "count": 1,
         "assemblies": {
-            "frame2_assembly": 1,
+            "frame2_assembly": 1
+        },
+        "vitamins": {
+            "tubing(CBNFIB10, 318.882): Carbon fiber OD 10mm ID 8mm x 318.882mm": {
+                "count": 2
+            },
+            "screw(M3_cap_screw, 12): Screw M3 cap x 12mm": {
+                "count": 9
+            },
+            "nut(M3_nut): Nut M3 x 2.4mm ": {
+                "count": 9
+            },
+            "tubing(CBNFIB10, 283): Carbon fiber OD 10mm ID 8mm x 283mm": {
+                "count": 1
+            }
+        },
+        "printed": {
+            "bed_holderL1.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "bed_holderF1.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "bed_holderB1.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "frame10_assembly",
+        "big": null,
+        "ngb": false,
+        "zoomed": 2,
+        "count": 1,
+        "assemblies": {
+            "frame3_assembly": 1,
             "idler_assembly": 1
         },
         "vitamins": {
@@ -277,13 +350,13 @@
         "routed": {}
     },
     {
-        "name": "frame5_assembly",
+        "name": "frame11_assembly",
         "big": null,
         "ngb": false,
-        "zoomed": 0,
+        "zoomed": 2,
         "count": 1,
         "assemblies": {
-            "frame4_assembly": 1,
+            "frame10_assembly": 1,
             "loops_motor_holder_assembly": 1
         },
         "vitamins": {
@@ -295,13 +368,106 @@
         "routed": {}
     },
     {
+        "name": "frame20_assembly",
+        "big": null,
+        "ngb": false,
+        "zoomed": 2,
+        "count": 1,
+        "assemblies": {
+            "frame11_assembly": 1
+        },
+        "vitamins": {
+            "rail(MGN12, 410): Linear rail MGN12 x 410mm": {
+                "count": 2
+            },
+            "screw(M3_cap_screw, 5): Screw M3 cap x  5mm": {
+                "count": 18
+            }
+        },
+        "printed": {},
+        "routed": {}
+    },
+    {
+        "name": "frame21_assembly",
+        "big": null,
+        "ngb": false,
+        "zoomed": 2,
+        "count": 1,
+        "assemblies": {
+            "frame20_assembly": 1
+        },
+        "vitamins": {
+            "nut(M3_nut): Nut M3 x 2.4mm ": {
+                "count": 4
+            },
+            "screw(M3_cap_screw, 12): Screw M3 cap x 12mm": {
+                "count": 4
+            },
+            "screw(M3_cap_screw, 10): Screw M3 cap x 10mm": {
+                "count": 4
+            }
+        },
+        "printed": {
+            "x_holderL1.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "x_holderR1.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "frame22_assembly",
+        "big": null,
+        "ngb": false,
+        "zoomed": 2,
+        "count": 1,
+        "assemblies": {
+            "frame21_assembly": 1
+        },
+        "vitamins": {
+            "screw(M3_cap_screw, 30): Screw M3 cap x 30mm": {
+                "count": 4
+            },
+            "screw(M3_cap_screw, 16): Screw M3 cap x 16mm": {
+                "count": 2
+            },
+            "washer(M3_washer): Washer  M3 x 6mm x 1mm": {
+                "count": 8
+            },
+            "pulley(GT2_xx): Pulley GT2 idler smooth 10mm": {
+                "count": 4
+            },
+            "rail(MGN12, 396): Linear rail MGN12 x 396mm": {
+                "count": 1
+            },
+            "nut(M3_nut): Nut M3 x 2.4mm ": {
+                "count": 2
+            }
+        },
+        "printed": {
+            "x_holderL2.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "x_holderR2.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            }
+        },
+        "routed": {}
+    },
+    {
         "name": "main_assembly",
         "big": null,
         "ngb": false,
         "zoomed": 0,
         "count": 1,
         "assemblies": {
-            "frame5_assembly": 1
+            "frame22_assembly": 1
         },
         "vitamins": {},
         "printed": {},

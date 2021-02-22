@@ -1,0 +1,7 @@
+frame20_assembly:
+Vitamins:
+  2 Linear rail MGN12 x 410mm
+ 18 Screw M3 cap x  5mm
+
+Assemblies:
+  1 frame11_assembly

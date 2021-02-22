@@ -40,7 +40,7 @@ module frame_assembly() assembly("frame") {
 module frame_sideL_assembly() assembly("frame_sideL") {
     frame_side_assembly(0);
 }
-module frame_sideR_assembly() assembly("frame_sideL") {
+module frame_sideR_assembly() assembly("frame_sideR") {
     frame_side_assembly(1);
 }
 
@@ -67,7 +67,7 @@ module frame_side_assembly(i) {
                         rotate([0,-90,i?90:-90])
                             for (p = rail_hole_nps(rail_y))
                                 translate([p,0,-extr_d2])
-                                    xnut(xextrusion_nut(extr_y,screwd=3));
+                                    xnut(xextrusion_nut(extr_y,screwd=screw_radius(rail_screw(rail_y))*2));
                     }
                 } else {
                     xextrusion_assembly(extr_y);

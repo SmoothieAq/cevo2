@@ -1,7 +1,0 @@
-frame4_assembly:
-Vitamins:
-  8 Screw M4 dome x  8mm
-
-Assemblies:
-  1 frame2_assembly
-  1 idler_assembly

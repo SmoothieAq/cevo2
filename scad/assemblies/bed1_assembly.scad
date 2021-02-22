@@ -4,7 +4,7 @@ include <NopSCADlib/vitamins/tubings.scad>
 include <../../../xNopSCADlib/xxVitamins/xxscrews.scad>
 use <../parts/bed_holder.scad>
 
-module bed1_assembly() assembly("bed1") {
+module bed1_assembly() pose(a=[ 55.00, 0.00, 25.00 ],t=[ 87.34, 174.10, 547.72 ],d=167.99) assembly("bed1") {
 
 	for (i = [0:2])
 		for_leads(i, pos_z-bed.z-holder_thick1-holder_offz-bed_off) {

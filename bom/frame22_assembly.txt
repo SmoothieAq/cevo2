@@ -1,0 +1,15 @@
+frame22_assembly:
+Vitamins:
+  2 Nut M3 x 2.4mm 
+  4 Pulley GT2 idler smooth 10mm
+  1 Linear rail MGN12 x 396mm
+  2 Screw M3 cap x 16mm
+  4 Screw M3 cap x 30mm
+  8 Washer  M3 x 6mm x 1mm
+
+Printed:
+  1 x_holderL2.stl
+  1 x_holderR2.stl
+
+Assemblies:
+  1 frame21_assembly

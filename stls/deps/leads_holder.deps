@@ -20,12 +20,12 @@ stls/leads_holder.stl: \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/core/bom.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/core.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/ball_bearing.scad \
-	C:/Users/jesper/IdeaProjects/cevo2/scad/assemblies/leads_holder.scad \
+	C:/Users/jesper/IdeaProjects/xNopSCADlib/xVitamins/xextrusions.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/washers.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/quadrant.scad \
-	C:/Users/jesper/IdeaProjects/xNopSCADlib/xVitamins/xextrusions.scad \
 	tmp/stl.scad \
 	C:/Users/jesper/IdeaProjects/cevo2/scad/cevo2.scad \
+	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/leadnuts.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/core/core.scad \
 	C:/Users/jesper/IdeaProjects/xNopSCADlib/xNopSCADlib/vitamins/tslot_nuts.scad \
 	C:/Users/jesper/IdeaProjects/xNopSCADlib/xVitamins/xscrew.scad \
@@ -40,7 +40,6 @@ stls/leads_holder.stl: \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/insert.scad \
 	C:/Users/jesper/IdeaProjects/xNopSCADlib/xVitamins/xwashers.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/nut.scad \
-	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/leadnuts.scad \
 	C:/Users/jesper/IdeaProjects/xNopSCADlib/xVitamins/xscrews.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/screw.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/leadnut.scad \
@@ -75,6 +74,7 @@ stls/leads_holder.stl: \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/sweep.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/dotSCAD/util/_impl/_sub_str_impl.scad \
 	C:/Users/jesper/IdeaProjects/xNopSCADlib/xNopSCADlib/vitamins/tslot_nut.scad \
+	C:/Users/jesper/IdeaProjects/cevo2/scad/parts/leads_holder.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/spring.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/ring_terminal.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/pin_headers.scad \

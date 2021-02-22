@@ -6,4 +6,5 @@ Vitamins:
  15 Nut M4 sliding T
 
 Assemblies:
-  2 frame_sideL_assemblies
+  1 frame_sideL_assembly
+  1 frame_sideR_assembly

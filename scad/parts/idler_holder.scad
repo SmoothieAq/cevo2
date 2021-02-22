@@ -52,7 +52,7 @@ module idler_idler(i) {
 			rotate([180,0,0]) w();
 		}
 }
-module idler_assembly() assembly("idler") {
+module idler_assembly() pose(a=[ 66.20, 0.00, 315.70 ],t=[ -6.72, 393.36, 565.37 ],d=246.51) assembly("idler", big=false) {
 	explode([0,0,base_part_thick2*0.6],explode_children=true) {
 		idler_holderL2_stl();
 		xxside2(idlerScrews[0]);
@@ -78,7 +78,7 @@ module idler_holderL1_stl() {stl("idler_holderL1"); idler_holder1(0); }
 module idler_holderL2_stl() {stl("idler_holderL2"); idler_holder2(0); }
 module idler_holderR1_stl() {stl("idler_holderR1"); idler_holder1(1); }
 module idler_holderR2_stl() {stl("idler_holderR2"); idler_holder2(1); }
-
+//idler_holderL1_stl();
 
 module idler_holder_cut(i,zd) {
 	p = idlerps[i][1];
