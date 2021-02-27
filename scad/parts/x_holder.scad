@@ -148,9 +148,9 @@ module x_holder(i) {
 			translate(p) {
 				translate([0, 0, - ph / 2 - iwt])
 					cylinder(ph + 2 * iwt, d = max(pulley_flange_dia(idler), pod + bt * 2) + 1);
-				translate([i?-xyholder_thick2:0, ((j?- 1:1) * (pod + bt) - bth)/2, - bwh / 2])
+				translate([i?-xyholder_thick2:0, ((j?i?1:- 1:i?-1:1) * (pod + bt) - bth)/2, - bwh / 2])
 					cube([xyholder_thick2, bth, bwh]);
-				translate([((i?-1:1)*(-pod - bt) - bth)/2, (j?0:-1)*xyholder_thick2, - bwh / 2])
+				translate([((i?-1:1)*(-pod - bt) - bth)/2, (j?i?-1:0:i?0:-1)*xyholder_thick2, -bwh / 2])
 					cube([bth, xyholder_thick2, bwh]);
 			}
 		}

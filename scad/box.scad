@@ -12,7 +12,7 @@ w = 100;
 h = 45;
 s = t3;
 
-color([0.19,0.19,0.19]) {
+color([0.22,0.22,0.22]) {
 	difference() {
 		translate([0,0,h-t2])
 			cube([w, l, t2]);

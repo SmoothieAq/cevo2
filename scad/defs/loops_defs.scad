@@ -20,8 +20,8 @@ rail_x = axrail(MGN12,xrail_len,MaterialBlackSteel,MGN12H_carriage);
 loops_side_off = NEMA_width(motor)/2-extr_d2+base_part_thick/2;
 loops_front_off = NEMA_width(motor)/2+extr_d2+motor_nudge;
 loops_back_off = pulley_flange_dia(idler)/2+extr_d2+motor_nudge;
-loops_xoff0 = 10;
-loops_xoff1 = 10;
+loops_xoff0 = 11;
+loops_xoff1 = 11;
 loops = let (
     lo = pulley_ir(idler)*2 + belt_thickness(belt) // 2*pulley_pr(idler)
 ) [
