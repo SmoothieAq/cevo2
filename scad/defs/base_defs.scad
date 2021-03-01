@@ -58,4 +58,4 @@ part_assemble_nudge = 0.2;
 part_assemble_line = 0.05;
 part_press_nudge = 0.6;
 
-partColor = grey(22);
+partColor = grey(18);//[56/256,28/256,8/256];//grey(22);
