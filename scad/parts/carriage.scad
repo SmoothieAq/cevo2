@@ -56,8 +56,8 @@ function fan_holder_screws() = fanHolderScrews;
 extruderScrews = [ for(p = orbiter_extruder_screwps) axxscrew_setLeng(screwPart,t=p+[0,0,platet],thick=p.z,insert=true) ];
 function extruder_screws() = extruderScrews;
 
-screwHotend = axscrew(M2p5_cs_cap_screw,material=MaterialBlackSteel);
-hotendScrews = [ for(p = mosquito_hotend_screwps) axxscrew_setLeng(screwHotend,t=p+[0,0,platet],thick=platet+2,xnut=false) ];
+screwHotend = axscrew(M2p5_dome_screw,material=MaterialBlackSteel);
+hotendScrews = [ for(p = mosquito_hotend_screwps) axxscrew_setLeng(screwHotend,t=p+[0,0,-mosquito_hotend_topt],r=[180,0,0],thick=mosquito_hotend_topt+5) ];
 function hotend_screws() = hotendScrews;
 
 module carriage_stl() {

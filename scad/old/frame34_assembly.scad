@@ -16,8 +16,10 @@ ch = carriage_height(carriage_x);
 module frame34_assembly() assembly("frame34") {
     frame33_assembly();
     translate([pos_x,pos_y-cw/2-mosquito_hotend_size.y/2-mosquito_hotend_offy,xrail_z+ch]) {
-        explode([0,0,-15],explode_children=true)
+        explode([0,0,-15],explode_children=false) {
             hotend_assembly();
+            xxside2(hotend_screws());
+        }
         xxside1(hotend_screws());
     }
  }

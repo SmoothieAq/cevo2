@@ -1,7 +1,7 @@
 include <cevo2.scad>
 include <defs/base_defs.scad>
 
-use <assemblies/frame22_assembly.scad>
+use <assemblies/frame40_assembly.scad>
 //use <assemblies/x_holder.scad>
 //use <assemblies/x_assembly.scad>
 //use <assemblies/bed.scad>
@@ -9,7 +9,7 @@ use <assemblies/frame22_assembly.scad>
 //use <assemblies/leads.scad>
 
 module main_assembly() assembly("main") {
-    frame22_assembly();
+    frame40_assembly();
 //    frame_y_assembly();
 //    y_assembly();
 //    x_assembly();

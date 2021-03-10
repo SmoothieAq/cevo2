@@ -2,12 +2,12 @@ include <../cevo2.scad>
 include <../defs/base_defs.scad>
 include <../defs/loops_defs.scad>
 
-use <frame22_assembly.scad>
+use <frame35_assembly.scad>
 use <../parts/x_holder.scad>
 
 
 module frame40_assembly() assembly("frame40") {
-    frame22_assembly();
+    frame35_assembly();
     for (loop = loops) {
         translate([0, 0, loop.x]) {
             for (p = loop.y)
