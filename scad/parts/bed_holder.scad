@@ -35,12 +35,12 @@ leadScrews = [ for (i = [0:2]) let(
 function bed_holder_lead_screws(i) = leadScrews[i];
 
 
-module bed_holderL2_stl() {stl("bed_holderL2"); holder2(0); }
-module bed_holderF2_stl() {stl("bed_holderF2"); holder2(1); }
-module bed_holderB2_stl() {stl("bed_holderB2"); holder2(2); }
-module bed_holderL1_stl() {stl("bed_holderL1"); holder1(0); }
-module bed_holderF1_stl() {stl("bed_holderF1"); holder1(1); }
-module bed_holderB1_stl() {stl("bed_holderB1"); holder1(2); }
+module bed_holderL2_stl() stl("bed_holderL2") holder2(0);
+module bed_holderF2_stl() stl("bed_holderF2") holder2(1);
+module bed_holderB2_stl() stl("bed_holderB2") holder2(2);
+module bed_holderL1_stl() stl("bed_holderL1") holder1(0);
+module bed_holderF1_stl() stl("bed_holderF1") holder1(1);
+module bed_holderB1_stl() stl("bed_holderB1") holder1(2);
 bed_holderL2_stl();
 
 module holder2(i,color=partColor) {

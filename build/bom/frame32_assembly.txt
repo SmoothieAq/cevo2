@@ -1,0 +1,8 @@
+frame32_assembly:
+Vitamins:
+  1 BLTouch
+  2 Nut M3 x 2.4mm 
+  2 Screw M3 cs cap x 10mm
+
+Assemblies:
+  1 frame31_assembly

@@ -24,7 +24,7 @@ hidlerholder = frame_y_z3-didlerholder-zidlerholder;
 
 yxbs = [ for (x = [extr_d2,extr_x_len+extr_d2]) [x,pos_y,frame_y_z3] ];
 
-idlerps = [[loopshp(4),loopslp(2)],[loopshp(3),loopslp(1)]];
+idlerps = [[loopshp(4),loopslp(8)],[loopshp(8),loopslp(4)]];
 
 idlerScrews = [ for (i = [0:1]) let(
 	screw = axxscrew_setLengAdjustDepth(screwPart,thick=hidlerholder,nut_depth=1.05,nut_plate=0,plate=0,twist=30),
@@ -59,10 +59,10 @@ module idler_idler(i) {
 	}
 }
 
-module x_holderL1_stl() {stl("x_holderL1"); x_holder1(0); }
-module x_holderL2_stl() {stl("x_holderL2"); x_holder2(0); }
-module x_holderR1_stl() {stl("x_holderR1"); x_holder1(1); }
-module x_holderR2_stl() {stl("x_holderR2"); x_holder2(1); }
+module x_holderL1_stl() stl("x_holderL1") x_holder1(0);
+module x_holderL2_stl() stl("x_holderL2") x_holder2(0);
+module x_holderR1_stl() stl("x_holderR1") x_holder1(1);
+module x_holderR2_stl() stl("x_holderR2") x_holder2(1);
 
 function cut(i,zd) = [ch + part_assemble_nudge-(i*2+1)*xyholder_thick2,-cl/2-cpx/2-3,(idlerps[i][(i+1)%2]-yxbs[i]).z+ph/2+iwt+zd];
 

@@ -1,8 +1,8 @@
 include <../../../xNopSCADlib/xVitamins/xextrusions.scad>
 include <../../../xNopSCADlib/xxVitamins/xxscrews.scad>
 
-posx = 0.30;
-posy = 0.1;
+posx = 0.35;
+posy = 0.35;
 
 extr_x_len = 420;
 extr_y_len = 410;

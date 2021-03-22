@@ -1,0 +1,8 @@
+carriage2_assembly:
+Vitamins:
+  1 Fan 25.4mm x 10mm
+  2 Nut M2.5 x 2.2mm 
+  2 Screw M2.5 cap x 25mm
+
+Assemblies:
+  1 carriage1_assembly

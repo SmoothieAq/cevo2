@@ -18,6 +18,8 @@ module frame30_assembly() assembly("frame30") {
     translate([pos_x,pos_y-cw/2-mosquito_hotend_size.y/2-mosquito_hotend_offy,xrail_z+ch]) {
         carriage2_assembly();
         xxside1(carriage_screws());
+        xxside1(carriage_loop_screws());
+        xxside2(carriage_loop_screws());
     }
  }
 

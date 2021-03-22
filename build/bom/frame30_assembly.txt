@@ -1,0 +1,9 @@
+frame30_assembly:
+Vitamins:
+  2 Nut M3 x 2.4mm 
+  2 Screw M3 cap x 30mm
+  4 Screw M3 cs cap x 12mm
+
+Assemblies:
+  1 carriage2_assembly
+  1 frame22_assembly

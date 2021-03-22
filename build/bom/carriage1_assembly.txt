@@ -1,0 +1,8 @@
+carriage1_assembly:
+Vitamins:
+  1 Mosquito hotend
+  2 Nut M2.5 x 2.2mm 
+  2 Screw M2.5 dome x 10mm
+
+Printed:
+  1 carriage.stl

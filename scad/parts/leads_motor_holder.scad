@@ -26,7 +26,7 @@ motor_mount_screws = [ for (i = [-1:1]) let(
 
 function leads_motor_mount_screws() = motor_mount_screws;
 
-module leads_motor_holder_stl() {stl("leads_motor_holder"); leads_motor_holder(); }
+module leads_motor_holder_stl() stl("leads_motor_holder") leads_motor_holder();
 module leads_motor_holder() color(partColor) {
 	difference() {
 		union() {

@@ -1,0 +1,7 @@
+frame40_assembly:
+Vitamins:
+  1 Belt GT_gates2 x 6mm x 1642mm
+  1 Belt GT_gates2 x 6mm x 1642mm
+
+Assemblies:
+  1 frame35_assembly

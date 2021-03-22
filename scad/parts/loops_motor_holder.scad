@@ -19,7 +19,7 @@ motor_mount_screws = [ for (i = [0,1]) let(
 
 function loops_motor_mount_screws(i) = [ for (s = motor_mount_screws) let (
 	loop = loops[i],
-	p =  loop[1][0],
+	p =  loop[1][5],
 	z = loop[0] - pulley_height(p.z) - motor_nudge
 ) axxscrew(s,t=xxscrew_translate(s)+[p.x,p.y,z],twist=90) ];
 
@@ -31,7 +31,7 @@ module loops_motor_holder_assembly() pose(a=[ 48.70, 0.00, 108.30 ],t=[ 72.78, 5
 module loops_motor_holderi_assembly(i) {
 	loop = loops[i];
 	z = loop[0];
-	p1 = loop[1][0];
+	p1 = loop[1][5];
 	translate([p1.x, p1.y, z - pulley_height(p1.z) - motor_nudge]) {
 		NEMA(motor);
 		translate([0,0,pulley_height(p1.z) + motor_nudge])
@@ -47,8 +47,8 @@ module loops_motor_holderi_assembly(i) {
 	}
 }
 
-module loops_motor_holderL_stl() {stl("loops_motor_holderL"); loops_motor_holder(); }
-module loops_motor_holderR_stl() {stl("loops_motor_holderR"); mirror([1,0,0]) loops_motor_holder(); }
+module loops_motor_holderL_stl() stl("loops_motor_holderL") loops_motor_holder();
+module loops_motor_holderR_stl() stl("loops_motor_holderR") mirror([1,0,0]) loops_motor_holder();
 module loops_motor_holder() color(partColor) {
 	difference() {
 		union() {

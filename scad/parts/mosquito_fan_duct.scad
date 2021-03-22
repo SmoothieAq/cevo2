@@ -48,7 +48,7 @@ module mosquito_fan_duct_stl() {
 	
 	widen = 1;
 
-	stl("mosquito_fan_duct");
+	stl("mosquito_fan_duct")
 	color(partColor) {
 		difference() {
 			// expand two thin slices

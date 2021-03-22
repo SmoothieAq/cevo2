@@ -7,26 +7,27 @@ pod = pulley_od(idler);
 iwt = washer_thickness(idler_washer);
 bt = belt_thickness(belt);
 bw = belt_width(belt);
-bth = bt + 1;
-bwh = ph + 2*iwt; //bw + 3;
+//bth = bt + 2;
+//bwh = ph + 2*iwt; //bw + 3;
 
 zidlerholder = loops[1][0]-ph/2-iwt-base_part_thick;
 hidlerholder = frame_y_z3-extr_d2-zidlerholder;
 hxidlerholder = loops[0][0]+ph/2+iwt+base_part_thick-zidlerholder;
 
-idlerps = [[loopshp(1),loopslp(3)],[loopshp(2),loopslp(4)]];
+idlerps = [[loopshp(6),loopslp(7)],[loopshp(7),loopslp(6)]];
 
 idler_holderpd = base_part_thick2-7;
+idler_holderpt = base_part_thick + 1;
 idler_holderps = [ for (i = [0:1]) let (
 	fx = i?frame_p3.x:frame_p2.x,
 	fy = frame_p2.y,
 	fxn = i?-extr_d2-base_part_thick:extr_d2,
 	in = -(i-1)
 ) [
-		[[fx,fy-extr_d2-18,frame_y_z3-extr_d2],[180,0,90],[0,i,0],[0,0,-base_part_thick+in*max(0,hxidlerholder-hidlerholder)],[0,0,0]],
-		[[fx,fy-extr_d2,zidlerholder-idler_holderpd/2],[90,180,0],[1,1,0],[0,1*-base_part_thick,0],[0,0,0]],
-		[[fx+fxn+i*base_part_thick,fy,frame_y_z3-extr_d2-idler_holderpd/2],[90,180,(i?-1:1)*90],[i,0,0],[(i?-1:1)*base_part_thick,0,0],[0,0,0]],
-		[[fx+fxn+i*base_part_thick,fy,zidlerholder],[90,180,(i?-1:1)*90],[i,in,0],[(i?-1:1)*base_part_thick,0,0],[0,i,0]]
+		[[fx,fy-extr_d2-22,frame_y_z3-extr_d2],[180,0,90],[0,i,0],[0,0,-idler_holderpt+in*max(0,hxidlerholder-hidlerholder)],[0,0,0],false],
+		[[fx,fy-extr_d2,zidlerholder-idler_holderpd/3],[90,180,0],[1,1,0],[0,1*-idler_holderpt,0],[0,i,0],180],
+		[[fx+fxn+i*idler_holderpt,fy,frame_y_z3-extr_d2-idler_holderpd/2],[90,180,(i?-1:1)*90],[i,0,0],[(i?-1:1)*idler_holderpt,0,0],[0,0,0],true],
+		[[fx+fxn+i*idler_holderpt,fy,zidlerholder+idler_holderpd/4],[90,180,(i?-1:1)*90],[i,in,0],[(i?-1:1)*idler_holderpt,0,0],[0,i,0],180]
 	]];
 
 idlerScrews = [ for (i = [0:1])
@@ -37,7 +38,10 @@ idlerScrews = [ for (i = [0:1])
 ];
 
 idlerHolderScrews = [ for (i = [0:1])
-	[ for (p = idler_holderps[i]) axxscrew_setLeng(screwFrameMount,thick=base_part_thick,t=p.x+p[3],r=p.y,horizontal=p.y.x%180!=0,twist=p.y.x%180!=0?90:0,flip=false,plate=0,spacing=0) ]
+	[ for (j = [0:len(idler_holderps[i])-1]) let (
+			p = idler_holderps[i][j],
+			t = p.x + p[3] + ((i==0 && j==0) ? [0,0,1.3] : [0,0,0])
+		) axxscrew_setLeng(screwFrameMount,thick=idler_holderpt,t=t,r=p.y,horizontal=p[5],twist=p.y.x%180!=0?90:0,flip=false,plate=0,spacing=0) ]
 ];
 
 function idlerHolderScrews(i,onz) = let (ss = idlerHolderScrews[i]) onz ? [ss[1],ss[2],ss[3]] : [ss[0]];
@@ -72,17 +76,23 @@ module idler_assembly() pose(a=[ 66.20, 0.00, 315.70 ],t=[ -6.72, 393.36, 565.37
 		xxside1(idlerScrews[1]);
 	}
 }
-idler_assembly();
+//idler_assembly();
 
-module idler_holderL1_stl() {stl("idler_holderL1"); idler_holder1(0); }
-module idler_holderL2_stl() {stl("idler_holderL2"); idler_holder2(0); }
-module idler_holderR1_stl() {stl("idler_holderR1"); idler_holder1(1); }
-module idler_holderR2_stl() {stl("idler_holderR2"); idler_holder2(1); }
-//idler_holderL1_stl();
+module idler_holderL1_stl() stl("idler_holderL1") idler_holder1(0);
+module idler_holderL2_stl() stl("idler_holderL2") idler_holder2(0);
+module idler_holderR1_stl() stl("idler_holderR1") idler_holder1(1);
+module idler_holderR2_stl() stl("idler_holderR2") idler_holder2(1);
+translate([0,0,0]) {
+	idler_holderR2_stl();
+	translate([0, 0, 0])idler_holderL2_stl();
+}
+idler_holderR1_stl();
+translate([0,0,0])idler_holderL1_stl();
+//for (i=[0,1])xxside1(idlerHolderScrews[i]);
 
 module idler_holder_cut(i,zd) {
 	p = idlerps[i][1];
-	translate([p.x-base_part_thick2*2,p.y-base_part_thick2,min(p.z+ph/2+iwt, frame_y_z3-extr_d2-idler_holderpd)-0.5+zd])
+	translate([p.x-base_part_thick2*2,p.y-base_part_thick2*1.5,min(p.z+ph/2+iwt, frame_y_z3-extr_d2-idler_holderpd)-0.5+zd])
 		cube([base_part_thick2*3,base_part_thick2*4,base_part_thick2*2]);
 
 }
@@ -107,33 +117,37 @@ module idler_holder(i) {
 		union() {
 			for (p = idler_holderps[i])
 				translate(p.x) rotate(p.y) mirror(p.z) mirror(p[4]) {
-					cylinder(base_part_thick, d = idler_holderpd);
+					cylinder(idler_holderpt, d = idler_holderpd);
 					translate([extr_d2-idler_holderpd/2,0,0]) {
-						cylinder(base_part_thick, d = idler_holderpd);
-						cube([idler_holderpd/2,idler_holderpd/2,base_part_thick]);
+						cylinder(idler_holderpt, d = idler_holderpd);
+						cube([idler_holderpd/2,idler_holderpd/2,idler_holderpt]);
 					}
 					translate([0,-idler_holderpd/2,0])
-						cube([extr_d2-idler_holderpd/2,idler_holderpd,base_part_thick]);
+						cube([extr_d2-idler_holderpd/2,idler_holderpd,idler_holderpt]);
 				}
 			for (l = idlerps[i]) {
 				p = l;
 				translate([p.x, p.y, zidlerholder])
-					cylinder(hidlerholder, d = base_part_thick2);
+					cylinder(hidlerholder, d = idler_tubed);
 			}
 		}
 		for (j = [0:1]) {
 			p = idlerps[i][j];
 			translate(p) rotate([0,0,i?-90:0]) {
 				translate([0, 0, - ph / 2 - iwt])
-					cylinder(ph + 2 * iwt, d = max(pulley_flange_dia(idler), pod + bt * 2) + 1);
-				translate([false?-base_part_thick2:0, ((false?- 1:1) * (pod + bt) - bth)/2, - bwh / 2])
-					cube([base_part_thick2*2, bth, bwh]);
-				translate([((false?-1:1)*(-pod - bt) - bth)/2, (false?0:-1)*base_part_thick2, - bwh / 2])
-					cube([bth, base_part_thick2, bwh]);
+					cylinder(ph + 2 * iwt, d = idler_tubehd);
+//				translate([false?-base_part_thick2:0, (false?- 1:1) * idler_tubehd/2 - idler_tubebth, - idler_tubebwh / 2])
+//					cube([base_part_thick2*2, idler_tubebth, idler_tubebwh]);
+//				translate([(false?-1:1)*-idler_tubehd/2, (false?0:-1)*base_part_thick2, - idler_tubebwh / 2])
+//					cube([idler_tubebth, base_part_thick2, idler_tubebwh]);
+				translate([0, idler_tubehd/2 - idler_tubebth, - idler_tubebwh / 2])
+					cube([idler_tubed*2, idler_tubebth, idler_tubebwh]);
+				translate([-idler_tubehd/2, -idler_tubed, - idler_tubebwh / 2])
+					cube([idler_tubebth, idler_tubed, idler_tubebwh]);
 			}
 		}
 		p = i?frame_p3:frame_p2;
-		translate([p.x-extr_d2,p.y-extr_d2,loops[1][0]-base_part_thick2])
+		translate([p.x-extr_d2,p.y-extr_d2-0.01,loops[1][0]-base_part_thick2])
 			cube([extr_d,extr_d,base_part_thick2*6]);
 	}
 }

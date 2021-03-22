@@ -1,0 +1,8 @@
+frame35_assembly:
+Vitamins:
+  2 Heatfit insert M3
+  1 Orbiter Extruder and motor
+  2 Screw M3 cap x  8mm
+
+Assemblies:
+  1 frame33_assembly

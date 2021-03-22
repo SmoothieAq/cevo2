@@ -1,0 +1,117 @@
+Vitamins:
+                                                                      L   
+                                                                      o   
+                                                                      o   
+                                                                      p   
+                                                                      s   
+                                                                          
+                                                                      m   
+                                                       F  F           o   
+                                                       r  r           t   
+    C  C                                               a  a           o   
+    a  a                                               m  m           r   
+    r  r  F  F     F  F  F     F  F  F  F  F     F     e  e               
+    r  r  r  r  F  r  r  r  F  r  r  r  r  r  F  r              L  L  h   
+    i  i  a  a  r  a  a  a  r  a  a  a  a  a  r  a  F  s  s  I  e  e  o   
+ B  a  a  m  m  a  m  m  m  a  m  m  m  m  m  a  m  r  i  i  d  a  a  l  M
+ e  g  g  e  e  m  e  e  e  m  e  e  e  e  e  m  e  a  d  d  l  d  d  d  a
+ d  e  e  1  1  e  2  2  2  e  3  3  3  3  3  e  4  m  e  e  e  s  s  e  i
+ 1  1  2  0  1  1  0  1  2  2  0  1  2  3  5  3  0  e  l  r  r  1  2  r  n
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 2|  |  2 Stepper motor NEMA17 x 47mm
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 3|  |  |  |  3 Stepper motor NEMA17 x 47mm
+  |  |  |  |  |  |  |  |  | 3|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  3 Ball bearing 608-2RS 8mm x 22mm x 7mm
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  1 Belt GT_gates2 x 6mm x 1642mm
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  1 Belt GT_gates2 x 6mm x 1642mm
+  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  |  1 Blower Runda RB5015
+  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  |  |  1 BLTouch
+ 3|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  3 Spring 11.85mm OD, 0.8mm gauge x 37.8mm long, closed end
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 3| 3|  |  |  |  |  |  6 Extrusion E3030 x 410mm
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  |  |  4 Extrusion E3030 x 420mm
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 2| 2|  |  |  |  |  |  4 Extrusion E3030 x 600mm
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 6| 4| 4|  |  |  |  |  | 14 Extrusion corner bracket 30
+  |  | 1|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  1 Fan 25.4mm x 10mm
+  |  |  |  |  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  2 Heatfit insert M3
+ 3|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  3 Leadscrew nut 8 x 2
+  | 1|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  1 Mosquito hotend
+  | 2| 2|  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  6 Nut M2.5 x 2.2mm 
+12|  |  |  |  |  |  | 4| 2|  | 2| 2| 2| 1|  | 9|  |  |  |  | 4|  |  |  |  | 38 Nut M3 x 2.4mm 
+  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  1 Orbiter Extruder and motor
+  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  8 Pulley GT2 (2 x F623ZZ flanged + washer 0.7) idler smooth 10mm
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 2|  |  2 Pulley GT2OB 20 teeth
+  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  1 Linear rail MGN12 x 396mm
+  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Linear rail MGN12 x 410mm
+ 6|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  6 Smooth rod 2mm x 10mm
+  |  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Screw M2.5 cap x 10mm
+  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Screw M2.5 cap x 25mm
+  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Screw M2.5 dome x 10mm
+  |  |  |  |  |  |  | 4|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  4 Screw M3 cap x 10mm
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  4 Screw M3 cap x 11mm
+12|  |  |  |  |  |  | 4|  |  |  |  |  |  |  | 9|  |  |  |  |  |12|  |  |  | 37 Screw M3 cap x 12mm
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  4 Screw M3 cap x 14mm
+  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Screw M3 cap x 16mm
+  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  | 4|  |  |  |  |  5 Screw M3 cap x 25mm
+  |  |  |  |  |  |  |  | 4|  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  6 Screw M3 cap x 30mm
+  |  |  |  |  |  |18|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 18 Screw M3 cap x  5mm
+  |  |  |  |  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  2 Screw M3 cap x  8mm
+  |  |  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  2 Screw M3 cs cap x 10mm
+  |  |  |  |  |  |  |  |  |  | 4| 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  6 Screw M3 cs cap x 12mm
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  4 Screw M3 grub x  6mm
+  |  |  |  | 4| 9|  |  |  | 9|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 22 Screw M4 dome x 12mm
+  |  |  | 8|  |  |  |  |  |  |  |  |  |  |  |  |  |12| 8| 8|  |  |  |  |  | 36 Screw M4 dome x  8mm
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 9| 9|  |  |  |  |  | 18 Nut M3 sliding T
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |15|17|17|  |  |  |  |  | 49 Nut M4 sliding T
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  1 Carbon fiber OD 10mm ID 8mm x 283mm
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  2 Carbon fiber OD 10mm ID 8mm x 318.882mm
+ 6|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  6 Washer  M2 x 5mm x 0.3mm
+  |  |  |  |  |  |  |  | 8|  |  |  |  |  |  |  |  |  |  |  | 8|  |  |  |  | 16 Washer  M3 x 6mm x 1mm
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 2| 2|  |  |  |  |  |  4 Extrusion inner corner bracket E30 M5
+
+Printed:
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  1 bed_holderB1.stl
+ 1|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  1 bed_holderB2.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  1 bed_holderF1.stl
+ 1|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  1 bed_holderF2.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  1 bed_holderL1.stl
+ 1|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  1 bed_holderL2.stl
+  | 1|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  1 carriage.stl
+  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  |  |  |  1 fan_holder_at_carriage.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  1 idler_holderL1.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  1 idler_holderL2.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  1 idler_holderR1.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  1 idler_holderR2.stl
+  |  |  |  |  |  |  |  |  | 3|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  3 leads_holder.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 3|  |  |  |  3 leads_motor_holder.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  1 loops_motor_holderL.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  1 loops_motor_holderR.stl
+  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  |  |  |  1 mosquito_fan_duct.stl
+  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  1 x_holderL1.stl
+  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  1 x_holderL2.stl
+  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  1 x_holderR1.stl
+  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  1 x_holderR2.stl
+
+Assemblies:
+  1 bed1_assembly
+  1 carriage1_assembly
+  1 carriage2_assembly
+  1 frame10_assembly
+  1 frame11_assembly
+  1 frame1_assembly
+  1 frame20_assembly
+  1 frame21_assembly
+  1 frame22_assembly
+  1 frame2_assembly
+  1 frame30_assembly
+  1 frame31_assembly
+  1 frame32_assembly
+  1 frame33_assembly
+  1 frame35_assembly
+  1 frame3_assembly
+  1 frame40_assembly
+  1 frame_assembly
+  1 frame_sideL_assembly
+  1 frame_sideR_assembly
+  1 idler_assembly
+  1 leads1_assembly
+  1 leads2_assembly
+  1 loops_motor_holder_assembly
+  1 main_assembly

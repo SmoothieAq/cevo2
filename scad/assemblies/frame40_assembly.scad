@@ -8,13 +8,10 @@ use <../parts/x_holder.scad>
 
 module frame40_assembly() assembly("frame40") {
     frame35_assembly();
-    for (loop = loops) {
-        translate([0, 0, loop.x]) {
-            for (p = loop.y)
-            translate([p.x, p.y, 0])
-                pulley_assembly(p.z);
-            belt(GT2x6, [for (p = loop.y) [p.x, p.y, p[3] * pulley_pr(p[2])]]);
-        }
+    for (i = [0,1]) {
+        loop = loops[i];
+        translate([0, 0, loop.x])
+            belt(belt, loop.y, open=true, start_twist = i, tooth_colour = [0.35,0.15,0.18]);
     }
 }
 

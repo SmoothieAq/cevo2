@@ -22,7 +22,7 @@ module frame31_assembly() assembly("frame31") {
             xxside2(fan_duct_screws());
         }
         explode([0,15,-3])
-            fan_holder_at_carriage();
+            fan_holder_at_carriage_stl();
         xxside1(fan_holder_screws());
         xxside2(fan_holder_screws());
 

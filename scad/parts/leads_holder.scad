@@ -18,7 +18,7 @@ lead_bearing_holder_screws = [ for (i = [-1:1]) let(
 
 function lead_bearing_holder_screws() = lead_bearing_holder_screws;
 
-module leads_holder_stl() {stl("leads_holder"); leads_holder(); }
+module leads_holder_stl() stl("leads_holder") leads_holder();
 module leads_holder() color(partColor) {
 	difference() {
 		union() {
