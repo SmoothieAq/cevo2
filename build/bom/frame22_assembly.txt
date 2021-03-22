@@ -1,7 +1,7 @@
 frame22_assembly:
 Vitamins:
   2 Nut M3 x 2.4mm 
-  4 Pulley GT2 (2 x F623ZZ flanged + washer 0.7) idler smooth 10mm
+  4 Pulley GT2 (2 x F623ZZ flanged + washer 0.8) idler smooth 10mm
   1 Linear rail MGN12 x 396mm
   2 Screw M3 cap x 16mm
   4 Screw M3 cap x 30mm

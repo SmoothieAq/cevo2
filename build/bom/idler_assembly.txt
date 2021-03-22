@@ -1,8 +1,8 @@
 idler_assembly:
 Vitamins:
   4 Nut M3 x 2.4mm 
-  4 Pulley GT2 (2 x F623ZZ flanged + washer 0.7) idler smooth 10mm
-  4 Screw M3 cap x 25mm
+  4 Pulley GT2 (2 x F623ZZ flanged + washer 0.8) idler smooth 10mm
+  4 Screw M3 cap x 30mm
   8 Washer  M3 x 6mm x 1mm
 
 Printed:

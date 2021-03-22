@@ -12,7 +12,7 @@ bw = belt_width(belt);
 
 idlerps = [[loopshp(6),loopslp(7)],[loopshp(7),loopslp(6)]];
 _hidlerholder = frame_y_z3-extr_d2-(loops[1][0]-ph/2-iwt-base_part_thick);
-idlerScrew = axxscrew_setLengAdjustThickUp(screwPart,thick=_hidlerholder,depth=0,nut_depth=1.09,nut_plate=0,plate=0,flip=false);
+idlerScrew = axxscrew_setLengAdjustThickUp(screwPart,thick=_hidlerholder,depth=0,nut_depth=1.3,nut_plate=0,plate=0,flip=false);
 hidlerholder = xxscrew_thick(idlerScrew);
 zidlerholder = frame_y_z3-extr_d2-hidlerholder;//loops[1][0]-ph/2-iwt-base_part_thick;
 hxidlerholder = loops[0][0]+ph/2+iwt+base_part_thick-zidlerholder; echo(_hidlerholder=_hidlerholder,hidlerholder=hidlerholder,zidlerholder=zidlerholder,hxidlerholder=hxidlerholder);
@@ -82,7 +82,7 @@ module idler_holderL1_stl() stl("idler_holderL1") idler_holder1(0);
 module idler_holderL2_stl() stl("idler_holderL2") idler_holder2(0);
 module idler_holderR1_stl() stl("idler_holderR1") idler_holder1(1);
 module idler_holderR2_stl() stl("idler_holderR2") idler_holder2(1);
-translate([0,0,0]) {
+translate([0,0,20]) {
 //	idler_holderR2_stl();
 	translate([0, 0, 0])idler_holderL2_stl();
 }
@@ -92,7 +92,7 @@ translate([0,0,0])idler_holderL1_stl();
 
 module idler_holder_cut(i,zd) {
 	p = idlerps[i][1];
-	translate([p.x-base_part_thick2*2,p.y-base_part_thick2*1.5,min(p.z+ph/2+iwt, frame_y_z3-extr_d2-idler_holderpd)-0.5+zd])
+	translate([p.x-base_part_thick2*2,p.y-base_part_thick2*1.5,min(p.z+ph/2+iwt, frame_y_z3-extr_d2-idler_holderpd)-0.1+zd])
 		cube([base_part_thick2*3,base_part_thick2*4,base_part_thick2*2]);
 
 }
@@ -135,7 +135,7 @@ module idler_holder(i) {
 			p = idlerps[i][j];
 			translate(p) rotate([0,0,i?-90:0]) {
 				phx = 0.4; // extra high hole, because supporters make the surface uneven
-				translate([0, 0, - ph / 2 - iwt])
+				translate([0, 0, - ph / 2 - iwt - phx/2])
 					cylinder(ph + 2 * iwt + phx, d = idler_tubehd);
 				translate([0, idler_tubehd/2 - idler_tubebth, - idler_tubebwh / 2])
 					cube([idler_tubed*2, idler_tubebth, idler_tubebwh]);

@@ -98,10 +98,10 @@
             "washer(M3_washer): Washer  M3 x 6mm x 1mm": {
                 "count": 8
             },
-            "pulley(GT2_xx): Pulley GT2 (2 x F623ZZ flanged + washer 0.7) idler smooth 10mm": {
+            "pulley(GT2_xx): Pulley GT2 (2 x F623ZZ flanged + washer 0.8) idler smooth 10mm": {
                 "count": 4
             },
-            "screw(M3_cap_screw, 25): Screw M3 cap x 25mm": {
+            "screw(M3_cap_screw, 30): Screw M3 cap x 30mm": {
                 "count": 4
             }
         },
@@ -487,7 +487,7 @@
             "washer(M3_washer): Washer  M3 x 6mm x 1mm": {
                 "count": 8
             },
-            "pulley(GT2_xx): Pulley GT2 (2 x F623ZZ flanged + washer 0.7) idler smooth 10mm": {
+            "pulley(GT2_xx): Pulley GT2 (2 x F623ZZ flanged + washer 0.8) idler smooth 10mm": {
                 "count": 4
             },
             "rail(MGN12, 396): Linear rail MGN12 x 396mm": {

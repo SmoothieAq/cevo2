@@ -36,7 +36,7 @@ Vitamins:
   | 2| 2|  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  6 Nut M2.5 x 2.2mm 
 12|  |  |  |  |  |  | 4| 2|  | 2| 2| 2| 1|  | 9|  |  |  |  | 4|  |  |  |  | 38 Nut M3 x 2.4mm 
   |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  1 Orbiter Extruder and motor
-  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  8 Pulley GT2 (2 x F623ZZ flanged + washer 0.7) idler smooth 10mm
+  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  8 Pulley GT2 (2 x F623ZZ flanged + washer 0.8) idler smooth 10mm
   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 2|  |  2 Pulley GT2OB 20 teeth
   |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  1 Linear rail MGN12 x 396mm
   |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Linear rail MGN12 x 410mm
@@ -49,8 +49,8 @@ Vitamins:
 12|  |  |  |  |  |  | 4|  |  |  |  |  |  |  | 9|  |  |  |  |  |12|  |  |  | 37 Screw M3 cap x 12mm
   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  4 Screw M3 cap x 14mm
   |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Screw M3 cap x 16mm
-  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  | 4|  |  |  |  |  5 Screw M3 cap x 25mm
-  |  |  |  |  |  |  |  | 4|  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  6 Screw M3 cap x 30mm
+  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  |  1 Screw M3 cap x 25mm
+  |  |  |  |  |  |  |  | 4|  | 2|  |  |  |  |  |  |  |  |  | 4|  |  |  |  | 10 Screw M3 cap x 30mm
   |  |  |  |  |  |18|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 18 Screw M3 cap x  5mm
   |  |  |  |  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  2 Screw M3 cap x  8mm
   |  |  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  2 Screw M3 cs cap x 10mm
