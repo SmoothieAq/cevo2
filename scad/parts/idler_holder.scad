@@ -10,11 +10,17 @@ bw = belt_width(belt);
 //bth = bt + 2;
 //bwh = ph + 2*iwt; //bw + 3;
 
-zidlerholder = loops[1][0]-ph/2-iwt-base_part_thick;
-hidlerholder = frame_y_z3-extr_d2-zidlerholder;
-hxidlerholder = loops[0][0]+ph/2+iwt+base_part_thick-zidlerholder;
-
 idlerps = [[loopshp(6),loopslp(7)],[loopshp(7),loopslp(6)]];
+_hidlerholder = frame_y_z3-extr_d2-(loops[1][0]-ph/2-iwt-base_part_thick);
+idlerScrew = axxscrew_setLengAdjustThickUp(screwPart,thick=_hidlerholder,depth=0,nut_depth=1.09,nut_plate=0,plate=0,flip=false);
+hidlerholder = xxscrew_thick(idlerScrew);
+zidlerholder = frame_y_z3-extr_d2-hidlerholder;//loops[1][0]-ph/2-iwt-base_part_thick;
+hxidlerholder = loops[0][0]+ph/2+iwt+base_part_thick-zidlerholder; echo(_hidlerholder=_hidlerholder,hidlerholder=hidlerholder,zidlerholder=zidlerholder,hxidlerholder=hxidlerholder);
+idlerScrews = [ for (i = [0:1])
+		let(
+			pss = [ for (p = idlerps[i]) [p.x,p.y,zidlerholder] ]
+		) [ for (p = pss) axxscrew(idlerScrew,t=p,r=[180,0,0]) ]
+	];
 
 idler_holderpd = base_part_thick2-7;
 idler_holderpt = base_part_thick + 1;
@@ -25,17 +31,11 @@ idler_holderps = [ for (i = [0:1]) let (
 	in = -(i-1)
 ) [
 		[[fx,fy-extr_d2-22,frame_y_z3-extr_d2],[180,0,90],[0,i,0],[0,0,-idler_holderpt+in*max(0,hxidlerholder-hidlerholder)],[0,0,0],false],
-		[[fx,fy-extr_d2,zidlerholder-idler_holderpd/3],[90,180,0],[1,1,0],[0,1*-idler_holderpt,0],[0,i,0],180],
+		[[fx,fy-extr_d2,zidlerholder-idler_holderpd/3],[90,180,0],[1,1,0],[0,1*-idler_holderpt,0],[0,i,0],true],
 		[[fx+fxn+i*idler_holderpt,fy,frame_y_z3-extr_d2-idler_holderpd/2],[90,180,(i?-1:1)*90],[i,0,0],[(i?-1:1)*idler_holderpt,0,0],[0,0,0],true],
-		[[fx+fxn+i*idler_holderpt,fy,zidlerholder+idler_holderpd/4],[90,180,(i?-1:1)*90],[i,in,0],[(i?-1:1)*idler_holderpt,0,0],[0,i,0],180]
+		[[fx+fxn+i*idler_holderpt,fy,zidlerholder+idler_holderpd/4],[90,180,(i?-1:1)*90],[i,in,0],[(i?-1:1)*idler_holderpt,0,0],[0,i,0],true]
 	]];
 
-idlerScrews = [ for (i = [0:1])
-	let(
-		screw = axxscrew_setLengAdjustDepth(screwPart,thick=hidlerholder,nut_depth=1.05,nut_plate=0,plate=0,flip=false),
-		pss = [ for (p = idlerps[i]) [p.x,p.y,zidlerholder] ]
-	) [ for (p = pss) axxscrew(screw,t=p,r=[180,0,0]) ]
-];
 
 idlerHolderScrews = [ for (i = [0:1])
 	[ for (j = [0:len(idler_holderps[i])-1]) let (
@@ -83,10 +83,10 @@ module idler_holderL2_stl() stl("idler_holderL2") idler_holder2(0);
 module idler_holderR1_stl() stl("idler_holderR1") idler_holder1(1);
 module idler_holderR2_stl() stl("idler_holderR2") idler_holder2(1);
 translate([0,0,0]) {
-	idler_holderR2_stl();
+//	idler_holderR2_stl();
 	translate([0, 0, 0])idler_holderL2_stl();
 }
-idler_holderR1_stl();
+//idler_holderR1_stl();
 translate([0,0,0])idler_holderL1_stl();
 //for (i=[0,1])xxside1(idlerHolderScrews[i]);
 
@@ -134,12 +134,9 @@ module idler_holder(i) {
 		for (j = [0:1]) {
 			p = idlerps[i][j];
 			translate(p) rotate([0,0,i?-90:0]) {
+				phx = 0.4; // extra high hole, because supporters make the surface uneven
 				translate([0, 0, - ph / 2 - iwt])
-					cylinder(ph + 2 * iwt, d = idler_tubehd);
-//				translate([false?-base_part_thick2:0, (false?- 1:1) * idler_tubehd/2 - idler_tubebth, - idler_tubebwh / 2])
-//					cube([base_part_thick2*2, idler_tubebth, idler_tubebwh]);
-//				translate([(false?-1:1)*-idler_tubehd/2, (false?0:-1)*base_part_thick2, - idler_tubebwh / 2])
-//					cube([idler_tubebth, base_part_thick2, idler_tubebwh]);
+					cylinder(ph + 2 * iwt + phx, d = idler_tubehd);
 				translate([0, idler_tubehd/2 - idler_tubebth, - idler_tubebwh / 2])
 					cube([idler_tubed*2, idler_tubebth, idler_tubebwh]);
 				translate([-idler_tubehd/2, -idler_tubed, - idler_tubebwh / 2])

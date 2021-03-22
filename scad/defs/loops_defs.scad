@@ -11,7 +11,7 @@ include <../../../xNopSCADlib/xVitamins/xwashers.scad>
 //            GT2x6 = ["GT", 2.0,  6, 1.38, 0.75, 0.254];
 belt = ["GT_gates", 2.0,  6, 1.55, 0.75, 0.254];// GT2x6; // folded 2.55
 pulley = GT2x20ob_pulley;
-idler = ["GT2_xx","GT2 (2 x F623ZZ flanged + washer 0.7)",0,10,GT2x6,6.7,11.5,0,3,11.5,1.0,0,0,false,0];//2 x 623zz flanged + washer 0.7
+idler = ["GT2_xx","GT2 (2 x F623ZZ flanged + washer 0.8)",0,10,GT2x6,6.8,11.5,0,3,11.5,1.0,0,0,false,0];//2 x 623zz flanged + washer 0.8
 idler_washer = M3_washer_small_thick;
 motor = NEMA17;
 
