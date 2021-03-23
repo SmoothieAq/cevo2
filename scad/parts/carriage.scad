@@ -15,6 +15,7 @@ include <mosquito_fan_duct.scad>
 // skrue til belt, 0.5 længere ned
 // mosquito, de andre skruer, de skrå
 // mosquito anden størrelse (tykkelse og højde), måske også endnu mere plads bag den
+// countersink længere ned
 
 
 *translate([-pos_x,-(pos_y-cw/2-mosquito_hotend_size.y/2-mosquito_hotend_offy),-(xrail_z+ch)])

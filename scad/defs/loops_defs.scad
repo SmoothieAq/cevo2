@@ -19,7 +19,7 @@ rail_y = axrail(MGN12,extr_y_len,MaterialBlackSteel,MGN12H_carriage);
 rail_x = axrail(MGN12,xrail_len,MaterialBlackSteel,MGN12H_carriage);
 
 idler_tubehd = max(pulley_flange_dia(idler), pulley_od(idler) + belt_thickness(belt) * 2) + 3;
-idler_tubed = idler_tubehd + 8;
+idler_tubed = idler_tubehd + 6;
 idler_tubebth = belt_thickness(belt) + 2;
 idler_tubebwh = pulley_height(idler) + 2*washer_thickness(idler_washer);
 

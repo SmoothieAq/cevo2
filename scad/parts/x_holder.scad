@@ -27,7 +27,7 @@ yxbs = [ for (x = [extr_d2,extr_x_len+extr_d2]) [x,pos_y,frame_y_z3] ];
 idlerps = [[loopshp(4),loopslp(8)],[loopshp(8),loopslp(4)]];
 
 idlerScrews = [ for (i = [0:1]) let(
-	screw = axxscrew_setLengAdjustDepth(screwPart,thick=hidlerholder,nut_depth=1.05,nut_plate=0,plate=0,twist=30),
+	screw = axxscrew_setLengAdjustDepth(screwPart,thick=hidlerholder,nut_depth=1.2,nut_plate=0,plate=0,twist=30),
 	pss = [ for (p = idlerps[i]) [p.x,p.y,zidlerholder] ]
 ) [ for (p = pss) axxscrew(screw,t=p,r=[180,0,0]) ] ];
 function x_holder_idler_screws(i) = idlerScrews[i];
@@ -69,7 +69,7 @@ function cut(i,zd) = [ch + part_assemble_nudge-(i*2+1)*xyholder_thick2,-cl/2-cpx
 idler_holderpd = base_part_thick2-7;
 module x_holder_cut(i,zd) {
 	p = idlerps[i][1];
-	translate([p.x-base_part_thick2*2,p.y-base_part_thick2*2,min(p.z+ph/2+iwt, frame_y_z3-extr_d2-idler_holderpd)-0.5+zd])
+	translate([p.x-base_part_thick2*2,p.y-base_part_thick2*2,min(p.z+ph/2+iwt, frame_y_z3-extr_d2-idler_holderpd)-0.9+zd])
 		cube([base_part_thick2*4,base_part_thick2*4,base_part_thick2*3]);
 
 }
@@ -134,7 +134,7 @@ module x_holder(i) {
 			for (l = idlerps[i]) {
 				p = l - y1xb;
 				translate([p.x, p.y, -hidlerholder-didlerholder])
-					cylinder(hidlerholder, d = xyholder_thick2);
+					cylinder(hidlerholder, d = idler_tubed);
 			}
 		}
 		mirror([i,0,0]) {
@@ -146,18 +146,19 @@ module x_holder(i) {
 		for (j = [0:1]) {
 			p = idlerps[i][j] - y1xb;
 			translate(p) {
-				translate([0, 0, - ph / 2 - iwt])
-					cylinder(ph + 2 * iwt, d = max(pulley_flange_dia(idler), pod + bt * 2) + 1);
-				translate([i?-xyholder_thick2:0, ((j?i?1:- 1:i?-1:1) * (pod + bt) - bth)/2, - bwh / 2])
-					cube([xyholder_thick2, bth, bwh]);
-				translate([((i?-1:1)*(-pod - bt) - bth)/2, (j?i?-1:0:i?0:-1)*xyholder_thick2, -bwh / 2])
-					cube([bth, xyholder_thick2, bwh]);
+				phx = 0.4; // extra high hole, because supporters make the surface uneven
+				translate([0, 0, - ph / 2 - iwt - phx/2])
+					cylinder(ph + 2 * iwt + phx, d = idler_tubehd);
+				translate([i?-xyholder_thick2:0, (j?i?1:- 1:i?-1:1) * idler_tubehd/2, -idler_tubebwh / 2])
+					cube([xyholder_thick2, idler_tubebth, idler_tubebwh]);
+				translate([(i?-1:-1)*idler_tubehd/2, (j?i?-1:0:i?0:-1)*xyholder_thick2, -idler_tubebwh / 2])
+					cube([idler_tubebth, xyholder_thick2, idler_tubebwh]);
 			}
 		}
 	}
 }
 
-x_holderL1_stl();
+translate([0,0,20])x_holderL1_stl();
 x_holderL2_stl();
-xxside1(idlerScrews[0]);
-xxside2(idlerScrews[0]);
+//xxside1(idlerScrews[0]);
+//xxside2(idlerScrews[0]);
