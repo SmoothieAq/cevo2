@@ -105,6 +105,8 @@ module x_holder(i) {
 						translate([-1-chc,-xyholder_thick2,-xyholder_thick2-rh2-5])
 							cube([xyholder_thick2*2, xyholder_thick2*2, xyholder_thick2]);
 					}
+				translate([idler_tubed/2.7,-idler_tubed/4, -hidlerholder-didlerholder])
+					cylinder(hidlerholder/3, d = idler_tubed/1.7);
 				difference() {
 					union() {
 						x = ch + part_assemble_nudge - 3;
@@ -149,7 +151,7 @@ module x_holder(i) {
 				phx = 0.4; // extra high hole, because supporters make the surface uneven
 				translate([0, 0, - ph / 2 - iwt - phx/2])
 					cylinder(ph + 2 * iwt + phx, d = idler_tubehd);
-				translate([i?-xyholder_thick2:0, (j?i?1:- 1:i?-1:1) * idler_tubehd/2, -idler_tubebwh / 2])
+				translate([i?-xyholder_thick2:0, (j?i?1:- 1:i?-1:1) * idler_tubehd/2 + (j?0:-1)*idler_tubebth, -idler_tubebwh / 2])
 					cube([xyholder_thick2, idler_tubebth, idler_tubebwh]);
 				translate([(i?-1:-1)*idler_tubehd/2, (j?i?-1:0:i?0:-1)*xyholder_thick2, -idler_tubebwh / 2])
 					cube([idler_tubebth, xyholder_thick2, idler_tubebwh]);
@@ -158,7 +160,7 @@ module x_holder(i) {
 	}
 }
 
-translate([0,0,20])x_holderL1_stl();
+translate([0,0,0])x_holderL1_stl();
 x_holderL2_stl();
 //xxside1(idlerScrews[0]);
 //xxside2(idlerScrews[0]);
