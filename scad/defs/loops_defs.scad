@@ -13,24 +13,24 @@ belt = ["GT_gates", 2.0,  6, 1.55, 0.75, 0.254];// GT2x6; // folded 2.55
 pulley = GT2x20ob_pulley;
 idler = ["GT2_xx","GT2 (2 x F623ZZ flanged + washer 0.8)",0,10,GT2x6,6.8,11.5,0,3,11.5,1.0,0,0,false,0];//2 x 623zz flanged + washer 0.8
 idler_washer = M3_washer_small_thick;
-motor = NEMA17;
+motor = NEMA17M;
 
 rail_y = axrail(MGN12,extr_y_len,MaterialBlackSteel,MGN12H_carriage);
-rail_x = axrail(MGN12,xrail_len,MaterialBlackSteel,MGN12H_carriage);
+rail_x = axrail(MGN9,xrail_len,MaterialBlackSteel,MGN9H_carriage);
 
-idler_tubehd = max(pulley_flange_dia(idler), pulley_od(idler) + belt_thickness(belt) * 2) + 3;
+idler_tubehd = max(pulley_flange_dia(idler), pulley_od(idler) + belt_thickness(belt) * 2) + 4;
 idler_tubed = idler_tubehd + 6;
-idler_tubebth = belt_thickness(belt) + 2;
+idler_tubebth = belt_thickness(belt) + 3;
 idler_tubebwh = pulley_height(idler) + 2*washer_thickness(idler_washer);
 
 loops_side_off = NEMA_width(motor)/2-extr_d2+base_part_thick/2;
 loops_front_off = NEMA_width(motor)/2+extr_d2+motor_nudge;
 loops_back_off = idler_tubehd/2 + extr_d2;//pulley_flange_dia(idler)/2+extr_d2+motor_nudge;
-loops_xoff0 = 11.7;//11;
-loops_xoff1 = 11.7;//11;
+loops_xoff0 = 10.7;//11;
+loops_xoff1 = 10.7;//11;
 
 carriage_loopr = 1.5;
-carriage_loopd = carriage_length(xrail_carriage(rail_x))/2 + 0.4;
+carriage_loopd = carriage_length(xrail_carriage(rail_x))/2 + 1.6;
 carriage_loopdx = carriage_loopd + 7;
 carriage_loopdxx = carriage_loopdx + 9;
 
@@ -92,7 +92,6 @@ loops = let (
 function loopshp(i) = let ( p = loops[0][1][i] ) [p.x,p.y,loops[0][0]];
 function loopslp(i) = let ( p = loops[1][1][i] ) [p.x,p.y,loops[1][0]];
 
-
-
 xyholder_thick1 = base_part_thickx;
 xyholder_thick2 = base_part_thick2x;
+

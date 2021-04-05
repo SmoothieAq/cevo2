@@ -17,11 +17,11 @@ Vitamins:
  e  g  g  e  e  m  e  e  e  m  e  e  e  e  e  m  e  a  d  d  l  d  d  d  a
  d  e  e  1  1  e  2  2  2  e  3  3  3  3  3  e  4  m  e  e  e  s  s  e  i
  1  1  2  0  1  1  0  1  2  2  0  1  2  3  5  3  0  e  l  r  r  1  2  r  n
-  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 2|  |  2 Stepper motor NEMA17 x 47mm
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 2|  |  2 Stepper motor NEMA17 x 40mm
   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 3|  |  |  |  3 Stepper motor NEMA17 x 47mm
   |  |  |  |  |  |  |  |  | 3|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  3 Ball bearing 608-2RS 8mm x 22mm x 7mm
-  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  1 Belt GT_gates2 x 6mm x 1642mm
-  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  1 Belt GT_gates2 x 6mm x 1642mm
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  1 Belt GT_gates2 x 6mm x 1644mm
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  1 Belt GT_gates2 x 6mm x 1644mm
   |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  |  1 Blower Runda RB5015
   |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  |  |  1 BLTouch
  3|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  3 Spring 11.85mm OD, 0.8mm gauge x 37.8mm long, closed end
@@ -38,11 +38,11 @@ Vitamins:
   |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  1 Orbiter Extruder and motor
   |  |  |  |  |  |  |  | 4|  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  8 Pulley GT2 (2 x F623ZZ flanged + washer 0.8) idler smooth 10mm
   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 2|  |  2 Pulley GT2OB 20 teeth
-  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  1 Linear rail MGN12 x 396mm
   |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Linear rail MGN12 x 410mm
+  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  1 Linear rail MGN9 x 396mm
  6|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  6 Smooth rod 2mm x 10mm
   |  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Screw M2.5 cap x 10mm
-  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Screw M2.5 cap x 25mm
+  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Screw M2.5 cap x 30mm
   | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Screw M2.5 dome x 10mm
   |  |  |  |  |  |  | 4|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  4 Screw M3 cap x 10mm
   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  4 Screw M3 cap x 11mm

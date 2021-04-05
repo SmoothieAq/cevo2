@@ -6,32 +6,38 @@ include <../extparts/mosquito_hotend.scad>
 include <../extparts/bltouch.scad>
 include <../extparts/orbiter_extruder.scad>
 include <mosquito_fan_duct.scad>
+include <NopSCADlib/vitamins/tubings.scad>
 
-// pft tube hul lidt størrer
-// belt mere plads
-// belt holdere, bred cylender
-// fan holder, lidt bredere
+// ++pft tube hul lidt størrer
+// ++belt mere plads
+// ++belt holdere, bred cylender
+// ++fan holder, lidt bredere
 // orbiter, venstre hul forkert
-// skrue til belt, 0.5 længere ned
-// mosquito, de andre skruer, de skrå
-// mosquito anden størrelse (tykkelse og højde), måske også endnu mere plads bag den
+// ++skrue til belt, 0.5 længere ned
+// ++mosquito, de andre skruer, de skrå
+// ++mosquito anden størrelse (tykkelse og højde), måske også endnu mere plads bag den
 // countersink længere ned
 
 
-*translate([-pos_x,-(pos_y-cw/2-mosquito_hotend_size.y/2-mosquito_hotend_offy),-(xrail_z+ch)])
-	for (i = [0,1]) {
+*translate([-pos_x,-(pos_y-cw/2-mosquito_hotend_size.y/2-mosquito_hotend_offy),-(xrail_z+ch)]) {
+	for (i = [0, 1]) {
 		loop = loops[i];
 		translate([0, 0, loop.x]) {
 			*for (p = loop.y) if (is_list(p.z))
 				translate([p.x, p.y, 0])
 					#pulley_assembly(p.z);
-			xbelt(belt, loop.y, open=true, auto_twist = true, start_twist = i, tooth_colour = [0.35,0.15,0.18]);
+			belt(belt, loop.y, open = true, auto_twist = true, start_twist = i, tooth_colour = [0.35, 0.15, 0.18]);
 		}
 	}
+	translate([extr_d2-xrail_xoff,pos_y,xrail_z]) {
+		xrail_assembly(rail_x, pos=pos_x-extr_d2+xrail_xoff);
+		translate([xrail_len/2,0,-5]) rotate([0,-90,0]) tubing(CARBONFIBER10, length=xrail_len);
+	}
 
+}
 
 carriage_x = xrail_carriage(rail_x);
-cl = carriage_length(carriage_x);
+cl = carriage_length(MGN12H_carriage);
 cw = carriage_width(carriage_x);
 ch = carriage_height(carriage_x);
 
@@ -56,10 +62,11 @@ carriageScrews = [ for(j = [0:3]) let(
 ) axxscrew_setLeng(screwCarriage,t=pp,thick=platet+5,xnut=false) ];
 function carriage_screws() = carriageScrews;
 
-bltouch_offx = 4;
 bltouch_holderr = bltouch_size.y/2+bltouch_offy/2;
+bltouch_offx = 5.3;
+bltouch_offsy = max(cw/2,20);
 bltouchScrews = [ for(j = [0:1]) let(
-	p = [cl/2+bltouch_offx-j*bltouch_screwp.x*2,mq.y/2+mqo+cw+bltouch_size.y/2+bltouch_offy,platet]
+	p = [cl/2+bltouch_offx-j*bltouch_screwp.x*2,mq.y/2+mqo+bltouch_offsy+bltouch_size.y/2+bltouch_offy,platet]
 ) axxscrew_setLeng(screwCarriage,t=p,thick=platet+bltouch_screw_holdert) ];
 function bltouch_screws() = bltouchScrews;
 
@@ -76,7 +83,7 @@ screwHotend = axscrew(M2p5_dome_screw,material=MaterialBlackSteel);
 hotendScrews = [ for(p = mosquito_hotend_screwps) axxscrew_setLeng(screwHotend,t=p+[0,0,-mosquito_hotend_topt],r=[180,0,0],thick=mosquito_hotend_topt+5) ];
 function hotend_screws() = hotendScrews;
 
-loopScrewHoldert = platet-screw_head_height(screwPart)*1.01;
+loopScrewHoldert = platet-screw_head_height(screwPart)*1.2;
 loopScrews = [ for (i = [1,-1]) let(
 		t = [carriage_loopd*i,carriage_loopy,loopScrewHoldert]
 	) axxscrew_setLengAdjustThick(screwPart, thick=loopScrewHoldert+mq.x, t=t, depth=0, nut_depth=0, twist=30 )];
@@ -90,66 +97,79 @@ module carriage_stl() stl("carriage") {
 			union() {
 				difference() {
 					union() {
-						difference() {
-							translate([-cl/2, -mq.y/2, 0])
-								cube([cl, cw+mqo+mq.y, platet]);
+						difference() { // top plate
+							translate([-cl/2-1, -mq.y/2, 0])
+								cube([cl+2, cw+mqo+mq.y, platet]);
 							for (i = [0, 1]) mirror([i, 0, 0])
 								translate([cl/2-legr, -mq.y/2, 0])
 									rotate([lega, 0, 0]) translate([0, -1, -legl+platet]) cube([legr+1, legr+1, legl]);
 						}
-						for (i = [0, 1]) mirror([i, 0, 0]) {
+						for (i = [0, 1]) mirror([i, 0, 0]) { // pillars to hold belds and fan duct
 							difference() {
 								translate([cl/2-legr*2, -mq.y/2+legr, -mq.x-legr+1])
 									cube([legr*2, mq.y+mqo-legr-part_assemble_nudge, mq.x+legr]);
 								translate([cl/2-legr, -mq.y/2, 0])
 									rotate([lega, 0, 0]) translate([-legr-1, -legr*2, -legl+platet]) cube([legr*2+2, legr*3, legl]);
 							}
-							translate([cl/2-legr, -mq.y/2, 0])
-								rotate([lega, 0, 0]) translate([0, legr, -legl+platet]) cylinder(legl, r = legr);
-							difference() {
+							translate([cl/2-legr+1, -mq.y/2+1-0.5, 0]) // main pilars
+								rotate([lega, 0, 0]) translate([0, legr, -legl+platet]) cylinder(legl, r = legr+0.5);
+							difference() { // belt holders
 								r = carriage_loopr+belt_thickness(belt)+motor_nudge*2;
 								translate([carriage_loopd, carriage_loopy, -loopScrewHolderl+loopScrewHoldert])
 									cylinder(loopScrewHolderl, r = r);
 								for(z = carriage_loopz) translate([carriage_loopd,carriage_loopy,z])
-									cube([r*3,r*3,belt_width(belt)+motor_nudge], center = true);
-								h = ch-carriage_clearance(carriage_x)+part_assemble_nudge;
-								translate([carriage_loopd-r+part_assemble_nudge,mq.y/2+mqo-part_assemble_nudge,-h])
-									cube([r,r,h+part_assemble_nudge]);
+									cube([r*3,r*3,belt_width(belt)+motor_nudge*2], center = true);
+//								h = ch-carriage_clearance(carriage_x)+part_assemble_nudge;
+//								#translate([carriage_loopd-r+part_assemble_nudge,mq.y/2+mqo-part_assemble_nudge,-h])
+//									cube([r,r,h+part_assemble_nudge]);
 							}
 						}
-						difference() {
-							translate([-cl/2+legr, -mq.y/2, 0])
+						difference() { // beam connection the two pilars
+							translate([-cl/2+legr-1, -mq.y/2, 0])
 								rotate([lega, 0, 0]) translate([0, 0, -legl+platet])
-									cube([cl-2*legr, legr*2, legr*2]);
+									cube([cl-2*legr+2, legr*2+2, legr*2]);
 							translate([-cl/2-1, -mq.y/2+motor_nudge, -mq.x-1])
 								cube([cl+2, mq.y, mq.y]);
 						}
-						translate([0, cw+mq.y/2+mqo, 0]) {
-							for (x = [cl/2+bltouch_offx, -cl/2+bltouch_holderr])
-							translate([x, bltouch_holderr-0.1, 0])
-								cylinder(platet, r = bltouch_holderr);
-							translate([-cl/2+bltouch_holderr, -0.1, 0])
-								cube([cl-bltouch_holderr+bltouch_offx, bltouch_holderr*2, platet]);
-							translate([-cl/2, 0, 0])
+						translate([0, bltouch_offsy+mq.y/2+mqo, 0]) { // bltouch holder
+							xb = cl/2+bltouch_offx;
+							for (x = [xb, xb-bltouch_screwp.x*2])
+								translate([x, bltouch_holderr-0.1, 0])
+									cylinder(platet, r = bltouch_holderr);
+							translate([xb-bltouch_screwp.x*2, -0.1, 0])
+								cube([bltouch_screwp.x*2, bltouch_holderr*2, platet]);
+							*translate([-cl/2, 0, 0])
 								cube([bltouch_holderr+0.1, bltouch_holderr+0.1, platet]);
 						}
+						translate([0, cw+mq.y/2+mqo, 0]) { // fan holder holder
+							r = fan_holderw/2+0.5;
+							translate([-cl/2+r, r-0.1, 0])
+								cylinder(platet, r = r);
+							translate([-cl/2+r, -0.1, 0])
+								cube([cl+bltouch_offx-r, r*2, platet]);
+							translate([-cl/2, 0, 0])
+								cube([r+0.1, r+0.1, platet]);
+						}
 					}
+
 					translate([-cl/2-5, -mq.y/2-5, platet])
-						cube([cl+10, cw+mqo+mq.y+10, platet]);
-					translate([-cl/2-1, -mq.y/2-cw, -1])
-						cube([cl+2, cw, platet+10]);
-					translate([-cl/2-1, 2, -mq.x-mq.y])
-						cube([cl+2, mq.y, mq.y]);
-					translate([-cl/2-1, mq.y/2+mqo+3, -mq.x-1])
-						cube([cl+2, mq.y, mq.y]);
+						cube([cl+10, cw+mqo+mq.y+10, platet]); // cut on top
+					translate([-cl/2-4, -mq.y/2-cw, -1])
+						cube([cl+8, cw, platet+10]); // cut on front
+					translate([-cl/2-4, 0, -mq.x-mq.y])
+						cube([cl+8, mq.y+4, mq.y]); // cut on bottom
+					translate([-cl/2-4, mq.y/2+mqo+3+2, -mq.x-1])
+						cube([cl+8, mq.y, mq.y]); // cut on inside
 					xxside1_hole(carriageScrews);
 					xxside1_hole(bltouchScrews);
 					xxside1_hole(fanHolderScrews);
 					xxside1_hole(hotendScrews);
 					xxside2_hole(extruderScrews);
-					translate([0, 0, -1]) xhole(4.1/2, platet+2);
+					translate([0, 0, -1]) xhole(4.3/2, platet+2); // hole for ptf tube for filament
 
 				}
+
+				// holder for the fan duct
 				for (i = [0, 1]) mirror([i, 0, 0]) difference() {
 					dz = cos(lega)*(mq.x-2);
 					dy = sin(lega)*(mq.x-2);
@@ -158,12 +178,12 @@ module carriage_stl() stl("carriage") {
 					p2 = [fan_duct_screwp.y-fan_duct_screw_tapsize.y-part_assemble_nudge/2, spz-fan_duct_screw_tapsize.z*0.2];
 					leg2a = a2(p2-p1);
 					leg2l = len2(p2-p1);
-					x = cl/2-legr-1;
+					x = cl/2-legr-0.1;
 					union() {
 						translate([x, p1.x, p1.y])
 							rotate([leg2a, 0, 0])
 								translate([0, 0, -leg2h/2])
-									cube([leg2w, leg2l+2, leg2h]);
+									cube([leg2w+0.4, leg2l+2, leg2h]);
 						translate([0, -fan_duct_screw_tapsize.y-part_assemble_nudge/2, -mosquito_hotend_fanz])
 							fan_duct_holder();
 					}
@@ -175,22 +195,32 @@ module carriage_stl() stl("carriage") {
 						cube([base_part_thickx*2, base_part_thickx*2, base_part_thickx]);
 
 				}
+//				translate([cl/2-1,mq.y/2+mqo+cw/2+3,0]) {
+//					difference() {
+//						cylinder(40, d = 13);
+//						translate([0,0,platet]) cylinder(42, d = 8);
+//						translate([0,-13/2-1,6.5/2+platet]) rotate([-90,0,0]) cylinder(13/2+1,d=6.5);
+//						translate([5,-6,-1]) cube([5,12,platet+1]);
+//						translate([-10.5,-6,30]) cube([5,12,30]);
+//					}
+//					color("black")difference() {
+//						cylinder(50, d = 7.9);
+//						translate([0,0,-1]) cylinder(52, d = 6.5);
+//					}
+//					translate([-9,0,platet]) screw(M3_cap_screw,4);
+//				}
+
 			}
+
+			// holes for the belts and holes for the screw that holds them
 			xxside1_hole(loopScrews);
 			xxside2_hole(loopScrews);
 			for (i = [0, 1]) mirror([i, 0, 0])
 				for(z = carriage_loopz) translate([carriage_loopd,carriage_loopy,z]) {
-					*cylinder(40, r = carriage_loopr, center = true);
 					r = carriage_loopr+belt_thickness(belt)+motor_nudge;
-					cylinder(belt_width(belt)+motor_nudge, r = r, center = true);
-					*translate([-carriage_loopd+cl/2+r*1.5,0,0]) cube([r*3,r*3,belt_width(belt)+motor_nudge], center = true);
-					*difference() {
-						cylinder(belt_width(belt)+motor_nudge, r = carriage_loopr+belt_thickness(belt)+motor_nudge, center = true);
-						cylinder(belt_width(belt)+motor_nudge*2, r = carriage_loopr, center = true);
-					}
+					cylinder(belt_width(belt)+motor_nudge*2, r = r, center = true);
 				}
 		}
-	*translate([carriage_loopd,carriage_loopy,5]) xscrew(screwPart,l=40);//xnut(M3_nut, twist=30);//xscrew(screwPart,l=40);
 }
 
 module bltouch_at_carriage() {
@@ -211,3 +241,4 @@ translate([0,0,-mosquito_hotend_fanz]) {
 	*mosquito_fan_duct_stl();
 	*fan_holder(xxscrew_translate(fanHolderScrews[0])+[0,0,mosquito_hotend_fanz-platet],-fanholderd);
 }
+*translate([0,0,carriage_platet()]) orbiter_extruder();

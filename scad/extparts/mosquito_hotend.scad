@@ -1,10 +1,12 @@
 include <NopSCADlib/core.scad>
 
-mosquito_hotend_offy = 3;
-mosquito_hotend_size = [25,13,41]; // clone [25,14,41,6]
+mosquito_hotend_offy = 1;
+mosquito_hotend_size = [25,14,41,6]; // clone, original is [25,13,41]
 mosquito_hotend_topt = 3.8;
 mosquito_hotend_fanz = 44;
-mosquito_hotend_screwps = [[-6,0,0],[6,0,0]];
+//mosquito_hotend_screwps = [[-6,0,0],[6,0,0]];
+sd = sin(45)*4.5;
+mosquito_hotend_screwps = [[-sd,-sd,0],[sd,sd,0]];
 mosquito_hotend_fan_screwps = [[-10,-6.5,-2.5],[10,-6.5,-2.5]];
 
 module mosquito_hotend() {

@@ -397,7 +397,6 @@ ECHO: "~rod(2, 10): Smooth rod 2mm x 10mm"
 ECHO: "~washer(M2_washer): Washer  M2 x 5mm x 0.3mm"
 ECHO: "~washer(M2_washer): Washer  M2 x 5mm x 0.3mm"
 ECHO: "~leadnut(LSN8x2): Leadscrew nut 8 x 2"
-DEPRECATED: Using ranges of the form [begin:end] with begin value greater than the end value is deprecated in file thread.scad, line 130
 ECHO: "~comp_spring(leadnut spring, 18.9): Spring 11.85mm OD, 0.8mm gauge x 37.8mm long, closed end"
 ECHO: "setLengAdjustThick", "M3_cap", thick = 13.3333, leng = 13.9333, xleng = 12, xthick = 11.4
 ECHO: "setLengAdjustThick", "M3_cap", thick = 13.3333, leng = 13.9333, xleng = 12, xthick = 11.4
@@ -776,7 +775,7 @@ ECHO: "~}frame10_assembly"
 ECHO: "setLengAdjustDepth", "M4_dome", thick = 7, leng = 10.6, lengMin = 4.075, lengMax = 12.795, xleng = 12, xlengMin = 5, xxleng = 12, aleng1 = -1.4, aleng2 = -0.545, dd0 = [0, 0], ddmin = [-0.2, -0.2], ddmax = [0, 1.2], dd1 = [0, 1.2], dd2 = [0, -0.545], dd3 = [0, -0.121111], dd4 = [0, -0.121111]
 ECHO: "setLengAdjustDepth", "M4_dome", thick = 7, leng = 10.6, lengMin = 4.075, lengMax = 12.795, xleng = 12, xlengMin = 5, xxleng = 12, aleng1 = -1.4, aleng2 = -0.545, dd0 = [0, 0], ddmin = [-0.2, -0.2], ddmax = [0, 1.2], dd1 = [0, 1.2], dd2 = [0, -0.545], dd3 = [0, -0.121111], dd4 = [0, -0.121111]
 ECHO: "~loops_motor_holder_assembly(zoomed = 3){"
-ECHO: "~NEMA(NEMA17): Stepper motor NEMA17 x 47mm"
+ECHO: "~NEMA(NEMA17M): Stepper motor NEMA17 x 40mm"
 ECHO: "~pulley(GT2x20ob_pulley): Pulley GT2OB 20 teeth"
 ECHO: "~screw(M3_grub_screw, 6): Screw M3 grub x  6mm"
 ECHO: "~screw(M3_grub_screw, 6): Screw M3 grub x  6mm"
@@ -785,7 +784,7 @@ ECHO: "~screw(M3_cap_screw, 14): Screw M3 cap x 14mm"
 ECHO: "~screw(M3_cap_screw, 11): Screw M3 cap x 11mm"
 ECHO: "~screw(M3_cap_screw, 14): Screw M3 cap x 14mm"
 ECHO: "~screw(M3_cap_screw, 11): Screw M3 cap x 11mm"
-ECHO: "~NEMA(NEMA17): Stepper motor NEMA17 x 47mm"
+ECHO: "~NEMA(NEMA17M): Stepper motor NEMA17 x 40mm"
 ECHO: "~pulley(GT2x20ob_pulley): Pulley GT2OB 20 teeth"
 ECHO: "~screw(M3_grub_screw, 6): Screw M3 grub x  6mm"
 ECHO: "~screw(M3_grub_screw, 6): Screw M3 grub x  6mm"
@@ -825,8 +824,8 @@ ECHO: "~screw(M3_cap_screw, 5): Screw M3 cap x  5mm"
 ECHO: "~screw(M3_cap_screw, 5): Screw M3 cap x  5mm"
 ECHO: "~screw(M3_cap_screw, 5): Screw M3 cap x  5mm"
 ECHO: "~}frame20_assembly"
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 10, xleng = 10, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
@@ -838,8 +837,8 @@ ECHO: "setLeng", "M3_cap", thick = 10, xleng = 10, head_leng = -0.6, fastner_len
 ECHO: "setLengAdjustDepth", "M3_cap", thick = 17.5, leng = 17.86, lengMin = 12.64, lengMax = 20.956, xleng = 20, xlengMin = 16, xxleng = 16, aleng1 = 1.86, aleng2 = 1.02, dd0 = [0.2, 0.4], ddmin = [-0.2, -0.2], ddmax = [1.1, 1.2], dd1 = [0.4, 0.6], dd2 = [0.408, 0.612], dd3 = [0.136, 0.255], dd4 = [0.336, 0.655]
 ECHO: "setLengAdjustDepth", "M3_cap", thick = 17.5, leng = 17.86, lengMin = 12.64, lengMax = 20.956, xleng = 20, xlengMin = 16, xxleng = 16, aleng1 = 1.86, aleng2 = 1.02, dd0 = [0.2, 0.4], ddmin = [-0.2, -0.2], ddmax = [1.1, 1.2], dd1 = [0.4, 0.6], dd2 = [0.408, 0.612], dd3 = [0.136, 0.255], dd4 = [0.336, 0.655]
 ECHO: "~x_holderL1.stl(colour='[0, 0.572549, 0]')"
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 10, xleng = 10, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
@@ -854,8 +853,8 @@ ECHO: n = "M3_nut", s = [3, 2, 5]
 ECHO: "~nut(M3_nut): Nut M3 x 2.4mm "
 ECHO: n = "M3_nut", s = [3, 2, 5]
 ECHO: "~nut(M3_nut): Nut M3 x 2.4mm "
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 10, xleng = 10, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
@@ -870,8 +869,8 @@ ECHO: "~screw(M3_cap_screw, 12): Screw M3 cap x 12mm"
 ECHO: "~screw(M3_cap_screw, 10): Screw M3 cap x 10mm"
 ECHO: "~screw(M3_cap_screw, 12): Screw M3 cap x 12mm"
 ECHO: "~screw(M3_cap_screw, 10): Screw M3 cap x 10mm"
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 10, xleng = 10, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
@@ -883,8 +882,8 @@ ECHO: "setLeng", "M3_cap", thick = 10, xleng = 10, head_leng = -0.6, fastner_len
 ECHO: "setLengAdjustDepth", "M3_cap", thick = 17.5, leng = 17.86, lengMin = 12.64, lengMax = 20.956, xleng = 20, xlengMin = 16, xxleng = 16, aleng1 = 1.86, aleng2 = 1.02, dd0 = [0.2, 0.4], ddmin = [-0.2, -0.2], ddmax = [1.1, 1.2], dd1 = [0.4, 0.6], dd2 = [0.408, 0.612], dd3 = [0.136, 0.255], dd4 = [0.336, 0.655]
 ECHO: "setLengAdjustDepth", "M3_cap", thick = 17.5, leng = 17.86, lengMin = 12.64, lengMax = 20.956, xleng = 20, xlengMin = 16, xxleng = 16, aleng1 = 1.86, aleng2 = 1.02, dd0 = [0.2, 0.4], ddmin = [-0.2, -0.2], ddmax = [1.1, 1.2], dd1 = [0.4, 0.6], dd2 = [0.408, 0.612], dd3 = [0.136, 0.255], dd4 = [0.336, 0.655]
 ECHO: "~x_holderR1.stl(colour='[0, 0.572549, 0]')"
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 10, xleng = 10, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
@@ -899,8 +898,8 @@ ECHO: n = "M3_nut", s = [3, 2, 5]
 ECHO: "~nut(M3_nut): Nut M3 x 2.4mm "
 ECHO: n = "M3_nut", s = [3, 2, 5]
 ECHO: "~nut(M3_nut): Nut M3 x 2.4mm "
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 10, xleng = 10, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
@@ -916,8 +915,8 @@ ECHO: "~screw(M3_cap_screw, 10): Screw M3 cap x 10mm"
 ECHO: "~screw(M3_cap_screw, 12): Screw M3 cap x 12mm"
 ECHO: "~screw(M3_cap_screw, 10): Screw M3 cap x 10mm"
 ECHO: "~}frame21_assembly"
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 10, xleng = 10, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
@@ -929,8 +928,8 @@ ECHO: "setLeng", "M3_cap", thick = 10, xleng = 10, head_leng = -0.6, fastner_len
 ECHO: "setLengAdjustDepth", "M3_cap", thick = 17.5, leng = 17.86, lengMin = 12.64, lengMax = 20.956, xleng = 20, xlengMin = 16, xxleng = 16, aleng1 = 1.86, aleng2 = 1.02, dd0 = [0.2, 0.4], ddmin = [-0.2, -0.2], ddmax = [1.1, 1.2], dd1 = [0.4, 0.6], dd2 = [0.408, 0.612], dd3 = [0.136, 0.255], dd4 = [0.336, 0.655]
 ECHO: "setLengAdjustDepth", "M3_cap", thick = 17.5, leng = 17.86, lengMin = 12.64, lengMax = 20.956, xleng = 20, xlengMin = 16, xxleng = 16, aleng1 = 1.86, aleng2 = 1.02, dd0 = [0.2, 0.4], ddmin = [-0.2, -0.2], ddmax = [1.1, 1.2], dd1 = [0.4, 0.6], dd2 = [0.408, 0.612], dd3 = [0.136, 0.255], dd4 = [0.336, 0.655]
 ECHO: "~x_holderL2.stl(colour='[0, 0.572549, 0]')"
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 10, xleng = 10, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
@@ -943,8 +942,8 @@ ECHO: "setLengAdjustDepth", "M3_cap", thick = 17.5, leng = 17.86, lengMin = 12.6
 ECHO: "setLengAdjustDepth", "M3_cap", thick = 17.5, leng = 17.86, lengMin = 12.64, lengMax = 20.956, xleng = 20, xlengMin = 16, xxleng = 16, aleng1 = 1.86, aleng2 = 1.02, dd0 = [0.2, 0.4], ddmin = [-0.2, -0.2], ddmax = [1.1, 1.2], dd1 = [0.4, 0.6], dd2 = [0.408, 0.612], dd3 = [0.136, 0.255], dd4 = [0.336, 0.655]
 ECHO: "~screw(M3_cap_screw, 30): Screw M3 cap x 30mm"
 ECHO: "~screw(M3_cap_screw, 30): Screw M3 cap x 30mm"
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 10, xleng = 10, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
@@ -956,8 +955,8 @@ ECHO: "setLeng", "M3_cap", thick = 10, xleng = 10, head_leng = -0.6, fastner_len
 ECHO: "setLengAdjustDepth", "M3_cap", thick = 17.5, leng = 17.86, lengMin = 12.64, lengMax = 20.956, xleng = 20, xlengMin = 16, xxleng = 16, aleng1 = 1.86, aleng2 = 1.02, dd0 = [0.2, 0.4], ddmin = [-0.2, -0.2], ddmax = [1.1, 1.2], dd1 = [0.4, 0.6], dd2 = [0.408, 0.612], dd3 = [0.136, 0.255], dd4 = [0.336, 0.655]
 ECHO: "setLengAdjustDepth", "M3_cap", thick = 17.5, leng = 17.86, lengMin = 12.64, lengMax = 20.956, xleng = 20, xlengMin = 16, xxleng = 16, aleng1 = 1.86, aleng2 = 1.02, dd0 = [0.2, 0.4], ddmin = [-0.2, -0.2], ddmax = [1.1, 1.2], dd1 = [0.4, 0.6], dd2 = [0.408, 0.612], dd3 = [0.136, 0.255], dd4 = [0.336, 0.655]
 ECHO: "~screw(M3_cap_screw, 16): Screw M3 cap x 16mm"
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 10, xleng = 10, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
@@ -969,8 +968,8 @@ ECHO: "setLeng", "M3_cap", thick = 10, xleng = 10, head_leng = -0.6, fastner_len
 ECHO: "setLengAdjustDepth", "M3_cap", thick = 17.5, leng = 17.86, lengMin = 12.64, lengMax = 20.956, xleng = 20, xlengMin = 16, xxleng = 16, aleng1 = 1.86, aleng2 = 1.02, dd0 = [0.2, 0.4], ddmin = [-0.2, -0.2], ddmax = [1.1, 1.2], dd1 = [0.4, 0.6], dd2 = [0.408, 0.612], dd3 = [0.136, 0.255], dd4 = [0.336, 0.655]
 ECHO: "setLengAdjustDepth", "M3_cap", thick = 17.5, leng = 17.86, lengMin = 12.64, lengMax = 20.956, xleng = 20, xlengMin = 16, xxleng = 16, aleng1 = 1.86, aleng2 = 1.02, dd0 = [0.2, 0.4], ddmin = [-0.2, -0.2], ddmax = [1.1, 1.2], dd1 = [0.4, 0.6], dd2 = [0.408, 0.612], dd3 = [0.136, 0.255], dd4 = [0.336, 0.655]
 ECHO: "~x_holderR2.stl(colour='[0, 0.572549, 0]')"
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 10, xleng = 10, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
@@ -983,8 +982,8 @@ ECHO: "setLengAdjustDepth", "M3_cap", thick = 17.5, leng = 17.86, lengMin = 12.6
 ECHO: "setLengAdjustDepth", "M3_cap", thick = 17.5, leng = 17.86, lengMin = 12.64, lengMax = 20.956, xleng = 20, xlengMin = 16, xxleng = 16, aleng1 = 1.86, aleng2 = 1.02, dd0 = [0.2, 0.4], ddmin = [-0.2, -0.2], ddmax = [1.1, 1.2], dd1 = [0.4, 0.6], dd2 = [0.408, 0.612], dd3 = [0.136, 0.255], dd4 = [0.336, 0.655]
 ECHO: "~screw(M3_cap_screw, 30): Screw M3 cap x 30mm"
 ECHO: "~screw(M3_cap_screw, 30): Screw M3 cap x 30mm"
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 10, xleng = 10, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
@@ -996,8 +995,8 @@ ECHO: "setLeng", "M3_cap", thick = 10, xleng = 10, head_leng = -0.6, fastner_len
 ECHO: "setLengAdjustDepth", "M3_cap", thick = 17.5, leng = 17.86, lengMin = 12.64, lengMax = 20.956, xleng = 20, xlengMin = 16, xxleng = 16, aleng1 = 1.86, aleng2 = 1.02, dd0 = [0.2, 0.4], ddmin = [-0.2, -0.2], ddmax = [1.1, 1.2], dd1 = [0.4, 0.6], dd2 = [0.408, 0.612], dd3 = [0.136, 0.255], dd4 = [0.336, 0.655]
 ECHO: "setLengAdjustDepth", "M3_cap", thick = 17.5, leng = 17.86, lengMin = 12.64, lengMax = 20.956, xleng = 20, xlengMin = 16, xxleng = 16, aleng1 = 1.86, aleng2 = 1.02, dd0 = [0.2, 0.4], ddmin = [-0.2, -0.2], ddmax = [1.1, 1.2], dd1 = [0.4, 0.6], dd2 = [0.408, 0.612], dd3 = [0.136, 0.255], dd4 = [0.336, 0.655]
 ECHO: "~screw(M3_cap_screw, 16): Screw M3 cap x 16mm"
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 10, xleng = 10, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
@@ -1014,8 +1013,8 @@ ECHO: "~washer(M3_washer): Washer  M3 x 6mm x 1mm"
 ECHO: "~washer(M3_washer): Washer  M3 x 6mm x 1mm"
 ECHO: "~pulley(GT2_xx): Pulley GT2 (2 x F623ZZ flanged + washer 0.8) idler smooth 10mm"
 ECHO: "~washer(M3_washer): Washer  M3 x 6mm x 1mm"
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 10, xleng = 10, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
@@ -1032,9 +1031,9 @@ ECHO: "~washer(M3_washer): Washer  M3 x 6mm x 1mm"
 ECHO: "~washer(M3_washer): Washer  M3 x 6mm x 1mm"
 ECHO: "~pulley(GT2_xx): Pulley GT2 (2 x F623ZZ flanged + washer 0.8) idler smooth 10mm"
 ECHO: "~washer(M3_washer): Washer  M3 x 6mm x 1mm"
-ECHO: "~rail(MGN12, 396): Linear rail MGN12 x 396mm"
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
+ECHO: "~rail(MGN9, 396): Linear rail MGN9 x 396mm"
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 10, xleng = 10, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
@@ -1047,8 +1046,8 @@ ECHO: "setLengAdjustDepth", "M3_cap", thick = 17.5, leng = 17.86, lengMin = 12.6
 ECHO: "setLengAdjustDepth", "M3_cap", thick = 17.5, leng = 17.86, lengMin = 12.64, lengMax = 20.956, xleng = 20, xlengMin = 16, xxleng = 16, aleng1 = 1.86, aleng2 = 1.02, dd0 = [0.2, 0.4], ddmin = [-0.2, -0.2], ddmax = [1.1, 1.2], dd1 = [0.4, 0.6], dd2 = [0.408, 0.612], dd3 = [0.136, 0.255], dd4 = [0.336, 0.655]
 ECHO: n = "M3_nut", s = [3, 2, 5]
 ECHO: "~nut(M3_nut): Nut M3 x 2.4mm "
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
-ECHO: "setLengAdjustDepth", "M3_cap", thick = 30.3, leng = 29.1, lengMin = 25.44, lengMax = 30.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.9, aleng2 = -0.444, dd0 = [0.2, 1.05], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.9, 0.15], dd2 = [-0.380571, -0.0634286], dd3 = [-0.126857, -0.0264286], dd4 = [0.0731429, 1.02357]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
+ECHO: "setLengAdjustDepth", "M3_cap", thick = 31.3, leng = 29.74, lengMin = 26.44, lengMax = 31.876, xleng = 30, xlengMin = 30, xxleng = 30, aleng1 = -0.26, aleng2 = 0, dd0 = [0.2, 1.2], ddmin = [-0.2, 1], ddmax = [1.1, 1.2], dd1 = [0.4, 0.2], dd2 = [0, 0], dd3 = [0, 0], dd4 = [0.2, 1.2]
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 10, xleng = 10, head_leng = -0.6, fastner_leng = 0
 ECHO: "setLeng", "M3_cap", thick = 11.5, xleng = 12, head_leng = -0.6, fastner_leng = 0
@@ -1062,8 +1061,8 @@ ECHO: "setLengAdjustDepth", "M3_cap", thick = 17.5, leng = 17.86, lengMin = 12.6
 ECHO: n = "M3_nut", s = [3, 2, 5]
 ECHO: "~nut(M3_nut): Nut M3 x 2.4mm "
 ECHO: "~}frame22_assembly"
-ECHO: "setLeng", "M2p5_cap", thick = 23, xleng = 25, head_leng = 0, fastner_leng = 1.21
-ECHO: "setLeng", "M2p5_cap", thick = 23, xleng = 25, head_leng = 0, fastner_leng = 1.21
+ECHO: "setLeng", "M2p5_cap", thick = 24, xleng = 30, head_leng = 0, fastner_leng = 1.21
+ECHO: "setLeng", "M2p5_cap", thick = 24, xleng = 30, head_leng = 0, fastner_leng = 1.21
 ECHO: "~carriage2_assembly{"
 ECHO: "~carriage1_assembly{"
 ECHO: "setLeng", "M2p5_cap", thick = 7.4, xleng = 10, head_leng = 0, fastner_leng = 1.21
@@ -1081,8 +1080,8 @@ ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_len
 ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_leng = 3.19
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
 ECHO: "~carriage.stl(colour='[0, 0.572549, 0]')"
 ECHO: "setLeng", "M2p5_cap", thick = 7.4, xleng = 10, head_leng = 0, fastner_leng = 1.21
 ECHO: "setLeng", "M2p5_cap", thick = 7.4, xleng = 10, head_leng = 0, fastner_leng = 1.21
@@ -1099,8 +1098,8 @@ ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_len
 ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_leng = 3.19
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
 ECHO: n = "M2p5_nut", s = [5, 4, 7]
 ECHO: "~nut(M2p5_nut): Nut M2.5 x 2.2mm "
 ECHO: n = "M2p5_nut", s = [5, 4, 7]
@@ -1121,14 +1120,14 @@ ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_len
 ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_leng = 3.19
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
 ECHO: "~screw(M2p5_dome_screw, 10): Screw M2.5 dome x 10mm"
 ECHO: "~screw(M2p5_dome_screw, 10): Screw M2.5 dome x 10mm"
 ECHO: "~}carriage1_assembly"
 ECHO: "~fan(fan25.4x10): Fan 25.4mm x 10mm"
-ECHO: "~screw(M2p5_cap_screw, 25): Screw M2.5 cap x 25mm"
-ECHO: "~screw(M2p5_cap_screw, 25): Screw M2.5 cap x 25mm"
+ECHO: "~screw(M2p5_cap_screw, 30): Screw M2.5 cap x 30mm"
+ECHO: "~screw(M2p5_cap_screw, 30): Screw M2.5 cap x 30mm"
 ECHO: n = "M2p5_nut", s = [5, 4, 7]
 ECHO: "~nut(M2p5_nut): Nut M2.5 x 2.2mm "
 ECHO: n = "M2p5_nut", s = [5, 4, 7]
@@ -1149,8 +1148,8 @@ ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_len
 ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_leng = 3.19
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
 ECHO: "~screw(M3_cs_cap_screw, 12): Screw M3 cs cap x 12mm"
 ECHO: "~screw(M3_cs_cap_screw, 12): Screw M3 cs cap x 12mm"
 ECHO: "~screw(M3_cs_cap_screw, 12): Screw M3 cs cap x 12mm"
@@ -1170,8 +1169,8 @@ ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_len
 ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_leng = 3.19
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
 ECHO: "~screw(M3_cap_screw, 30): Screw M3 cap x 30mm"
 ECHO: "~screw(M3_cap_screw, 30): Screw M3 cap x 30mm"
 ECHO: "setLeng", "M2p5_cap", thick = 7.4, xleng = 10, head_leng = 0, fastner_leng = 1.21
@@ -1189,8 +1188,8 @@ ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_len
 ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_leng = 3.19
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
 ECHO: n = "M3_nut", s = [3, 2, 5]
 ECHO: "~nut(M3_nut): Nut M3 x 2.4mm "
 ECHO: n = "M3_nut", s = [3, 2, 5]
@@ -1211,8 +1210,8 @@ ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_len
 ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_leng = 3.19
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
 ECHO: "~mosquito_fan_duct.stl(colour='[0, 0.572549, 0]')"
 ECHO: "setLeng", "M2p5_cap", thick = 7.4, xleng = 10, head_leng = 0, fastner_leng = 1.21
 ECHO: "setLeng", "M2p5_cap", thick = 7.4, xleng = 10, head_leng = 0, fastner_leng = 1.21
@@ -1229,8 +1228,8 @@ ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_len
 ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_leng = 3.19
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
 ECHO: "~screw(M2p5_cap_screw, 10): Screw M2.5 cap x 10mm"
 ECHO: "~screw(M2p5_cap_screw, 10): Screw M2.5 cap x 10mm"
 ECHO: "setLeng", "M2p5_cap", thick = 7.4, xleng = 10, head_leng = 0, fastner_leng = 1.21
@@ -1248,8 +1247,8 @@ ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_len
 ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_leng = 3.19
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
 ECHO: n = "M2p5_nut", s = [5, 4, 7]
 ECHO: "~nut(M2p5_nut): Nut M2.5 x 2.2mm "
 ECHO: n = "M2p5_nut", s = [5, 4, 7]
@@ -1269,8 +1268,8 @@ ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_len
 ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_leng = 3.19
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
 ECHO: "~fan_holder_at_carriage.stl(colour='[0, 0.572549, 0]')"
 ECHO: "setLeng", "M2p5_cap", thick = 7.4, xleng = 10, head_leng = 0, fastner_leng = 1.21
 ECHO: "setLeng", "M2p5_cap", thick = 7.4, xleng = 10, head_leng = 0, fastner_leng = 1.21
@@ -1287,8 +1286,8 @@ ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_len
 ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_leng = 3.19
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
 ECHO: "~screw(M3_cs_cap_screw, 12): Screw M3 cs cap x 12mm"
 ECHO: "~screw(M3_cs_cap_screw, 12): Screw M3 cs cap x 12mm"
 ECHO: "setLeng", "M2p5_cap", thick = 7.4, xleng = 10, head_leng = 0, fastner_leng = 1.21
@@ -1306,8 +1305,8 @@ ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_len
 ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_leng = 3.19
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
 ECHO: n = "M3_nut", s = [3, 2, 5]
 ECHO: "~nut(M3_nut): Nut M3 x 2.4mm "
 ECHO: n = "M3_nut", s = [3, 2, 5]
@@ -1328,8 +1327,8 @@ ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_len
 ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_leng = 3.19
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
 ECHO: "~screw(M3_cs_cap_screw, 10): Screw M3 cs cap x 10mm"
 ECHO: "~screw(M3_cs_cap_screw, 10): Screw M3 cs cap x 10mm"
 ECHO: "setLeng", "M2p5_cap", thick = 7.4, xleng = 10, head_leng = 0, fastner_leng = 1.21
@@ -1347,8 +1346,8 @@ ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_len
 ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_leng = 3.19
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
 ECHO: "~bltouch(): BLTouch"
 ECHO: "setLeng", "M2p5_cap", thick = 7.4, xleng = 10, head_leng = 0, fastner_leng = 1.21
 ECHO: "setLeng", "M2p5_cap", thick = 7.4, xleng = 10, head_leng = 0, fastner_leng = 1.21
@@ -1365,8 +1364,8 @@ ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_len
 ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_leng = 3.19
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
 ECHO: n = "M3_nut", s = [3, 2, 5]
 ECHO: "~nut(M3_nut): Nut M3 x 2.4mm "
 ECHO: n = "M3_nut", s = [3, 2, 5]
@@ -1387,8 +1386,8 @@ ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_len
 ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_leng = 3.19
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
 ECHO: "~screw(M3_cap_screw, 25): Screw M3 cap x 25mm"
 ECHO: "setLeng", "M2p5_cap", thick = 7.4, xleng = 10, head_leng = 0, fastner_leng = 1.21
 ECHO: "setLeng", "M2p5_cap", thick = 7.4, xleng = 10, head_leng = 0, fastner_leng = 1.21
@@ -1405,8 +1404,8 @@ ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_len
 ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_leng = 3.19
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
 ECHO: "~blower(RB5015): Blower Runda RB5015"
 ECHO: "setLeng", "M2p5_cap", thick = 7.4, xleng = 10, head_leng = 0, fastner_leng = 1.21
 ECHO: "setLeng", "M2p5_cap", thick = 7.4, xleng = 10, head_leng = 0, fastner_leng = 1.21
@@ -1423,8 +1422,8 @@ ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_len
 ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_leng = 3.19
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
 ECHO: n = "M3_nut", s = [3, 2, 5]
 ECHO: "~nut(M3_nut): Nut M3 x 2.4mm "
 ECHO: "~}frame33_assembly"
@@ -1443,8 +1442,8 @@ ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_len
 ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_leng = 3.19
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
 ECHO: "~insert(F1BM3): Heatfit insert M3"
 ECHO: "~insert(F1BM3): Heatfit insert M3"
 ECHO: "setLeng", "M2p5_cap", thick = 7.4, xleng = 10, head_leng = 0, fastner_leng = 1.21
@@ -1462,8 +1461,8 @@ ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_len
 ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_leng = 3.19
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
 ECHO: "~orbiter_extruder(): Orbiter Extruder and motor"
 ECHO: "setLeng", "M2p5_cap", thick = 7.4, xleng = 10, head_leng = 0, fastner_leng = 1.21
 ECHO: "setLeng", "M2p5_cap", thick = 7.4, xleng = 10, head_leng = 0, fastner_leng = 1.21
@@ -1480,12 +1479,12 @@ ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_len
 ECHO: "setLeng", "M3_cap", thick = 4.5, xleng = 8, head_leng = -0.6, fastner_leng = 3.19
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
 ECHO: "setLeng", "M2p5_dome", thick = 8.8, xleng = 10, head_leng = 0, fastner_leng = 0.33
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
-ECHO: "setLengAdjustThick", "M3_cap", thick = 28.97, leng = 31.13, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
+ECHO: "setLengAdjustThick", "M3_cap", thick = 28.4, leng = 30.56, xleng = 30, xthick = 27.84
 ECHO: "~screw(M3_cap_screw, 8): Screw M3 cap x  8mm"
 ECHO: "~screw(M3_cap_screw, 8): Screw M3 cap x  8mm"
 ECHO: "~}frame35_assembly"
-ECHO: "~belt(GT_gates2x6, [[137.9, 169.512, 0], [146.9, 171.512, -2], [153.9, 168.254, 2.504], [146.9, 166.254, -2], [20.0622, 162.708, -5.546], [8.15, 36.65, 6.3662], [8.15, 416.95, 6.004], [429.938, 416.95, 6.004], [429.938, 173.8, 6.004], [207.1, 170.254, 2], [200.1, 168.254, -2.504], [207.1, 164.996, 2], [216.1, 166.996, 0]]): Belt GT_gates2 x 6mm x 1642mm"
-ECHO: "~belt(GT_gates2x6, [[216.1, 169.512, 0], [207.1, 171.512, 2], [200.1, 168.254, -2.504], [207.1, 166.254, 2], [429.938, 162.708, 5.546], [441.85, 36.65, -6.3662], [441.85, 416.95, -6.004], [20.0622, 416.95, -6.004], [20.0622, 173.8, -6.004], [146.9, 170.254, -2], [153.9, 168.254, 2.504], [146.9, 164.996, -2], [137.9, 166.996, 0]]): Belt GT_gates2 x 6mm x 1642mm"
+ECHO: "~belt(GT_gates2x6, [[138.65, 170.512, 0], [147.65, 172.512, -2], [154.65, 169.254, 2.504], [147.65, 167.254, -2], [20.0622, 163.708, -5.546], [8.15, 36.65, 6.3662], [8.15, 416.95, 6.004], [429.938, 416.95, 6.004], [429.938, 174.8, 6.004], [206.35, 171.254, 2], [199.35, 169.254, -2.504], [206.35, 165.996, 2], [215.35, 167.996, 0]]): Belt GT_gates2 x 6mm x 1644mm"
+ECHO: "~belt(GT_gates2x6, [[215.35, 170.512, 0], [206.35, 172.512, 2], [199.35, 169.254, -2.504], [206.35, 167.254, 2], [429.938, 163.708, 5.546], [441.85, 36.65, -6.3662], [441.85, 416.95, -6.004], [20.0622, 416.95, -6.004], [20.0622, 174.8, -6.004], [147.65, 171.254, -2], [154.65, 169.254, 2.504], [147.65, 165.996, -2], [138.65, 167.996, 0]]): Belt GT_gates2 x 6mm x 1644mm"
 ECHO: "~}frame40_assembly"
 ECHO: "~}main_assembly"

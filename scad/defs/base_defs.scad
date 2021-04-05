@@ -28,10 +28,12 @@ frame_y_z1 = 164+extr_z_bracket_thick-extr_d2;
 frame_y_z3 = extr_z_len+extr_z_bracket_thick-extr_d2;
 frame_y_z2 = frame_y_z3-112;
 
-xrail_xoff = -12;
-xrail_zoff = 32/*28*/;
+xrail_zoff = 33/*28*/;
 xrail_z = frame_y_z3-xrail_zoff;
-xrail_len = extr_x_len+2*xrail_xoff;
+xrail_len = 400;
+xrail_xoff = (xrail_len-extr_x_len)/2;
+//xrail_xoff = -12;
+//xrail_len = extr_x_len+2*xrail_xoff;
 
 pos_z = xrail_z-29;
 

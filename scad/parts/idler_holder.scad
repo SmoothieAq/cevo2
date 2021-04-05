@@ -83,11 +83,11 @@ module idler_holderL2_stl() stl("idler_holderL2") idler_holder2(0);
 module idler_holderR1_stl() stl("idler_holderR1") idler_holder1(1);
 module idler_holderR2_stl() stl("idler_holderR2") idler_holder2(1);
 translate([0,0,20]) {
-//	idler_holderR2_stl();
-	translate([0, 0, 0])idler_holderL2_stl();
+	idler_holderR2_stl();
+//	translate([0, 0, 0])idler_holderL2_stl();
 }
-//idler_holderR1_stl();
-translate([0,0,0])idler_holderL1_stl();
+idler_holderR1_stl();
+//translate([0,0,0])idler_holderL1_stl();
 //for (i=[0,1])xxside1(idlerHolderScrews[i]);
 
 module idler_holder_cut(i,zd) {
@@ -143,8 +143,19 @@ module idler_holder(i) {
 					cube([idler_tubebth, idler_tubed, idler_tubebwh]);
 			}
 		}
+		if (i == 0) {
+			translate(idlerps[0][0]) rotate([0, 0, -15]) {// extra space for twisted belt
+				translate([-idler_tubehd/2, -idler_tubed, -idler_tubebwh/2])
+					#cube([idler_tubebth, idler_tubed, idler_tubebwh]);
+			}
+		} else {
+			translate(idlerps[1][1]) rotate([0, 0, -75]) {// extra space for twisted belt
+				translate([0, idler_tubehd/2-idler_tubebth, -idler_tubebwh/2])
+					cube([idler_tubed*2, idler_tubebth, idler_tubebwh]);
+			}
+		}
 		p = i?frame_p3:frame_p2;
 		translate([p.x-extr_d2,p.y-extr_d2-0.01,loops[1][0]-base_part_thick2])
-			cube([extr_d,extr_d,base_part_thick2*6]);
+			cube([extr_d,extr_d,base_part_thick2*6]); // cut for extruder
 	}
 }

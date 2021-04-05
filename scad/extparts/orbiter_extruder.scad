@@ -1,6 +1,6 @@
 include <NopSCADlib/core.scad>
 
-orbiter_extruder_screwps = [[-16.5,1,4.5],[18,6,4.5]];
+orbiter_extruder_screwps = [[-16.5,-1,4.5],[18,6,4.5]];
 
 module orbiter_extruder() {
 	vitamin("orbiter_extruder(): Orbiter Extruder and motor");
