@@ -184,8 +184,16 @@
             }
         },
         "printed": {
-            "leads_motor_holder.stl": {
-                "count": 3,
+            "leads_motor_holderL.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "leads_motor_holderB.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "leads_motor_holderF.stl": {
+                "count": 1,
                 "colour": "[0, 0.572549, 0]"
             }
         },
@@ -351,7 +359,7 @@
             "frame2_assembly": 1
         },
         "vitamins": {
-            "tubing(CBNFIB10, 318.882): Carbon fiber OD 10mm ID 8mm x 318.882mm": {
+            "tubing(CBNFIB10, 304.676): Carbon fiber OD 10mm ID 8mm x 304.676mm": {
                 "count": 2
             },
             "screw(M3_cap_screw, 12): Screw M3 cap x 12mm": {
@@ -360,7 +368,7 @@
             "nut(M3_nut): Nut M3 x 2.4mm ": {
                 "count": 9
             },
-            "tubing(CBNFIB10, 283): Carbon fiber OD 10mm ID 8mm x 283mm": {
+            "tubing(CBNFIB10, 257.792): Carbon fiber OD 10mm ID 8mm x 257.792mm": {
                 "count": 1
             }
         },
@@ -426,14 +434,29 @@
             "frame11_assembly": 1
         },
         "vitamins": {
-            "rail(MGN12, 410): Linear rail MGN12 x 410mm": {
+            "rail(MGN12, 400): Linear rail MGN12 x 400mm": {
                 "count": 2
             },
-            "screw(M3_cap_screw, 5): Screw M3 cap x  5mm": {
-                "count": 18
+            "carriage(MGN12H_carriage): Linear rail carriage MGN12H": {
+                "count": 2
+            },
+            "screw(M3_cap_screw, 12): Screw M3 cap x 12mm": {
+                "count": 14
+            },
+            "screw(M3_cap_screw, 16): Screw M3 cap x 16mm": {
+                "count": 4
             }
         },
-        "printed": {},
+        "printed": {
+            "rail_y_back_stop.stl": {
+                "count": 2,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "rail_y_front_stop.stl": {
+                "count": 2,
+                "colour": "[0, 0.572549, 0]"
+            }
+        },
         "routed": {}
     },
     {
@@ -481,7 +504,7 @@
             "screw(M3_cap_screw, 30): Screw M3 cap x 30mm": {
                 "count": 4
             },
-            "screw(M3_cap_screw, 16): Screw M3 cap x 16mm": {
+            "screw(M3_cap_screw, 20): Screw M3 cap x 20mm": {
                 "count": 2
             },
             "washer(M3_washer): Washer  M3 x 6mm x 1mm": {
@@ -490,7 +513,10 @@
             "pulley(GT2_xx): Pulley GT2 (2 x F623ZZ flanged + washer 0.8) idler smooth 10mm": {
                 "count": 4
             },
-            "rail(MGN9, 396): Linear rail MGN9 x 396mm": {
+            "rail(MGN9, 400): Linear rail MGN9 x 400mm": {
+                "count": 1
+            },
+            "carriage(MGN9H_carriage): Linear rail carriage MGN9H": {
                 "count": 1
             },
             "nut(M3_nut): Nut M3 x 2.4mm ": {
@@ -647,10 +673,10 @@
             "frame35_assembly": 1
         },
         "vitamins": {
-            "belt(GT_gates2x6, [[138.65, 170.512, 0], [147.65, 172.512, -2], [154.65, 169.254, 2.504], [147.65, 167.254, -2], [20.0622, 163.708, -5.546], [8.15, 36.65, 6.3662], [8.15, 416.95, 6.004], [429.938, 416.95, 6.004], [429.938, 174.8, 6.004], [206.35, 171.254, 2], [199.35, 169.254, -2.504], [206.35, 165.996, 2], [215.35, 167.996, 0]]): Belt GT_gates2 x 6mm x 1644mm": {
+            "belt(GT_gates2x6, [[139.45, 170.512, 0], [148.45, 172.512, -2], [155.45, 169.254, 2.504], [148.45, 167.254, -2], [20.0622, 163.708, -5.546], [8.15, 36.65, 6.3662], [8.15, 416.45, 6.004], [429.938, 416.45, 6.004], [429.938, 174.8, 6.004], [205.55, 171.254, 2], [198.55, 169.254, -2.504], [205.55, 165.996, 2], [214.55, 167.996, 0]]): Belt GT_gates2 x 6mm x 1644mm": {
                 "count": 1
             },
-            "belt(GT_gates2x6, [[215.35, 170.512, 0], [206.35, 172.512, 2], [199.35, 169.254, -2.504], [206.35, 167.254, 2], [429.938, 163.708, 5.546], [441.85, 36.65, -6.3662], [441.85, 416.95, -6.004], [20.0622, 416.95, -6.004], [20.0622, 174.8, -6.004], [147.65, 171.254, -2], [154.65, 169.254, 2.504], [147.65, 165.996, -2], [138.65, 167.996, 0]]): Belt GT_gates2 x 6mm x 1644mm": {
+            "belt(GT_gates2x6, [[214.55, 170.512, 0], [205.55, 172.512, 2], [198.55, 169.254, -2.504], [205.55, 167.254, 2], [429.938, 163.708, 5.546], [441.85, 36.65, -6.3662], [441.85, 416.45, -6.004], [20.0622, 416.45, -6.004], [20.0622, 174.8, -6.004], [148.45, 171.254, -2], [155.45, 169.254, 2.504], [148.45, 165.996, -2], [139.45, 167.996, 0]]): Belt GT_gates2 x 6mm x 1644mm": {
                 "count": 1
             }
         },

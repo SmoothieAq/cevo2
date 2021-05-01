@@ -1,4 +1,4 @@
-build/stls/leads_motor_holder.stl: \
+build/stls/leads_motor_holderF.stl: \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/offset.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/pin_headers.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/ring_terminals.scad \

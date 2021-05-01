@@ -25,11 +25,26 @@ holder_offz = 15;
 //---
 
 leads_side_off = NEMA_width(leads_motor)/2+extr_d2+motor_nudge;
+csp = 79;
+f_x = min(bed.x+bed_x_off-bed_fast_off,frame_p4.x-extr_d2-csp);
+b_y = min(bed_y_off+bed.y-bed_fast_off,frame_p3.y-extr_d2-csp);
+l_y = let(
+    d = bed_fast_off,
+    w = bed.x,
+    s1 = bed_y_off + bed.y - b_y,
+    s2 = bed_x_off + bed.x - f_x,
+    t = (2*d^2 + s1^2 - 2*d*s2 - (s2 - w)^2)/(2 *(d + s1 - w))
+) bed_y_off + bed.y - t;
 leads = [
-        ["L",[leads_side_off,extr_y_len/2+extr_d2],                             [bed_x_off+bed_fast_off,extr_y_len/2+extr_d2]],
-        ["F",[bed.x+bed_x_off-bed_fast_off,leads_side_off],                     [bed_x_off+bed.x-bed_fast_off,bed_y_off+bed_fast_off]],
-        ["B",[extr_x_len+extr_d-leads_side_off,bed_y_off+bed.y-bed_fast_off],   [bed_x_off+bed.x-bed_fast_off,bed_y_off+bed.y-bed_fast_off]]
+        ["L",[leads_side_off,l_y],                     [bed_x_off+bed_fast_off,l_y]],
+        ["F",[f_x,leads_side_off],                     [f_x,bed_y_off+bed_fast_off]],
+        ["B",[extr_x_len+extr_d-leads_side_off,b_y],   [bed_x_off+bed.x-bed_fast_off,b_y]]
     ];
+//leads = [
+//["L",[leads_side_off,extr_y_len/2+extr_d2],                             [bed_x_off+bed_fast_off,extr_y_len/2+extr_d2]],
+//["F",[bed.x+bed_x_off-bed_fast_off,leads_side_off],                     [bed_x_off+bed.x-bed_fast_off,bed_y_off+bed_fast_off]],
+//["B",[extr_x_len+extr_d-leads_side_off,bed_y_off+bed.y-bed_fast_off],   [bed_x_off+bed.x-bed_fast_off,bed_y_off+bed.y-bed_fast_off]]
+//];
 
 function holder_name(i)     = leads[i][0];
 function holder_leadp(i)    = leads[i][1];

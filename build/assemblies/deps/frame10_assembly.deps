@@ -4,13 +4,14 @@ build/tmp/frame10_assembly.png: \
 	C:/Users/jesper/IdeaProjects/cevo2/build/stls/bed_holderF1.stl \
 	C:/Users/jesper/IdeaProjects/cevo2/build/stls/bed_holderL1.stl \
 	C:/Users/jesper/IdeaProjects/cevo2/build/stls/leads_holder.stl \
+	C:/Users/jesper/IdeaProjects/cevo2/build/stls/leads_motor_holderB.stl \
+	C:/Users/jesper/IdeaProjects/cevo2/build/stls/leads_motor_holderL.stl \
 	C:/Users/jesper/IdeaProjects/cevo2/scad/parts/loops_motor_holder.scad \
 	C:/Users/jesper/IdeaProjects/cevo2/scad/assemblies/frame_assembly.scad \
 	C:/Users/jesper/IdeaProjects/cevo2/scad/parts/leads_motor_holder.scad \
 	C:/Users/jesper/IdeaProjects/cevo2/scad/assemblies/leads1_assembly.scad \
 	C:/Users/jesper/IdeaProjects/cevo2/scad/assemblies/frame1_assembly.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/dotSCAD/__comm__/__to2d.scad \
-	C:/Users/jesper/IdeaProjects/cevo2/build/stls/leads_motor_holder.stl \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/dotSCAD/ptf/_impl/_ptf_rotate_impl.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/dotSCAD/util/flat.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/dotSCAD/ptf/ptf_rotate.scad \
@@ -96,6 +97,7 @@ build/tmp/frame10_assembly.png: \
 	C:/Users/jesper/IdeaProjects/cevo2/build/stls/idler_holderR2.stl \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/belts.scad \
 	C:/Users/jesper/IdeaProjects/xNopSCADlib/xVitamins/xrail.scad \
+	C:/Users/jesper/IdeaProjects/cevo2/build/stls/leads_motor_holderF.stl \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/fillet.scad \
 	C:/Users/jesper/IdeaProjects/xNopSCADlib/xNopSCADlib/core.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/belt.scad \

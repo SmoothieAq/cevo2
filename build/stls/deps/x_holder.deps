@@ -1,4 +1,4 @@
-build/stls/x_holderR2.stl: \
+build/stls/rail_y_back_stop.stl: \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/dogbones.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/offset.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/rod.scad \
@@ -9,6 +9,7 @@ build/stls/x_holderR2.stl: \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/pin_header.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/dotSCAD/util/sub_str.scad \
 	C:/Users/jesper/IdeaProjects/xNopSCADlib/xVitamins/xextrusion_bracket.scad \
+	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/tube.scad \
 	C:/Users/jesper/IdeaProjects/xNopSCADlib/xVitamins/xextrusion.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/washer.scad \
 	C:/Users/jesper/IdeaProjects/xNopSCADlib/xVitamins/xextrusions.scad \
@@ -20,6 +21,8 @@ build/stls/x_holderR2.stl: \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/core/bom.scad \
 	C:/Users/jesper/IdeaProjects/xNopSCADlib/xVitamins/xscrews.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/pulleys.scad \
+	C:/Users/jesper/IdeaProjects/xNopSCADlib/xVitamins/xnuts.scad \
+	C:/Users/jesper/IdeaProjects/xNopSCADlib/xUtil/xUtil.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/screws.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/rail.scad \
 	C:/Users/jesper/IdeaProjects/xNopSCADlib/xxVitamins/xxscrews.scad \
@@ -58,6 +61,8 @@ build/stls/x_holderR2.stl: \
 	C:/Users/jesper/IdeaProjects/xNopSCADlib/xVitamins/xrails.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/rails.scad \
 	C:/Users/jesper/IdeaProjects/xNopSCADlib/xVitamins/xwasher.scad \
+	C:/Users/jesper/IdeaProjects/cevo2/scad/parts/loops_motor_holder.scad \
+	C:/Users/jesper/IdeaProjects/cevo2/scad/parts/idler_holder.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/insert.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/core/clip.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/rounded_cylinder.scad \
@@ -67,7 +72,4 @@ build/stls/x_holderR2.stl: \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/core/sphere.scad \
 	C:/Users/jesper/IdeaProjects/xNopSCADlib/xNopSCADlib/vitamins/tslot_nut.scad \
 	C:/Users/jesper/IdeaProjects/xNopSCADlib/xNopSCADlib/vitamins/tslot_nuts.scad \
-	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/maths.scad \
-	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/tube.scad \
-	C:/Users/jesper/IdeaProjects/xNopSCADlib/xUtil/xUtil.scad \
-	C:/Users/jesper/IdeaProjects/xNopSCADlib/xVitamins/xnuts.scad
+	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/maths.scad

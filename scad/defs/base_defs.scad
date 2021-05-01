@@ -28,6 +28,9 @@ frame_y_z1 = 164+extr_z_bracket_thick-extr_d2;
 frame_y_z3 = extr_z_len+extr_z_bracket_thick-extr_d2;
 frame_y_z2 = frame_y_z3-112;
 
+yrail_len = 400;
+yrail_yoff = extr_d2+(extr_y_len-yrail_len);
+
 xrail_zoff = 33/*28*/;
 xrail_z = frame_y_z3-xrail_zoff;
 xrail_len = 400;
@@ -59,5 +62,7 @@ motor_nudge = 0.5;
 part_assemble_nudge = 0.2;
 part_assemble_line = 0.05;
 part_press_nudge = 0.6;
+
+part_support_nudge = 0.4;
 
 partColor = grey(18);//[56/256,28/256,8/256];//grey(22);

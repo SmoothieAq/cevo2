@@ -1,5 +1,7 @@
 build/tmp/frame2_assembly.png: \
 	C:/Users/jesper/IdeaProjects/cevo2/build/stls/leads_holder.stl \
+	C:/Users/jesper/IdeaProjects/cevo2/build/stls/leads_motor_holderB.stl \
+	C:/Users/jesper/IdeaProjects/cevo2/build/stls/leads_motor_holderL.stl \
 	C:/Users/jesper/IdeaProjects/cevo2/scad/parts/loops_motor_holder.scad \
 	C:/Users/jesper/IdeaProjects/cevo2/scad/parts/idler_holder.scad \
 	C:/Users/jesper/IdeaProjects/xNopSCADlib/xVitamins/xrail.scad \
@@ -22,6 +24,7 @@ build/tmp/frame2_assembly.png: \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/maths.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/sweep.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/quadrant.scad \
+	C:/Users/jesper/IdeaProjects/cevo2/build/stls/leads_motor_holderF.stl \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/fillet.scad \
 	C:/Users/jesper/IdeaProjects/xNopSCADlib/xNopSCADlib/vitamins/tslot_nuts.scad \
 	C:/Users/jesper/IdeaProjects/xNopSCADlib/xVitamins/xrails.scad \
@@ -103,6 +106,5 @@ build/tmp/frame2_assembly.png: \
 	C:/Users/jesper/IdeaProjects/cevo2/scad/assemblies/bed1_assembly.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/insert.scad \
 	C:/Users/jesper/IdeaProjects/cevo2/scad/parts/bed_holder.scad \
-	C:/Users/jesper/IdeaProjects/cevo2/build/stls/leads_motor_holder.stl \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/dotSCAD/ptf/_impl/_ptf_rotate_impl.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/dotSCAD/__comm__/__to2d.scad

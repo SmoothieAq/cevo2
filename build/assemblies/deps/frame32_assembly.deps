@@ -14,6 +14,7 @@ build/tmp/frame32_assembly.png: \
 	C:/Users/jesper/IdeaProjects/cevo2/build/stls/bed_holderF1.stl \
 	C:/Users/jesper/IdeaProjects/cevo2/build/stls/bed_holderL1.stl \
 	C:/Users/jesper/IdeaProjects/cevo2/build/stls/leads_holder.stl \
+	C:/Users/jesper/IdeaProjects/cevo2/build/stls/bed_holderB2.stl \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/rounded_cylinder.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/tube.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/screw.scad \
@@ -56,6 +57,7 @@ build/tmp/frame32_assembly.png: \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/core/core.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/round.scad \
 	C:/Users/jesper/IdeaProjects/cevo2/scad/assemblies/frame21_assembly.scad \
+	C:/Users/jesper/IdeaProjects/cevo2/build/stls/rail_y_front_stop.stl \
 	C:/Users/jesper/IdeaProjects/cevo2/build/stls/loops_motor_holderR.stl \
 	C:/Users/jesper/IdeaProjects/xNopSCADlib/xVitamins/xwasher.scad \
 	C:/Users/jesper/IdeaProjects/cevo2/scad/assemblies/frame32_assembly.scad \
@@ -81,6 +83,7 @@ build/tmp/frame32_assembly.png: \
 	C:/Users/jesper/IdeaProjects/xNopSCADlib/xNopSCADlib/vitamins/tslot_nut.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/rail.scad \
 	C:/Users/jesper/IdeaProjects/cevo2/scad/parts/mosquito_fan_duct.scad \
+	C:/Users/jesper/IdeaProjects/cevo2/build/stls/leads_motor_holderL.stl \
 	C:/Users/jesper/IdeaProjects/xNopSCADlib/xVitamins/xextrusion.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/thread.scad \
 	C:/Users/jesper/IdeaProjects/cevo2/scad/assemblies/frame2_assembly.scad \
@@ -95,11 +98,12 @@ build/tmp/frame32_assembly.png: \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/pulleys.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/maths.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/fillet.scad \
+	C:/Users/jesper/IdeaProjects/cevo2/build/stls/leads_motor_holderF.stl \
+	C:/Users/jesper/IdeaProjects/cevo2/build/stls/rail_y_back_stop.stl \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/dotSCAD/util/sub_str.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/pin_header.scad \
 	C:/Users/jesper/IdeaProjects/cevo2/build/stls/bed_holderF2.stl \
 	C:/Users/jesper/IdeaProjects/cevo2/scad/assemblies/frame10_assembly.scad \
-	C:/Users/jesper/IdeaProjects/cevo2/build/stls/bed_holderB2.stl \
 	C:/Users/jesper/IdeaProjects/cevo2/build/stls/carriage.stl \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/dotSCAD/util/_impl/_sub_str_impl.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/quadrant.scad \
@@ -120,28 +124,28 @@ build/tmp/frame32_assembly.png: \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/utils/dogbones.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/dotSCAD/__comm__/__to3d.scad \
 	C:/Users/jesper/IdeaProjects/cevo2/scad/assemblies/frame30_assembly.scad \
-	C:/Users/jesper/IdeaProjects/cevo2/scad/assemblies/carriage2_assembly.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/fans.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/ball_bearing.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/fan.scad \
-	C:/Users/jesper/IdeaProjects/cevo2/scad/assemblies/frame11_assembly.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/tubing.scad \
 	C:/Users/jesper/IdeaProjects/cevo2/scad/parts/loops_motor_holder.scad \
-	C:/Users/jesper/IdeaProjects/cevo2/scad/parts/x_holder.scad \
-	C:/Users/jesper/IdeaProjects/cevo2/scad/assemblies/frame3_assembly.scad \
 	C:/Users/jesper/IdeaProjects/cevo2/scad/parts/idler_holder.scad \
+	C:/Users/jesper/IdeaProjects/cevo2/scad/assemblies/frame11_assembly.scad \
 	C:/Users/jesper/IdeaProjects/cevo2/scad/assemblies/carriage1_assembly.scad \
 	C:/Users/jesper/IdeaProjects/cevo2/scad/defs/leads_defs.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/leadnuts.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/dotSCAD/ptf/ptf_rotate.scad \
+	C:/Users/jesper/Documents/OpenSCAD/libraries/dotSCAD/__comm__/__to2d.scad \
+	C:/Users/jesper/IdeaProjects/cevo2/scad/parts/x_holder.scad \
+	C:/Users/jesper/IdeaProjects/cevo2/scad/assemblies/frame3_assembly.scad \
 	C:/Users/jesper/IdeaProjects/xNopSCADlib/xVitamins/xscrew.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/dotSCAD/util/flat.scad \
-	C:/Users/jesper/IdeaProjects/cevo2/build/stls/leads_motor_holder.stl \
-	C:/Users/jesper/Documents/OpenSCAD/libraries/dotSCAD/__comm__/__to2d.scad \
 	C:/Users/jesper/IdeaProjects/cevo2/scad/assemblies/frame1_assembly.scad \
 	C:/Users/jesper/IdeaProjects/cevo2/build/stls/idler_holderR1.stl \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/NopSCADlib/vitamins/extrusion_bracket.scad \
 	C:/Users/jesper/Documents/OpenSCAD/libraries/dotSCAD/ptf/_impl/_ptf_rotate_impl.scad \
 	C:/Users/jesper/IdeaProjects/cevo2/scad/assemblies/leads1_assembly.scad \
 	C:/Users/jesper/IdeaProjects/cevo2/scad/parts/leads_motor_holder.scad \
-	C:/Users/jesper/IdeaProjects/cevo2/scad/assemblies/frame_assembly.scad
+	C:/Users/jesper/IdeaProjects/cevo2/scad/assemblies/frame_assembly.scad \
+	C:/Users/jesper/IdeaProjects/cevo2/scad/assemblies/carriage2_assembly.scad \
+	C:/Users/jesper/IdeaProjects/cevo2/build/stls/leads_motor_holderB.stl

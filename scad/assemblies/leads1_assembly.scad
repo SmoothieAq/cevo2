@@ -9,7 +9,9 @@ module leads1_assembly() pose(a=[ 55.00, 0.00, 25.00 ],t=[ 92.63, 102.34, 274.30
 		for_leads(i,frame_y_z1+extr_d2){
 			NEMA(leads_motor);
 			explode(extr_d2,explode_children=true) {
-				leads_motor_holder_stl();
+				if (i==0) leads_motor_holderL_stl();
+				else if (i==1) leads_motor_holderB_stl();
+				else leads_motor_holderF_stl();
 				xxside1(motor_screws());
 			}
 		}

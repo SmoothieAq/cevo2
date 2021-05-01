@@ -23,6 +23,8 @@ function loops_motor_mount_screws(i) = [ for (s = motor_mount_screws) let (
 	z = loop[0] - pulley_height(p.z) - motor_nudge
 ) axxscrew(s,t=xxscrew_translate(s)+[p.x,p.y,z],twist=90) ];
 
+function loops_motor_holder_max_xd() = mw+motor_nudge;
+
 module loops_motor_holder_assembly() pose(a=[ 48.70, 0.00, 108.30 ],t=[ 72.78, 52.48, 609.26 ],d=197.34) assembly("loops_motor_holder") {
 	loops_motor_holderi_assembly(0);
 	loops_motor_holderi_assembly(1);

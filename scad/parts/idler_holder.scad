@@ -46,6 +46,7 @@ idlerHolderScrews = [ for (i = [0:1])
 
 function idlerHolderScrews(i,onz) = let (ss = idlerHolderScrews[i]) onz ? [ss[1],ss[2],ss[3]] : [ss[0]];
 
+function idler_holder_max_xd() = frame_p2.y-extr_d2-idlerps[0][0].y+idler_tubed/2;
 
 module idler_idler(i) {
 	module w() translate([0,0,ph/2]) explode([0,0,ph/4]) xwasher(idler_washer);
@@ -134,7 +135,7 @@ module idler_holder(i) {
 		for (j = [0:1]) {
 			p = idlerps[i][j];
 			translate(p) rotate([0,0,i?-90:0]) {
-				phx = 0.4; // extra high hole, because supporters make the surface uneven
+				phx = part_support_nudge; // extra high hole, because supporters make the surface uneven
 				translate([0, 0, - ph / 2 - iwt - phx/2])
 					cylinder(ph + 2 * iwt + phx, d = idler_tubehd);
 				translate([0, idler_tubehd/2 - idler_tubebth, - idler_tubebwh / 2])
@@ -146,7 +147,7 @@ module idler_holder(i) {
 		if (i == 0) {
 			translate(idlerps[0][0]) rotate([0, 0, -15]) {// extra space for twisted belt
 				translate([-idler_tubehd/2, -idler_tubed, -idler_tubebwh/2])
-					#cube([idler_tubebth, idler_tubed, idler_tubebwh]);
+					cube([idler_tubebth, idler_tubed, idler_tubebwh]);
 			}
 		} else {
 			translate(idlerps[1][1]) rotate([0, 0, -75]) {// extra space for twisted belt

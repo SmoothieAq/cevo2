@@ -4,4 +4,6 @@ Vitamins:
  12 Screw M3 cap x 12mm
 
 Printed:
-  3 leads_motor_holder.stl
+  1 leads_motor_holderB.stl
+  1 leads_motor_holderF.stl
+  1 leads_motor_holderL.stl

@@ -8,17 +8,6 @@ include <../extparts/orbiter_extruder.scad>
 include <mosquito_fan_duct.scad>
 include <NopSCADlib/vitamins/tubings.scad>
 
-// ++pft tube hul lidt størrer
-// ++belt mere plads
-// ++belt holdere, bred cylender
-// ++fan holder, lidt bredere
-// orbiter, venstre hul forkert
-// ++skrue til belt, 0.5 længere ned
-// ++mosquito, de andre skruer, de skrå
-// ++mosquito anden størrelse (tykkelse og højde), måske også endnu mere plads bag den
-// countersink længere ned
-
-
 *translate([-pos_x,-(pos_y-cw/2-mosquito_hotend_size.y/2-mosquito_hotend_offy),-(xrail_z+ch)]) {
 	for (i = [0, 1]) {
 		loop = loops[i];
@@ -38,6 +27,7 @@ include <NopSCADlib/vitamins/tubings.scad>
 
 carriage_x = xrail_carriage(rail_x);
 cl = carriage_length(MGN12H_carriage);
+clx = cl + 2;
 cw = carriage_width(carriage_x);
 ch = carriage_height(carriage_x);
 
@@ -59,7 +49,7 @@ screwCarriage = axscrew(M3_cs_cap_screw,material=MaterialBlackSteel);
 carriageScrews = [ for(j = [0:3]) let(
 	p = carriage_hole_ps(carriage_x)[j],
 	pp = [p.x,p.y+cw/2+mq.y/2+mqo,platet]
-) axxscrew_setLeng(screwCarriage,t=pp,thick=platet+5,xnut=false) ];
+) axxscrew_setLeng(screwCarriage,t=pp,thick=platet+5,xnut=false,depth=0.2) ];
 function carriage_screws() = carriageScrews;
 
 bltouch_holderr = bltouch_size.y/2+bltouch_offy/2;
@@ -67,13 +57,13 @@ bltouch_offx = 5.3;
 bltouch_offsy = max(cw/2,20);
 bltouchScrews = [ for(j = [0:1]) let(
 	p = [cl/2+bltouch_offx-j*bltouch_screwp.x*2,mq.y/2+mqo+bltouch_offsy+bltouch_size.y/2+bltouch_offy,platet]
-) axxscrew_setLeng(screwCarriage,t=p,thick=platet+bltouch_screw_holdert) ];
+) axxscrew_setLeng(screwCarriage,t=p,thick=platet+bltouch_screw_holdert,depth=0.2) ];
 function bltouch_screws() = bltouchScrews;
 
 fanholderd = xxscrew_translate(bltouchScrews[1]).x-screw_head_radius(screwCarriage)*2.2-cl/2+bltouch_holderr;
 fanHolderScrews = [ for(j = [0:1]) let(
 	p = [-cl/2+bltouch_holderr-j*fanholderd,mq.y/2+mqo+cw+part_assemble_nudge+fan_holderw/2,platet]
-) axxscrew_setLeng(screwCarriage,t=p,thick=platet+fan_holdert) ];
+) axxscrew_setLeng(screwCarriage,t=p,thick=platet+fan_holdert,depth=0.2) ];
 function fan_holder_screws() = fanHolderScrews;
 
 extruderScrews = [ for(p = orbiter_extruder_screwps) axxscrew_setLeng(screwPart,t=p+[0,0,platet],thick=p.z,insert=true) ];
@@ -98,8 +88,8 @@ module carriage_stl() stl("carriage") {
 				difference() {
 					union() {
 						difference() { // top plate
-							translate([-cl/2-1, -mq.y/2, 0])
-								cube([cl+2, cw+mqo+mq.y, platet]);
+							translate([-clx/2, -mq.y/2, 0])
+								cube([clx, cw+mqo+mq.y, platet]);
 							for (i = [0, 1]) mirror([i, 0, 0])
 								translate([cl/2-legr, -mq.y/2, 0])
 									rotate([lega, 0, 0]) translate([0, -1, -legl+platet]) cube([legr+1, legr+1, legl]);
@@ -125,11 +115,11 @@ module carriage_stl() stl("carriage") {
 							}
 						}
 						difference() { // beam connection the two pilars
-							translate([-cl/2+legr-1, -mq.y/2, 0])
+							translate([-clx/2+legr, -mq.y/2, 0])
 								rotate([lega, 0, 0]) translate([0, 0, -legl+platet])
-									cube([cl-2*legr+2, legr*2+2, legr*2]);
-							translate([-cl/2-1, -mq.y/2+motor_nudge, -mq.x-1])
-								cube([cl+2, mq.y, mq.y]);
+									cube([clx-2*legr, legr*2+2, legr*2]);
+							translate([-clx/2, -mq.y/2+motor_nudge, -mq.x-1])
+								cube([clx, mq.y, mq.y]);
 						}
 						translate([0, bltouch_offsy+mq.y/2+mqo, 0]) { // bltouch holder
 							xb = cl/2+bltouch_offx;
@@ -138,16 +128,14 @@ module carriage_stl() stl("carriage") {
 									cylinder(platet, r = bltouch_holderr);
 							translate([xb-bltouch_screwp.x*2, -0.1, 0])
 								cube([bltouch_screwp.x*2, bltouch_holderr*2, platet]);
-							*translate([-cl/2, 0, 0])
-								cube([bltouch_holderr+0.1, bltouch_holderr+0.1, platet]);
 						}
 						translate([0, cw+mq.y/2+mqo, 0]) { // fan holder holder
 							r = fan_holderw/2+0.5;
-							translate([-cl/2+r, r-0.1, 0])
+							translate([-clx/2+r, r-0.1, 0])
 								cylinder(platet, r = r);
-							translate([-cl/2+r, -0.1, 0])
+							translate([-clx/2+r, -0.1, 0])
 								cube([cl+bltouch_offx-r, r*2, platet]);
-							translate([-cl/2, 0, 0])
+							translate([-clx/2, 0, 0])
 								cube([r+0.1, r+0.1, platet]);
 						}
 					}

@@ -15,7 +15,7 @@ idler = ["GT2_xx","GT2 (2 x F623ZZ flanged + washer 0.8)",0,10,GT2x6,6.8,11.5,0,
 idler_washer = M3_washer_small_thick;
 motor = NEMA17M;
 
-rail_y = axrail(MGN12,extr_y_len,MaterialBlackSteel,MGN12H_carriage);
+rail_y = axrail(MGN12,yrail_len,MaterialBlackSteel,MGN12H_carriage);
 rail_x = axrail(MGN9,xrail_len,MaterialBlackSteel,MGN9H_carriage);
 
 idler_tubehd = max(pulley_flange_dia(idler), pulley_od(idler) + belt_thickness(belt) * 2) + 4;

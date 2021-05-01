@@ -146,14 +146,14 @@ module x_holder(i) {
 		}
 		mirror([i,0,0]) {
 			translate([ch-motor_nudge, -rail_width(rail_x)/2-part_assemble_nudge/2, part_assemble_nudge/2-xrail_zoff])
-				cube([xyholder_thick2*2, rail_width(rail_x)+part_assemble_nudge, rail_height(rail_x)-0*part_assemble_nudge]); // hole for x_rail
+				cube([xyholder_thick2*2, rail_width(rail_x)+part_assemble_nudge, rail_height(rail_x)+part_support_nudge-part_assemble_nudge]); // hole for x_rail
 			translate([-extr_d+motor_nudge,-cl,-extr_d2-motor_nudge])
 				cube([extr_d,cl*2,extr_d]); // space for extrution
 		}
 		for (j = [0:1]) {
 			p = idlerps[i][j] - y1xb;
 			translate(p) {
-				phx = 0.4; // extra high hole, because supporters make the surface uneven
+				phx = part_support_nudge; // extra high hole, because supporters make the surface uneven
 				translate([0, 0, - ph / 2 - iwt - phx/2])
 					cylinder(ph + 2 * iwt + phx, d = idler_tubehd); // hole for idler
 				translate([i?-xyholder_thick2:0, (j?i?1:- 1:i?-1:1) * idler_tubehd/2 + (j?i?-1:0:i?0:-1)*idler_tubebth, -idler_tubebwh / 2])
@@ -165,8 +165,53 @@ module x_holder(i) {
 	}
 }
 
-translate([0,0,15])x_holderL1_stl();
-x_holderL2_stl();
+
+rail_y_stop_screw = axscrew(rail_screw(rail_y), l = 16, material = MaterialBlackSteel);
+
+use <loops_motor_holder.scad>
+rail_y_front_stop_screws = [axxscrew(rail_y_stop_screw,t=[0,yrail_yoff-extr_d2+rail_pitch(rail_y)/2,carriage_height(carriage_y)-2],horizontal=true)];
+function rail_y_front_stop_screws() = rail_y_front_stop_screws;
+module rail_y_front_stop_stl() stl("rail_y_front_stop") color(partColor) {
+	//xd = cpx/2 + (rail_width(rail_x) + 10)/2 - cl/2;
+	xd = pos_y - idlerps[0][0].y - cl/2;
+	l = loops_motor_holder_max_xd() + xd + 2;
+	rotate([90,0,0]) difference() {
+		d = extr_d-4;
+		translate([0,l,0])
+			rotate([90, 0, 0])
+				translate([0, carriage_height(carriage_y)-d/2, 0])
+					cylinder(l-part_assemble_nudge, d1 = d, d2=d-5.8);
+		translate([-extr_d,-1,-extr_d])
+			cube([extr_d*2,l+2,extr_d]);
+		translate([-rail_width(rail_y)/2-part_assemble_nudge/2,yrail_yoff-extr_d2-1,-1])
+			cube([rail_width(rail_y)+part_assemble_nudge, l+2, rail_height(rail_y)+part_support_nudge-part_assemble_nudge+1]); // hole for y_rail
+		xxside1_hole(rail_y_front_stop_screws);
+	}
+}
+
+
+use <idler_holder.scad>
+rail_y_back_stop_screws = [axxscrew(rail_y_stop_screw,t=[0,-rail_pitch(rail_y)/2,carriage_height(carriage_y)-2],horizontal=true)];
+function rail_y_back_stop_screws() = rail_y_back_stop_screws;
+module rail_y_back_stop_stl() stl("rail_y_back_stop") color(partColor) {
+	xd = cpx/2 + (rail_width(rail_x) + 10)/2 - cl/2;
+	l = idler_holder_max_xd() + xd + 2;
+	rotate([90,0,0]) difference() {
+		d = extr_d-4;
+		rotate([90, 0, 0])
+			translate([0, carriage_height(carriage_y)-d/2, 0])
+				cylinder(l-part_assemble_nudge, d = d);
+		translate([-extr_d,-l-1,-extr_d])
+			cube([extr_d*2,l+2,extr_d]);
+		translate([-rail_width(rail_y)/2-part_assemble_nudge/2,-l-1,-1])
+			cube([rail_width(rail_y)+part_assemble_nudge, l+2, rail_height(rail_y)+part_support_nudge-part_assemble_nudge+1]); // hole for y_rail
+		xxside1_hole(rail_y_back_stop_screws);
+	}
+}
+
+rail_y_front_stop_stl();
+//translate([0,0,15])x_holderL1_stl();
+//x_holderL2_stl();
 //translate([0,0,15])x_holderR1_stl();
 //x_holderR2_stl();
 //xxside1(idlerScrews[0]);
