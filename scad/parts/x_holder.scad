@@ -180,10 +180,10 @@ module rail_y_front_stop_stl() stl("rail_y_front_stop") color(partColor) {
 		translate([0,l,0])
 			rotate([90, 0, 0])
 				translate([0, carriage_height(carriage_y)-d/2, 0])
-					cylinder(l-part_assemble_nudge, d1 = d, d2=d-5.8);
+					cylinder(l-part_assemble_nudge, d1 = d, d2=d-5);
 		translate([-extr_d,-1,-extr_d])
 			cube([extr_d*2,l+2,extr_d]);
-		translate([-rail_width(rail_y)/2-part_assemble_nudge/2,yrail_yoff-extr_d2-1,-1])
+		translate([-rail_width(rail_y)/2-part_assemble_nudge/2,yrail_yoff-extr_d2-3,-1])
 			cube([rail_width(rail_y)+part_assemble_nudge, l+2, rail_height(rail_y)+part_support_nudge-part_assemble_nudge+1]); // hole for y_rail
 		xxside1_hole(rail_y_front_stop_screws);
 	}
@@ -191,12 +191,12 @@ module rail_y_front_stop_stl() stl("rail_y_front_stop") color(partColor) {
 
 
 use <idler_holder.scad>
-rail_y_back_stop_screws = [axxscrew(rail_y_stop_screw,t=[0,-rail_pitch(rail_y)/2,carriage_height(carriage_y)-2],horizontal=true)];
+rail_y_back_stop_screws = [axxscrew(rail_y_stop_screw,t=[0,-rail_pitch(rail_y)/2+motor_nudge,carriage_height(carriage_y)-2],horizontal=180)];
 function rail_y_back_stop_screws() = rail_y_back_stop_screws;
 module rail_y_back_stop_stl() stl("rail_y_back_stop") color(partColor) {
 	xd = cpx/2 + (rail_width(rail_x) + 10)/2 - cl/2;
 	l = idler_holder_max_xd() + xd + 2;
-	rotate([90,0,0]) difference() {
+	rotate([-90,0,0]) difference() {
 		d = extr_d-4;
 		rotate([90, 0, 0])
 			translate([0, carriage_height(carriage_y)-d/2, 0])
@@ -209,7 +209,7 @@ module rail_y_back_stop_stl() stl("rail_y_back_stop") color(partColor) {
 	}
 }
 
-rail_y_front_stop_stl();
+rail_y_back_stop_stl();
 //translate([0,0,15])x_holderL1_stl();
 //x_holderL2_stl();
 //translate([0,0,15])x_holderR1_stl();
