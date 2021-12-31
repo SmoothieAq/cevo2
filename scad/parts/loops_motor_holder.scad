@@ -1,5 +1,6 @@
 include <../defs/loops_defs.scad>
 include <../../../xNopSCADlib/xxVitamins/xxscrews.scad>
+use <util.scad>
 
 mp = NEMA_hole_pitch(motor);
 mw = NEMA_width(motor);
@@ -55,8 +56,11 @@ module loops_motor_holder() color(partColor) {
 	difference() {
 		union() {
 			translate([3,-mw/2-extr_d-2,base_part_thick2/2+tzd])
-				rotate([-107,0,-11])
-					cylinder(base_part_thick2*4, d1 = base_part_thick2+5, d2 = base_part_thick2-3);
+//				rotate([-107,0,-11])
+//					cylinder(base_part_thick2*4, d1 = base_part_thick2+5, d2 = base_part_thick2-3);
+			rotate([0,0,-11])
+			holder_tube( h = base_part_thick2 * 4, d1 = base_part_thick2+5, d2 = base_part_thick2 - 3, dz = 0,
+			rx = -107, ry = 0, sh = base_part_thick2/2, nsd = 5, st = 0, sd = 3);
 			translate([-4,-mw/2-extr_d-2,base_part_thick2/2+tzd])
 				rotate([-107,0,10])
 					cylinder(base_part_thick2*4, d1 = base_part_thick2+5, d2 = base_part_thick2-3);
@@ -94,4 +98,5 @@ module loops_motor_holder() color(partColor) {
 	}
 }
 
-loops_motor_holder_assembly();
+$preview=0;
+loops_motor_holder();

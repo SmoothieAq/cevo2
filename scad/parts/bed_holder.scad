@@ -4,6 +4,7 @@ include <NopSCADlib/vitamins/tubings.scad>
 include <../../../xNopSCADlib/xxVitamins/xxscrews.scad>
 use <dotSCAD/ptf/ptf_rotate.scad>
 use <dotSCAD/util/flat.scad>
+use <util.scad>
 
 function holder_tub1l(i)    = len2(holder_bedp((i+1)%3)-holder_bedp(i));
 function holder_tub1a(i)    = a2(holder_bedp((i+1)%3)-holder_bedp(i));
@@ -41,7 +42,6 @@ module bed_holderB2_stl() stl("bed_holderB2") holder2(2);
 module bed_holderL1_stl() stl("bed_holderL1") holder1(0);
 module bed_holderF1_stl() stl("bed_holderF1") holder1(1);
 module bed_holderB1_stl() stl("bed_holderB1") holder1(2);
-bed_holderL2_stl();
 
 module holder2(i,color=partColor) {
 	ld = leadnut_flange_dia(leadnut);
@@ -61,10 +61,18 @@ module holder2(i,color=partColor) {
 				hax = rl-lad/2-holder_thick2/2-6+c[0];
 				hay = holder_offz+holder_thick1+lh-holder_thick2;
 				ha = atan(hay/hax);
-				translate([0,lad/2+6,-lh])
-					rotate([ha-90,0,0])
-						translate([0,-lad/2,-4])
-							cylinder(54,d2=holder_thick2,d1=lad); // support
+				translate([0,4,-lh])
+//				translate([0,lad/2+6,-lh])
+//					translate([0,-lad/2-1,0.5])
+					holder_tube( h = 58, d2 = holder_thick2, d1 = lad, rx = ha-90,
+						sh = lh+2, nsd = 2, st = 0, sd = 4);
+//					rotate([ha-90,0,0])
+//						translate([0,-lad/2,-4])
+//							cylinder(54,d2=holder_thick2,d1=lad); // support
+//					translate([0,-lad/2-1,0.5])
+//										rotate([ha-90,0,0])
+//											translate([0,0,0])
+//												cylinder(54,d2=holder_thick2,d1=lad); // support
 				difference() {
 					rotate([-90, 0, 0])
 						cylinder(ld/2+holder_thick1+c[1], d1 = holder_thick2,d2=holder_thick2-(holder_thick2-lad)/2); // from plate to support
@@ -89,24 +97,24 @@ module holder2(i,color=partColor) {
 			translate([0,0,-lh-0.1])
 				cylinder(lah+0.2,d=lad+0.1); // cut for leadnut bot
 			translate([0,0,-lh*2])
-				cylinder(lh,d=lad*2); // cut of bot
+				cylinder(lh,d=lad*6); // cut of bot
 			translate([0,0,-0.1])
 				cylinder(holder_thick1+0.2,d=leadnut_bore(leadnut)+0.6); // cut for leadnut bore
 			translate([0, rl, holder_thick1 + holder_offz]) {
 				cylinder(holder_thick2 * 2, d = holder_thick2 * 2); // cut of top
-				d = xshaft_diameter(holder_pin);
-				l = xshaft_length(holder_pin);
-				o = (holder_ball-d)/1.5;
-				wd = washer_diameter(holder_washer);
-				wt = washer_thickness(holder_washer);
+				d = xshaft_diameter(holder_pin)+part_assemble_nudge;
+				l = xshaft_length(holder_pin)+part_assemble_nudge*4;
+				o = (holder_ball-d)/1.1;
+				wd = 6.2; //washer_diameter(holder_washer);
+				wt = 0.8; //washer_thickness(holder_washer);
 				rotate([0,0,holder_pina(i)]) translate([0,l/2,0])
 					rotate([90,0,0]) {
-						cylinder(l, d = d);
+						cylinder(l, d = d*1);
 						translate([o,0,0]) cylinder(l, d = d);
 						translate([-o,0,0]) cylinder(l, d = d);
-						translate([0,-wd/6,-wt]) cylinder(wt, d = wd);
+						translate([0,-wd/10,-wt]) cylinder(wt+part_assemble_nudge, d = wd+part_assemble_nudge);
 						translate([-wd/2,-wd/6-wd/2,-wt]) cube([wd,wd,wt]);
-						translate([0,-wd/6,l]) cylinder(wt, d = wd);
+						translate([0,-wd/10,l]) cylinder(wt+part_assemble_nudge, d = wd+part_assemble_nudge);
 						translate([-wd/2,-wd/6-wd/2,l]) cube([wd,wd,wt]);
 					}
 				translate([-holder_thick2/3,-holder_thick2/3,-0.5])
@@ -164,7 +172,7 @@ module holder1(i,color=partColor) {
 						cylinder(t/2-part_assemble_nudge, r= screw_radius(s)*3);
 				xxside1_plate(holderScrews[i]);
 			}
-			holder_tubcut(i,a1,a2);
+			translate([0,0,part_assemble_nudge]) holder_tubcut(i,a1,a2);
 			xxside1_hole(holderScrews[i]);
 		}
 	}
@@ -184,3 +192,5 @@ module holder_tub(i,a1,a2,r=0) {
 	}
 }
 
+$preview=0;
+bed_holderL2_stl();

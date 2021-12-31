@@ -223,10 +223,10 @@ module fan_holder_at_carriage_stl() stl("fan_holder_at_carriage") {
 
 carriage_stl();
 *bltouch_at_carriage();
-*mosquito_hotend();
+mosquito_hotend();
 //translate([cl/2-bltouch_screwp.x+bltouch_offx,cw+mq.y/2+mqo+bltouch_offy+bltouch_screwp.y,0])
 translate([0,0,-mosquito_hotend_fanz]) {
-	*mosquito_fan_duct_stl();
-	*fan_holder(xxscrew_translate(fanHolderScrews[0])+[0,0,mosquito_hotend_fanz-platet],-fanholderd);
+	mosquito_fan_duct_stl();
+	fan_holder(xxscrew_translate(fanHolderScrews[0])+[0,0,mosquito_hotend_fanz-platet],-fanholderd);
 }
-*translate([0,0,carriage_platet()]) orbiter_extruder();
+translate([0,0,carriage_platet()]) orbiter_extruder();

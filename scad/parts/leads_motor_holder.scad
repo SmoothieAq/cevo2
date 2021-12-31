@@ -4,6 +4,7 @@ include <NopSCADlib/vitamins/tubings.scad>
 include <../../../xNopSCADlib/xxVitamins/xxscrews.scad>
 use <dotSCAD/ptf/ptf_rotate.scad>
 use <dotSCAD/util/flat.scad>
+use <util.scad>
 
 mp = NEMA_hole_pitch(leads_motor);
 mw = NEMA_width(leads_motor);
@@ -34,26 +35,29 @@ module leads_motor_holder(isleft=false,support=true) color(partColor) {
 		union() {
 			for (r=[1,-1]) {
 				translate([-mw/2, r*(-mw/2-10), -extr_d*0.65+5])
-					rotate([0,0,r*20])rotate([0, 72, 0])
-						translate([0, 0, -holder_thick2]) {
-							cylinder(holder_thick2*3.6, d1 = holder_thick2+5, d2 = holder_thick2-3);
-							if (support) {
-								translate([0, r*1, 0])
-									cube([30, 0.4, holder_thick2*2.5]);
-								translate([0, r*4, 0])
-									cube([30, 0.4, holder_thick2*3.6]);
-								translate([0, r*-2, 0])
-									cube([30, 0.4, holder_thick2*3.6]);
-								translate([0, r*7, 0])
-									cube([30, 0.4, holder_thick2*3.6]);
-								translate([0, r*-5, 0])
-									cube([30, 0.4, holder_thick2*3.6]);
-								rotate([0, 18, 0])translate([-20, r*5-10, 52])
-									cube([30, 20, 0.4]);
-								rotate([0, 18, 0])translate([-20, r*5-10, 62])
-									cube([30, 20, 0.4]);
-							}
-						}
+					rotate([0,0,r*20])
+						holder_tube( h = holder_thick2 * 3.6, d1 = holder_thick2+5, d2 = holder_thick2 - 3, dz = holder_thick2,
+						rx = 0, ry = 72, sh = holder_thick2/2, nsd = 5, st = 0, sd = 3);
+//						rotate([0, 72, 0])
+//						translate([0, 0, -holder_thick2]) {
+//							cylinder(holder_thick2*3.6, d1 = holder_thick2+5, d2 = holder_thick2-3);
+//							if (support) {
+//								translate([0, r*1, 0])
+//									cube([30, 0.4, holder_thick2*2.5]);
+//								translate([0, r*4, 0])
+//									cube([30, 0.4, holder_thick2*3.6]);
+//								translate([0, r*-2, 0])
+//									cube([30, 0.4, holder_thick2*3.6]);
+//								translate([0, r*7, 0])
+//									cube([30, 0.4, holder_thick2*3.6]);
+//								translate([0, r*-5, 0])
+//									cube([30, 0.4, holder_thick2*3.6]);
+//								rotate([0, 18, 0])translate([-20, r*5-10, 52])
+//									cube([30, 20, 0.4]);
+//								rotate([0, 18, 0])translate([-20, r*5-10, 62])
+//									cube([30, 20, 0.4]);
+//							}
+//						}
 				translate([-mw/2-extr_d-4, r*5, -2])
 					rotate([0, 88.5, r*7])
 						cylinder(holder_thick2*4, d1 = holder_thick2+6, d2 = holder_thick2-2);
@@ -89,5 +93,5 @@ module leads_motor_holder(isleft=false,support=true) color(partColor) {
 	}
 }
 
-
+//$preview=0;
 leads_motor_holderB_stl();
