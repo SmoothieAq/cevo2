@@ -112,9 +112,9 @@ module holder2(i,color=partColor) {
 						cylinder(l, d = d*1);
 						translate([o,0,0]) cylinder(l, d = d);
 						translate([-o,0,0]) cylinder(l, d = d);
-						translate([0,-wd/10,-wt]) cylinder(wt+part_assemble_nudge, d = wd+part_assemble_nudge);
+						translate([0,-wd/10,-wt]) cylinder(wt+part_assemble_nudge*0.7, d = wd+part_assemble_nudge*0.7);
 						translate([-wd/2,-wd/6-wd/2,-wt]) cube([wd,wd,wt]);
-						translate([0,-wd/10,l]) cylinder(wt+part_assemble_nudge, d = wd+part_assemble_nudge);
+						translate([0,-wd/10,l]) cylinder(wt+part_assemble_nudge*0.7, d = wd+part_assemble_nudge*0.7);
 						translate([-wd/2,-wd/6-wd/2,l]) cube([wd,wd,wt]);
 					}
 				translate([-holder_thick2/3,-holder_thick2/3,-0.5])
@@ -194,3 +194,4 @@ module holder_tub(i,a1,a2,r=0) {
 
 $preview=0;
 bed_holderL2_stl();
+

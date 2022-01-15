@@ -199,6 +199,6 @@ module fan_holder(carriagep1,carriagep2d) {
 
 //fan_holder([-15,35,45],17);
 //*blower_at_duct();
-//mosquito_fan_duct_stl();
+mosquito_fan_duct_stl();
 
 

@@ -40,9 +40,9 @@ module leads_holder() color(partColor) {
 		translate([-extr_d*1.5, -extr_d*4, -extr_d*2+1])
 			cube([extr_d*2, extr_d*8, extr_d]);
 		translate([0,0,lbz-bb_width(lead_bearing)-1])
-			cylinder(holder_thick1*2,d=bb_diameter(lead_bearing)+part_assemble_nudge*1.5);
-		translate([0,0,lbz-1.5-0.5]) // todo 1.5
-			cylinder(holder_thick1*2,d=25+part_assemble_nudge*4); // todo 25
+			cylinder(holder_thick1*2,d=bb_diameter(lead_bearing)+part_assemble_nudge*1);
+		translate([0,0,lbz-1.5-part_assemble_nudge*1.5]) // todo 1.5
+			cylinder(holder_thick1*2,d=25+part_assemble_nudge*3); // todo 25
 		translate([0,0,lbz-bb_width(lead_bearing)+holder_thick1])
 			cylinder(holder_thick1*4,d=bb_diameter(lead_bearing)*5);
 		lnw = leadnut_flange_dia(leadnut)+motor_nudge*6;
